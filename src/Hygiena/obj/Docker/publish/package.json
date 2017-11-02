@@ -1,0 +1,13 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "private": true
+  },
+  "description": "npm package file",
+  "devDependencies": {
+    "d3": "^3.5.5",
+    "jsdom": "10.1.0"
+  }
+}

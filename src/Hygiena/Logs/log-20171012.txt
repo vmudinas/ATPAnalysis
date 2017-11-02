@@ -1,0 +1,54 @@
+2017-10-12T12:22:58.9958287-07:00 0HL8HKQIVV1JJ [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1.<.ctor>b__7_0(SummaryInfo i)
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1..ctor(IEnumerable data, IAccessor`1 accessor, IEnumerable`1 totalSummary, IEnumerable`1 groupSummary)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 166
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-12T12:23:45.2501571-07:00 0HL8HKQIVV1JK [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1.<.ctor>b__7_0(SummaryInfo i)
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1..ctor(IEnumerable data, IAccessor`1 accessor, IEnumerable`1 totalSummary, IEnumerable`1 groupSummary)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 166
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-12T12:31:18.4771334-07:00 0HL8HKV7RCPJS [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1.<.ctor>b__7_0(SummaryInfo i)
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1..ctor(IEnumerable data, IAccessor`1 accessor, IEnumerable`1 totalSummary, IEnumerable`1 groupSummary)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 167
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-12T12:32:24.2121465-07:00 0HL8HKV7RCPJT [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1.<.ctor>b__7_0(SummaryInfo i)
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1..ctor(IEnumerable data, IAccessor`1 accessor, IEnumerable`1 totalSummary, IEnumerable`1 groupSummary)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 167
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-12T13:07:21.8428674-07:00 0HL8HLJCIRF7R [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1.<.ctor>b__7_0(SummaryInfo i)
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1..ctor(IEnumerable data, IAccessor`1 accessor, IEnumerable`1 totalSummary, IEnumerable`1 groupSummary)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 168
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-12T13:09:16.8615859-07:00 0HL8HLJCIRF7S [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1.<.ctor>b__7_0(SummaryInfo i)
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at DevExtreme.AspNet.Data.Aggregation.AggregateCalculator`1..ctor(IEnumerable data, IAccessor`1 accessor, IEnumerable`1 totalSummary, IEnumerable`1 groupSummary)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 168
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51

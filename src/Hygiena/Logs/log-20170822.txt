@@ -1,0 +1,18 @@
+2017-08-22T12:11:24.7548652-07:00 0HL79I6AI2RPD [FTL] admin generateReport (060e46e2)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle, List`1 emailList) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(String userName, String title, String reportType, String fromUtc, String toUtc, List`1 emailList) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2017-08-22T14:07:19.3122187-07:00 0HL79K735TAV4 [FTL] admin generateReport (060e46e2)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle, List`1 emailList) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 32
+   at Hygiena.Controllers.api.ReportsController.EmailReport(String userName, String title, String reportType, String fromUtc, String toUtc, List`1 emailList) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 57
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+

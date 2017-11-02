@@ -1,0 +1,69 @@
+﻿@using System.Threading.Tasks
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div ng-view>
+
+    </div>
+}
+
+else
+{
+    <div class="firstPageClass containerView">
+        <div class="row"></div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-10">
+                @*<div class="alert alert-danger">
+                    {{language.loginAlert.caption | capitalize}}
+                </div>*@
+            </div>
+        </div>
+        <div class="row">
+            <div itemprop="articleBody">
+                <p class="alignCenter">
+                    <span class="firstPageTitleLarge">{{language.aboutHygiena.caption | capitalize}}</span>
+                </p>
+                <p class="alignCenter">
+                    <span class="firstPageTitleMedium">{{language.hygienaMsgFirst.caption| capitalize}}</span>
+                </p>
+                <p class="alignCenter">
+                    <span class="firstPageTitleMedium">{{language.hygienaMsgSecond.caption| capitalize}}&nbsp;</span>
+                </p>
+                <p class="alignCenter">
+                    <div id="vector-map" dx-vector-map="vectorMapOptions"></div>
+                </p>
+                <p class="alignCenter">
+                    <span class="firstPageTitleMedium">{{language.headquarteredMsg.caption| capitalize}}&nbsp;</span>
+                </p>
+                <p class="alignCenter">
+                    <span class="firstPageTitleSmall">
+                        <span class="firstPageLineHeight">
+                            <span style="font-size: medium;">{{language.findAndFollow.caption| capitalize}}</span> &nbsp;<a href="http://www.linkedin.com/company/hygiena?trk=company_logo" target="_blank">
+                                <img src="~/css/LinkedIn_Logo60px.png" alt="LinkedIn Logo60px" width="36" height="30" style="vertical-align: middle;"/>
+                            </a>&nbsp;&nbsp;&nbsp;<a href="http://www.youtube.com/hygienatv" target="_blank">
+                                <img src="~/css/yt-brand-standard-logo-630px.png" alt="yt-brand-standard-logo-630px" width="71" height="30" style="vertical-align: middle;"/>
+                            </a>&nbsp; &nbsp;&nbsp;<a href="https://twitter.com/HygienaUSA" target="_blank" style="font-size: small; line-height: 20px;">
+                                <img src="~/css/twitter-bird-white-on-blue.jpg" alt="twitter-bird-white-on-blue" width="30" height="30" style="vertical-align: middle;"/>
+                            </a>
+                        </span>
+                    </span>
+                </p>
+                <p>
+                    <span class="firstPageTitleSmall">
+                        <span class="firstPageLineHeight"></span>
+                    </span>
+                </p>
+                <p>
+                    <span class="firstPageTitleSmall">
+                        <span class="firstPageLineHeight">
+                            <span style="font-size: medium;"></span>
+                        </span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+}

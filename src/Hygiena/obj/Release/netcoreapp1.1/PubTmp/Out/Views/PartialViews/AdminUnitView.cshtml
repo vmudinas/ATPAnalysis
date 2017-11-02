@@ -1,0 +1,15 @@
+﻿<div id="unitTokenGeneratorView" ng-controller="adminUnitController" ng-init="language != undefined">
+    <div class="row">
+        <div class="col-lg-12">
+            <label>{{language.unitRegistration.caption| capitalize}}</label>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="unitTokenGrid" dx-data-grid="unitTokenGridOptions">
+            </div>
+        </div>
+
+    </div>
+</div>

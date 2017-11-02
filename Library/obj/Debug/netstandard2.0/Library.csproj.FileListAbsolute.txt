@@ -1,0 +1,9 @@
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\bin\Debug\netstandard2.0\Library.deps.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\bin\Debug\netstandard2.0\Library.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\bin\Debug\netstandard2.0\Library.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\obj\Debug\netstandard2.0\Library.csproj.CoreCompileInputs.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\obj\Debug\netstandard2.0\Library.AssemblyInfoInputs.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\obj\Debug\netstandard2.0\Library.AssemblyInfo.cs
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\obj\Debug\netstandard2.0\Library.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\obj\Debug\netstandard2.0\Library.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\Library\obj\Debug\netstandard2.0\Library.csprojResolveAssemblyReference.cache

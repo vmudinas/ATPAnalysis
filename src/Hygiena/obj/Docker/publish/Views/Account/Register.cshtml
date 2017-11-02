@@ -1,0 +1,122 @@
+﻿@model Infrastructure.UserModel.Models.AccountViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="containerView">
+    <h2></h2>
+    <div id="registerView">
+        <form asp-controller="Account" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="form-horizontal registerContainer">
+            <h4>{{language.regNewAccount.caption| capitalize}}</h4>
+            <hr />
+            <div class="form-group">
+                <label asp-for="Site" class="col-md-2 control-label">{{language.defaultSite.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="Site" class="form-control" />
+                    <span asp-validation-for="Site" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="col-md-2 control-label">{{language.fullName.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="AccountEmail" class="col-md-2 control-label">{{language.accountEmail.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="AccountEmail" class="form-control" />
+                    <span asp-validation-for="AccountEmail" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Phone" class="col-md-2 control-label">{{language.phone.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="col-md-2 control-label">{{language.address.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="City" class="col-md-2 control-label">{{language.city.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="City" class="form-control" />
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="DistrictState" class="col-md-2 control-label">{{language.districtState.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="DistrictState" class="form-control" />
+                    <span asp-validation-for="DistrictState" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PostalCode" class="col-md-2 control-label">{{language.postalCode.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="PostalCode" class="form-control" />
+                    <span asp-validation-for="PostalCode" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CountryCode" class="col-md-2 control-label">{{language.countryCode.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="CountryCode" class="form-control" />
+                    <span asp-validation-for="CountryCode" class="text-danger"></span>
+                </div>
+            </div>
+
+            <hr />
+            <h4>{{language.regAdminAccount.caption| capitalize}}</h4>
+            <hr />
+            <div class="form-group">
+                <label asp-for="UserName" class="col-md-2 control-label">{{language.userName.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="UserName" class="form-control" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="col-md-2 control-label">{{language.email.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="col-md-2 control-label">{{language.password.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword" class="col-md-2 control-label">{{language.confirmPassword.caption| capitalize}}</label>
+                <div class="col-md-10">
+                    <input asp-for="ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <div class="col-md-offset-11 col-md-1">
+                    <button type="submit" class="btn btn-default">{{language.register.caption| capitalize}}</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    @section Scripts {
+        @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+    }

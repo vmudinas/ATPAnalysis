@@ -1,0 +1,13 @@
+﻿<div id="scheduleEmailedReportsView" class=".table-responsive" ng-controller="scheduleEmailedReportsController" ng-init="language != undefined">
+    <div class="row">
+        <div class="col-lg-12">
+            <label>{{language.scheduleEmailedReports.caption| capitalize}}</label>
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div dx-scheduler="emailScheduler"></div>
+        </div>
+    </div>
+</div>

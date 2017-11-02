@@ -1,0 +1,3 @@
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp2.0\win10-x64\Hygiena.csproj.CoreCompileInputs.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp2.0\win10-x64\Hygiena.AssemblyInfoInputs.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp2.0\win10-x64\Hygiena.AssemblyInfo.cs

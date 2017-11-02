@@ -1,0 +1,800 @@
+2017-10-26T10:47:41.3698573-07:00 0HL8SJ6JSV7CK [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 144
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 188
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 264
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T10:47:48.9615142-07:00 0HL8SJ6JSV7CL [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 144
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 188
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T10:51:06.7444659-07:00 0HL8SJ8H3INK8 [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 144
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 188
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T10:52:12.5021981-07:00 0HL8SJ8H3INK9 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 144
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 188
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T10:58:20.0232985-07:00 0HL8SJCI7KPL6 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:00:46.2302038-07:00 0HL8SJCI7KPL7 [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: JSON reader was expecting a value but found 'Location0'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateFindOperation[TProjection](FilterDefinition`1 filter, FindOptions`2 options)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 124
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:00:46.2732028-07:00 0HL8SJCI7KPL8 [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: JSON reader was expecting a value but found 'Location0'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateFindOperation[TProjection](FilterDefinition`1 filter, FindOptions`2 options)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 124
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:00:47.5387806-07:00 0HL8SJCI7KPL9 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.FormatException: JSON reader was expecting a value but found 'Location0'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateCountOperation(FilterDefinition`1 filter, CountOptions options)
+   at MongoDB.Driver.MongoCollectionImpl`1.Count(FilterDefinition`1 filter, CountOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.Count(CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 89
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:01:00.3703689-07:00 0HL8SJCI7KPLA [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: JSON reader was expecting a value but found 'Location'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateFindOperation[TProjection](FilterDefinition`1 filter, FindOptions`2 options)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:01:01.8710112-07:00 0HL8SJCI7KPLB [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.FormatException: JSON reader was expecting a value but found 'Location'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateCountOperation(FilterDefinition`1 filter, CountOptions options)
+   at MongoDB.Driver.MongoCollectionImpl`1.Count(FilterDefinition`1 filter, CountOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.Count(CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:01:12.8375944-07:00 0HL8SJCI7KPLC [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: JSON reader was expecting a value but found 'Location'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateFindOperation[TProjection](FilterDefinition`1 filter, FindOptions`2 options)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:01:14.6079829-07:00 0HL8SJCI7KPLD [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.FormatException: JSON reader was expecting a value but found 'Location'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateCountOperation(FilterDefinition`1 filter, CountOptions options)
+   at MongoDB.Driver.MongoCollectionImpl`1.Count(FilterDefinition`1 filter, CountOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.Count(CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:02:30.7879617-07:00 0HL8SJCI7KPLE [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: JSON reader was expecting a value but found 'Location0'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateFindOperation[TProjection](FilterDefinition`1 filter, FindOptions`2 options)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:02:32.2704989-07:00 0HL8SJCI7KPLF [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.FormatException: JSON reader was expecting a value but found 'Location0'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateCountOperation(FilterDefinition`1 filter, CountOptions options)
+   at MongoDB.Driver.MongoCollectionImpl`1.Count(FilterDefinition`1 filter, CountOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.Count(CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:06:39.3105857-07:00 0HL8SJH717KE7 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:06:46.9060594-07:00 0HL8SJH717KE8 [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: JSON reader was expecting a value but found 'Location0'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateFindOperation[TProjection](FilterDefinition`1 filter, FindOptions`2 options)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 124
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 221
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:10:48.7565128-07:00 0HL8SJJHC3SEA [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:23:47.6173362-07:00 0HL8SJQPFTB0P [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:23:55.2182848-07:00 0HL8SJQPFTB0Q [FTL] PagedResults Failed: admin (4c14f306)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Newtonsoft.Json.Linq.JArray' does not contain a definition for 'Split'
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 183
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 217
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 238
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:24:10.2152236-07:00 0HL8SJQPFTB0R [FTL] GetPagedCountResults Failed: admin (f22b8456)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Newtonsoft.Json.Linq.JArray' does not contain a definition for 'Split'
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 183
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 217
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:26:05.8609698-07:00 0HL8SJS2M9PK4 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:31:59.5328088-07:00 0HL8SJVC36123 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:32:44.3855673-07:00 0HL8SJVC36124 [FTL] PagedResults Failed: admin (4c14f306)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'System.Array' does not contain a definition for 'length'
+   at CallSite.Target(Closure , CallSite , Object )
+   at CallSite.Target(Closure , CallSite , Object )
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 184
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 217
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 238
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:35:19.3962904-07:00 0HL8SK17L773E [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:37:23.8451730-07:00 0HL8SK2CO2TB9 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:38:40.1222288-07:00 0HL8SK33FG27K [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:45:30.1777205-07:00 0HL8SK6TM2TGH [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:45:30.8672485-07:00 0HL8SK6TM2TGI [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:45:31.0998019-07:00 0HL8SK6TM2TGJ [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:46:08.3020297-07:00 0HL8SK6TM2TGK [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:46:08.5939844-07:00 0HL8SK6TM2TGL [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:46:37.7432803-07:00 0HL8SK6TM2TGM [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:46:38.0052910-07:00 0HL8SK6TM2TGN [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:47:20.1804456-07:00 0HL8SK6TM2TGO [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:51:23.1795879-07:00 0HL8SKA6SIR4L [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:51:41.2044127-07:00 0HL8SKA6SIR4M [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T11:54:01.5308999-07:00 0HL8SKA6SIR4N [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 149
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 190
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T11:56:25.2280709-07:00 0HL8SKD0T6HR2 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:30:58.9750746-07:00 0HL8SL0ATTU1N [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:31:33.9324158-07:00 0HL8SL0ATTU1O [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:31:44.8725730-07:00 0HL8SL0ATTU1P [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:31:55.8212497-07:00 0HL8SL0ATTU1Q [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:34:01.4066409-07:00 0HL8SL0ATTU1R [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 116
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T12:34:01.6818394-07:00 0HL8SL0ATTU1S [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:34:05.1979102-07:00 0HL8SL0ATTU1T [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 116
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T12:34:05.4382012-07:00 0HL8SL0ATTU1U [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:34:07.1861488-07:00 0HL8SL0ATTU1V [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 116
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T12:34:07.4356628-07:00 0HL8SL0ATTU20 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:34:10.3585631-07:00 0HL8SL0ATTU21 [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 116
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T12:34:10.6080644-07:00 0HL8SL0ATTU22 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:36:50.2313786-07:00 0HL8SL0ATTU23 [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 116
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T12:36:50.6153590-07:00 0HL8SL0ATTU24 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:39:43.3431071-07:00 0HL8SL576M1RD [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:39:45.4550091-07:00 0HL8SL576M1RE [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:39:51.6573162-07:00 0HL8SL576M1RF [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:39:57.4072208-07:00 0HL8SL576M1RG [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:40:16.9027102-07:00 0HL8SL576M1RH [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:43:37.7282589-07:00 0HL8SL576M1RI [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:43:40.8279899-07:00 0HL8SL576M1RJ [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:47:24.7873329-07:00 0HL8SL9GNC8LL [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T12:47:29.1221810-07:00 0HL8SL9GNC8LM [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Value cannot be empty.
+Parameter name: json
+   at MongoDB.Driver.Core.Misc.Ensure.IsNotNullOrEmpty(String value, String paramName)
+   at MongoDB.Driver.FilterDefinition`1.op_Implicit(String json)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 88
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T13:36:36.7126224-07:00 0HL8SM50F429O [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 247
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T13:36:36.9622414-07:00 0HL8SM50F429P [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T13:37:00.1193247-07:00 0HL8SM50F429Q [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 247
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T13:37:00.3573338-07:00 0HL8SM50F429R [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T13:39:21.4433783-07:00 0HL8SM50F429S [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 247
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T13:39:21.6088995-07:00 0HL8SM50F429T [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 247
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T13:40:39.5952071-07:00 0HL8SM50F429U [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 247
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T13:40:43.5039812-07:00 0HL8SM50F429V [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 247
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T13:40:43.5690037-07:00 0HL8SM50F42A0 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T13:40:43.6552889-07:00 0HL8SM50F42A1 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-26T13:42:59.1745203-07:00 0HL8SM50F42A2 [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 247
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-26T13:43:03.7604947-07:00 0HL8SM50F42A3 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.BuildFilter(String value, String filterBuilder) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 155
+   at Infrastructure.Services.DataService.LoopFilter(String filterBuilder, DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 202
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 226
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71

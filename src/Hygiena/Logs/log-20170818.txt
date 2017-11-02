@@ -1,0 +1,136 @@
+2017-08-18T10:59:45.0120985-07:00 0HL76CBKA3V09 [FTL] System.Collections.Generic.List`1[System.String] generateReport (44dd3127)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(List`1 userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2017-08-18T11:02:41.7319140-07:00 0HL76CBKA3V0A [FTL] System.Collections.Generic.List`1[System.String] generateReport (44dd3127)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(List`1 userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2017-08-18T11:17:02.5177148-07:00 0HL76CBKA3V0B [FTL] System.Collections.Generic.List`1[System.String] generateReport (44dd3127)
+System.AggregateException: One or more errors occurred. (Call to Node module failed with error: C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\wwwroot\node\reportGenerator.js:18
+         .src(reportUrl, ['1870x1024'] { css: css, script: javascsript})
+                                     ^
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:53:10)
+    at Object.runInThisContext (vm.js:95:10)
+    at Module._compile (module.js:543:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at C:\Users\vmudinas\AppData\Local\Temp\tmp963C.tmp:108:34) ---> System.Exception: Call to Node module failed with error: C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\wwwroot\node\reportGenerator.js:18
+         .src(reportUrl, ['1870x1024'] { css: css, script: javascsript})
+                                     ^
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:53:10)
+    at Object.runInThisContext (vm.js:95:10)
+    at Module._compile (module.js:543:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at C:\Users\vmudinas\AppData\Local\Temp\tmp963C.tmp:108:34
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.<InvokeExportAsync>d__7`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.<InvokeExportAsync>d__13`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.<InvokeExportWithPossibleRetryAsync>d__10`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.<InvokeExportWithPossibleRetryAsync>d__10`1.MoveNext()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(List`1 userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Exception: Call to Node module failed with error: C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\wwwroot\node\reportGenerator.js:18
+         .src(reportUrl, ['1870x1024'] { css: css, script: javascsript})
+                                     ^
+SyntaxError: missing ) after argument list
+    at createScript (vm.js:53:10)
+    at Object.runInThisContext (vm.js:95:10)
+    at Module._compile (module.js:543:28)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at C:\Users\vmudinas\AppData\Local\Temp\tmp963C.tmp:108:34
+   at Microsoft.AspNetCore.NodeServices.HostingModels.HttpNodeInstance.<InvokeExportAsync>d__7`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.HostingModels.OutOfProcessNodeInstance.<InvokeExportAsync>d__13`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.<InvokeExportWithPossibleRetryAsync>d__10`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.NodeServices.NodeServicesImpl.<InvokeExportWithPossibleRetryAsync>d__10`1.MoveNext()<---
+
+2017-08-18T11:50:34.1385917-07:00 0HL76D810RBTS [FTL] System.Collections.Generic.List`1[System.String] generateReport (44dd3127)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(List`1 userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2017-08-18T13:32:51.0444263-07:00 0HL76D810RBTT [FTL] System.Collections.Generic.List`1[System.String] generateReport (44dd3127)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(List`1 userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2017-08-18T14:13:13.2161254-07:00 0HL76FNNQIHIH [FTL] System.Collections.Generic.List`1[System.String] generateReport (44dd3127)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(List`1 userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2017-08-18T14:16:44.7396094-07:00 0HL76FNNQIHII [FTL] System.Collections.Generic.List`1[System.String] generateReport (44dd3127)
+System.AggregateException: One or more errors occurred. (A task was canceled.) ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 30
+   at Hygiena.Controllers.api.ReportsController.EmailReport(List`1 userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 41
+---> (Inner Exception #0) System.Threading.Tasks.TaskCanceledException: A task was canceled.<---
+
+2017-08-18T16:36:40.8613902-07:00 0HL76I7T3FI7O [FTL] GetResults Failed: admin (18e0708a)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.BusinessLogic.DateTimeConverter.MomentUtcToDateTime(String dateTime) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\BusinessLogic\DateTimeConverter.cs:line 10
+   at Hygiena.Controllers.api.ReportsController.GetReportData(String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 60
+2017-08-18T16:36:42.9933895-07:00 0HL76I7T3FI7P [FTL] GetResults Failed: admin (18e0708a)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.BusinessLogic.DateTimeConverter.MomentUtcToDateTime(String dateTime) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\BusinessLogic\DateTimeConverter.cs:line 10
+   at Hygiena.Controllers.api.ReportsController.GetReportData(String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 60

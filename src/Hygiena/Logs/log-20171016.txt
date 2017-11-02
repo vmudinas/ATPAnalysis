@@ -1,0 +1,16 @@
+2017-10-16T13:10:12.9107466-07:00 0HL8KQ7KCMUHO [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Repository.Repository.GetMongo[T](String collectionName, Expression`1 filter, DataSourceLoadOptions options, String sort, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 105
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 134
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-16T13:32:07.5292357-07:00 0HL8KQ7KCMUHP [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Repository.Repository.GetMongo[T](String collectionName, Expression`1 filter, DataSourceLoadOptions options, String sort, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 105
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 134
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-16T14:00:03.1215727-07:00 0HL8KR3FHJ5HH [FTL] PagedResults Failed: admin (4c14f306)
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'Infrastructure.Repository.GridFilter'.
+   at System.Linq.Enumerable.<CastIterator>d__35`1.MoveNext()
+   at Infrastructure.Repository.Repository.GetMongo[T](String collectionName, Expression`1 filter, DataSourceLoadOptions options, String sort, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 108
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 134
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50

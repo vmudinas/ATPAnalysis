@@ -1,0 +1,32 @@
+{
+  "name": "print.js",
+  "description": "A tiny javascript library to help printing from the web.",
+  "main": "src/print.js",
+  "authors": [
+    "Rodrigo Vieira <rodrigo@crabbly.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "print.js",
+    "printjs"
+  ],
+  "homepage": "https://github.com/crabbly/Print.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "1.0.18",
+  "_release": "1.0.18",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.18",
+    "commit": "69e7ed93d941364a1fe01c9fb59c2928b6491729"
+  },
+  "_source": "https://github.com/crabbly/Print.js.git",
+  "_target": "v1.0.18",
+  "_originalSource": "print.js",
+  "_direct": true
+}

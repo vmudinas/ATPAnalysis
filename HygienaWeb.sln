@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B35D636-8346-427C-B49A-B22DE3693174}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{433FBF90-20E6-49F1-A663-A9CF35897FD1}"
+	ProjectSection(SolutionItems) = preProject
+		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{52E3F51F-6867-441C-99EC-B09469F53C84}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hygiena", "src\Hygiena\Hygiena.csproj", "{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{CE66879C-0143-42B3-91D3-17E4620893DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HygienUnitTests", "test\HygienUnitTests\HygienUnitTests.csproj", "{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Debug|x86.Build.0 = Debug|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Release|x86.ActiveCfg = Release|Any CPU
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E}.Release|x86.Build.0 = Release|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Debug|x86.Build.0 = Debug|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Release|x86.ActiveCfg = Release|Any CPU
+		{CE66879C-0143-42B3-91D3-17E4620893DF}.Release|x86.Build.0 = Release|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Debug|x86.Build.0 = Debug|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Release|x86.ActiveCfg = Release|Any CPU
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBB0445C-E386-4A1B-9245-4BD3F2725B1E} = {3B35D636-8346-427C-B49A-B22DE3693174}
+		{CE66879C-0143-42B3-91D3-17E4620893DF} = {3B35D636-8346-427C-B49A-B22DE3693174}
+		{A85DA27A-6FDC-4C91-BB1B-92013C3CE73E} = {52E3F51F-6867-441C-99EC-B09469F53C84}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41BB6340-F43A-47E9-B6D3-8DE380D9C23C}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://hygiena.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\Hygiena\\Hygiena.csproj
+		SccProjectTopLevelParentUniqueName1 = HygienaWeb.sln
+		SccProjectName1 = src/Hygiena
+		SccLocalPath1 = src\\Hygiena
+		SccProjectUniqueName2 = src\\Infrastructure\\Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName2 = HygienaWeb.sln
+		SccProjectName2 = src/Infrastructure
+		SccLocalPath2 = src\\Infrastructure
+		SccProjectUniqueName3 = test\\HygienUnitTests\\HygienUnitTests.csproj
+		SccProjectTopLevelParentUniqueName3 = HygienaWeb.sln
+		SccProjectName3 = test/HygienUnitTests
+		SccLocalPath3 = test\\HygienUnitTests
+	EndGlobalSection
+EndGlobal

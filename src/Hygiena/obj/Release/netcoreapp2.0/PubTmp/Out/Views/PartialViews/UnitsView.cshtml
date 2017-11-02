@@ -1,0 +1,111 @@
+﻿<div id="unitsView" class="container-fluid" ng-controller="unitsController" ng-init="language != undefined">
+    <div class="row emptyRow"></div>
+    <div class="row">
+        <div class="col-sm-5">
+            <div dx-data-grid="dataGridHdrOptions"></div>
+        </div>
+        <div class="col-sm-7">
+            <div class="row">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="nav navbar-nav nav-tabs" style="width: 100%;">
+                            <li ng-click="tabClick('Basic')" class="{{basicTabClass}}">
+                                <a>
+                                    <span class="hygienaMenu">{{language.basic.caption}}</span>
+                                </a>
+                            </li>
+                            <li ng-click="tabClick('Plans')" class="{{planTabClass}}">
+                                <a>
+                                    <span class="hygienaMenu">{{language.assignedPlans.caption}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="table-bordered" style="border-top: none; height: 550px;">
+                            <div class="row" ng-hide="(basicTabClass === '')" style="padding: 16px;">
+                                <form name="frmUnitBasic" novalidate>
+                                    <div class="row" style="padding-bottom: 12px;">
+                                        <div class="col-sm-10" style="padding-left: 0;">
+                                            <b>{{language.serialNo.caption}}</b>: {{selectedUnit.serialNo}}
+                                        </div>
+                                        <div class="col-sm-2 right">
+                                            <button title="{{language.save.caption}}" ng-disabled="(saveBasicMuted === 'text-muted')"
+                                                    ng-click="saveUnitBasicInfoClick()" class="glyphicon glyphicon-floppy-disk {{saveBasicMuted}}">
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row table-bordered">
+                                        <div class="col-sm-3 bold" style="border-right: solid 1px #ccc; padding: 14px 12px 16px 12px;">
+                                            {{language.serialNo.caption}}
+                                        </div>
+                                        <div class="col-sm-9" style="padding: 12px;">
+                                            <input name="txtBasicSerialNo" ng-model="selectedUnit.serialNo" ng-change="unitBasicFieldChange()" ng-required="true"/>
+                                            <span style="color: red;" ng-show="frmUnitBasic.txtBasicSerialNo.$touched && frmUnitBasic.txtBasicSerialNo.$invalid"> {{language.fieldIsRequired.caption}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="row table-bordered">
+                                        <div class="col-sm-3 bold" style="border-right: solid 1px #ccc; padding: 14px 12px 16px 12px;">
+                                            {{language.name.caption}}
+                                        </div>
+                                        <div class="col-sm-9" style="padding: 12px;">
+                                            <input name="txtBasicName" ng-model="selectedUnit.name" ng-change="unitBasicFieldChange()" ng-required="true"/>
+                                            <span style="color: red;" ng-show="frmUnitBasic.txtBasicName.$touched && frmUnitBasic.txtBasicName.$invalid"> {{language.fieldIsRequired.caption}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="row table-bordered">
+                                        <div class="col-sm-3 bold" style="border-right: solid 1px #ccc; padding: 14px 12px 16px 12px;">
+                                            {{language.version.caption}}
+                                        </div>
+                                        <div class="col-sm-9" style="padding: 12px;">
+                                            <input name="txtBasicVersion" ng-model="selectedUnit.version" ng-change="unitBasicFieldChange()" ng-required="true"/>
+                                            <span style="color: red;" ng-show="frmUnitBasic.txtBasicVersion.$touched && frmUnitBasic.txtBasicVersion.$invalid"> {{language.fieldIsRequired.caption}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="row table-bordered">
+                                        <div class="col-sm-3 bold" style="border-right: solid 1px #ccc; padding: 14px 12px 16px 12px;">
+                                            {{language.site.caption}}
+                                        </div>
+                                        <div class="col-sm-9" style="padding: 12px;">
+                                            <input name="txtBasicSite" ng-model="selectedUnit.site" ng-change="unitBasicFieldChange()" ng-required="true"/>
+                                            <span style="color: red;" ng-show="frmUnitBasic.txtBasicSite.$touched && frmUnitBasic.txtBasicSite.$invalid"> {{language.fieldIsRequired.caption}}</span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div ng-hide="(planTabClass === '')" class="row" style="padding: 16px;">
+                                <div class="row" style="padding-bottom: 12px;">
+                                    <div class="col-sm-10">
+                                        <b>{{language.serialNo.caption}}</b>: {{selectedUnit.serialNo}}
+                                    </div>
+                                    <div class="col-sm-2 right">
+                                        <button title="{{language.save.caption}}" ng-disabled="(savePlansMuted === 'text-muted')"
+                                                ng-click="savePlansClick()" class="glyphicon glyphicon-floppy-disk {{savePlansMuted}}">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <div id="allPlansPerUnitGrid" dx-data-grid="dataGridAllPlansOptions"></div>
+                                    </div>
+                                    <div class="col-sm-2 center">
+                                        <p>
+                                            <button ng-click="movePlansFromAvailableToAssigned()">&gt;</button>
+                                        </p>
+                                        <button ng-click="movePlansFromAssignedToAvailable()">&lt;</button>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div id="assignedPlansGrid" dx-data-grid="dataGridAssignedPlansOptions"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row emptyRow"></div>
+</div>

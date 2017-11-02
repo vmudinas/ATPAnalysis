@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAYqeXR9f8jUSSQqi71WdxowAAAAACAAAAAAADZgAAwAAAABAAAADZulAR9aFSIUC5rWXI4GCgAAAAAASAAACgAAAAEAAAAO1jCX9W1AUAlkeCW9tM5xqAAAAAvSIqivaUeBT6GgnQz4jmGShCqXWAzDy8AvfqBcz09Pvys2Q3YL1jeLTDIbdUo9QbOke8EAGBGzCqkc0wvBE6rnlJd4aAqy0y5kxWoNG7Lwkxmbz0oFL8Gu72qiuydHLZMpqGNheQqnR3yK94wLIqdkegfGczP49LjgKuJoQ/TjUUAAAAJl3QRzZ+KPiATohrMp5oj0QrKNs=</EncryptedPassword>
+    <_NewBackgroundProfile>False</_NewBackgroundProfile>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=tcp:zvp4bnjcrg.database.windows.net,1433;Initial Catalog=SureTrendDev;Persist Security Info=False;User ID=hygiena;Password=SystemSURE2$#;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

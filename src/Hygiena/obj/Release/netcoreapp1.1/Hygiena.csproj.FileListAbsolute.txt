@@ -1,0 +1,13 @@
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\bin\Release\netcoreapp1.1\Hygiena.deps.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\bin\Release\netcoreapp1.1\Hygiena.runtimeconfig.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\bin\Release\netcoreapp1.1\Hygiena.runtimeconfig.dev.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\bin\Release\netcoreapp1.1\Hygiena.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\bin\Release\netcoreapp1.1\Hygiena.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\bin\Release\netcoreapp1.1\Infrastructure.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\bin\Release\netcoreapp1.1\Infrastructure.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp1.1\Hygiena.csprojResolveAssemblyReference.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp1.1\Hygiena.AssemblyInfo.cs
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp1.1\Hygiena.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp1.1\Hygiena.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp1.1\Hygiena.csproj.CoreCompileInputs.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\obj\Release\netcoreapp1.1\Hygiena.AssemblyInfoInputs.cache

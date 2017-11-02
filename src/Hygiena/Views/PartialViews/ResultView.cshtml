@@ -1,0 +1,30 @@
+﻿<div id="resultsView" ng-controller="resultController" ng-init="language != undefined">
+    <div class="row">
+        <div class="col-lg-3 ddTitle" >
+            <span class="spanTitle">{{language.period.caption| capitalize}}</span>
+            <select data-ng-options="o.period for o in periods" data-ng-model="selectedPeriodResult" ng-change="changeResultPeriod(selectedPeriodResult)" class="hygienaSelectDash"></select>
+        </div>
+        <div class="col-lg-3 ddTitle" >
+            <span class="spanTitle">{{language.from.caption| capitalize}}</span>
+            <div dx-date-box="dateBox.dateTimeFromResult" class="dateSelectorStyle"></div>
+          
+        </div>
+        <div class="col-lg-3 ddTitle" >
+            <span class="spanTitle">{{language.to.caption| capitalize}}</span>
+            <div dx-date-box="dateBox.dateTimeToResult" class="dateSelectorStyle"></div>
+        </div>
+     
+        <div class="col-lg-3 floatRightClass" >
+            <button type="button" class="btn btn-link right" ng-click="resetResultGridTemplateClick()" title="{{language.resetGridToFactorySettings.caption}}">
+                <i class="fa fa-refresh" aria-hidden="true"></i>
+            </button>
+        </div>
+       
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="resultGrid" dx-data-grid="resultsDataGridOptions"></div>
+        </div>
+    </div>
+</div>

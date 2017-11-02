@@ -1,0 +1,2943 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Web\\External\\Node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Web\\External\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install' ]
+2 info using npm@3.3.4
+3 info using node@v5.4.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune myproject@1.0.0
+20 silly idealTree:prePrune ├── abab@1.0.3
+20 silly idealTree:prePrune ├── abbrev@1.1.0
+20 silly idealTree:prePrune ├── accepts@1.3.3
+20 silly idealTree:prePrune ├── acorn@5.1.1
+20 silly idealTree:prePrune ├── acorn-globals@4.0.0
+20 silly idealTree:prePrune ├── adm-zip@0.4.4
+20 silly idealTree:prePrune ├── after@0.8.2
+20 silly idealTree:prePrune ├── ajv@4.11.8
+20 silly idealTree:prePrune ├── amdefine@1.0.1
+20 silly idealTree:prePrune ├── ansi-regex@2.1.1
+20 silly idealTree:prePrune ├── ansi-styles@2.2.1
+20 silly idealTree:prePrune ├── argparse@1.0.9
+20 silly idealTree:prePrune ├── arr-diff@2.0.0
+20 silly idealTree:prePrune ├── arr-flatten@1.1.0
+20 silly idealTree:prePrune ├── array-differ@1.0.0
+20 silly idealTree:prePrune ├── array-equal@1.0.0
+20 silly idealTree:prePrune ├── array-find-index@1.0.2
+20 silly idealTree:prePrune ├── array-union@1.0.2
+20 silly idealTree:prePrune ├── array-uniq@1.0.3
+20 silly idealTree:prePrune ├── array-unique@0.2.1
+20 silly idealTree:prePrune ├── arraybuffer.slice@0.0.6
+20 silly idealTree:prePrune ├── arrify@1.0.1
+20 silly idealTree:prePrune ├── asn1@0.2.3
+20 silly idealTree:prePrune ├── assert-plus@0.2.0
+20 silly idealTree:prePrune ├── async@1.5.2
+20 silly idealTree:prePrune ├── asynckit@0.4.0
+20 silly idealTree:prePrune ├── aws-sign2@0.6.0
+20 silly idealTree:prePrune ├── aws4@1.6.0
+20 silly idealTree:prePrune ├── babel-runtime@6.25.0
+20 silly idealTree:prePrune ├── backo2@1.0.2
+20 silly idealTree:prePrune ├── balanced-match@0.4.2
+20 silly idealTree:prePrune ├── base64-arraybuffer@0.1.5
+20 silly idealTree:prePrune ├── base64-stream@0.1.3
+20 silly idealTree:prePrune ├── base64id@1.0.0
+20 silly idealTree:prePrune ├── bcrypt-pbkdf@1.0.1
+20 silly idealTree:prePrune ├── better-assert@1.0.2
+20 silly idealTree:prePrune ├─┬ bl@1.0.3
+20 silly idealTree:prePrune │ ├── readable-stream@2.0.6
+20 silly idealTree:prePrune │ └── string_decoder@0.10.31
+20 silly idealTree:prePrune ├── blob@0.0.4
+20 silly idealTree:prePrune ├── bluebird@3.0.6
+20 silly idealTree:prePrune ├── boolbase@1.0.0
+20 silly idealTree:prePrune ├── boom@2.10.1
+20 silly idealTree:prePrune ├── bootstrap@3.3.7
+20 silly idealTree:prePrune ├── bootstrap-tooltip@3.1.1
+20 silly idealTree:prePrune ├── brace-expansion@1.1.6
+20 silly idealTree:prePrune ├── braces@1.8.5
+20 silly idealTree:prePrune ├── browser-request@0.3.3
+20 silly idealTree:prePrune ├── browser-stdout@1.3.0
+20 silly idealTree:prePrune ├── builtin-modules@1.1.1
+20 silly idealTree:prePrune ├── byline@4.2.2
+20 silly idealTree:prePrune ├── callsite@1.0.0
+20 silly idealTree:prePrune ├── camelcase@2.1.1
+20 silly idealTree:prePrune ├── camelcase-keys@2.1.0
+20 silly idealTree:prePrune ├── capture-stack-trace@1.0.0
+20 silly idealTree:prePrune ├── caseless@0.12.0
+20 silly idealTree:prePrune ├─┬ chalk@2.0.1
+20 silly idealTree:prePrune │ ├── ansi-styles@3.2.0
+20 silly idealTree:prePrune │ └── supports-color@4.2.1
+20 silly idealTree:prePrune ├─┬ cheerio@0.19.0
+20 silly idealTree:prePrune │ ├── domhandler@2.3.0
+20 silly idealTree:prePrune │ ├── domutils@1.5.1
+20 silly idealTree:prePrune │ ├─┬ htmlparser2@3.8.3
+20 silly idealTree:prePrune │ │ └── entities@1.0.0
+20 silly idealTree:prePrune │ ├── isarray@0.0.1
+20 silly idealTree:prePrune │ ├── lodash@3.10.1
+20 silly idealTree:prePrune │ ├── readable-stream@1.1.14
+20 silly idealTree:prePrune │ └── string_decoder@0.10.31
+20 silly idealTree:prePrune ├── cliui@3.2.0
+20 silly idealTree:prePrune ├── co@4.6.0
+20 silly idealTree:prePrune ├── code-point-at@1.1.0
+20 silly idealTree:prePrune ├── coffee-script@1.10.0
+20 silly idealTree:prePrune ├── color-convert@1.9.0
+20 silly idealTree:prePrune ├── color-name@1.1.3
+20 silly idealTree:prePrune ├── colors@1.1.2
+20 silly idealTree:prePrune ├── combined-stream@1.0.5
+20 silly idealTree:prePrune ├── commander@2.11.0
+20 silly idealTree:prePrune ├── component-bind@1.0.0
+20 silly idealTree:prePrune ├── component-emitter@1.1.2
+20 silly idealTree:prePrune ├── component-inherit@0.0.3
+20 silly idealTree:prePrune ├── concat-map@0.0.1
+20 silly idealTree:prePrune ├─┬ concat-stream@1.5.0
+20 silly idealTree:prePrune │ ├── readable-stream@2.0.6
+20 silly idealTree:prePrune │ └── string_decoder@0.10.31
+20 silly idealTree:prePrune ├── content-type-parser@1.0.1
+20 silly idealTree:prePrune ├── cookie@0.3.1
+20 silly idealTree:prePrune ├── core-js@2.5.0
+20 silly idealTree:prePrune ├── core-util-is@1.0.2
+20 silly idealTree:prePrune ├── create-error-class@3.0.2
+20 silly idealTree:prePrune ├── cross-spawn@2.2.3
+20 silly idealTree:prePrune ├── cross-spawn-async@2.2.5
+20 silly idealTree:prePrune ├── cryptiles@2.0.5
+20 silly idealTree:prePrune ├─┬ css-select@1.0.0
+20 silly idealTree:prePrune │ └── domutils@1.4.3
+20 silly idealTree:prePrune ├── css-what@1.0.0
+20 silly idealTree:prePrune ├── cssom@0.3.2
+20 silly idealTree:prePrune ├── cssstyle@0.2.37
+20 silly idealTree:prePrune ├── currently-unhandled@0.4.1
+20 silly idealTree:prePrune ├── d3@3.5.17
+20 silly idealTree:prePrune ├─┬ dashdash@1.14.1
+20 silly idealTree:prePrune │ └── assert-plus@1.0.0
+20 silly idealTree:prePrune ├── dateformat@1.0.12
+20 silly idealTree:prePrune ├── debug@2.6.8
+20 silly idealTree:prePrune ├── decamelize@1.2.0
+20 silly idealTree:prePrune ├── deep-is@0.1.3
+20 silly idealTree:prePrune ├─┬ del@3.0.0
+20 silly idealTree:prePrune │ └── pify@3.0.0
+20 silly idealTree:prePrune ├── delayed-stream@1.0.0
+20 silly idealTree:prePrune ├── detect-file@0.1.0
+20 silly idealTree:prePrune ├── diff@3.2.0
+20 silly idealTree:prePrune ├─┬ dom-serializer@0.1.0
+20 silly idealTree:prePrune │ └── domelementtype@1.1.3
+20 silly idealTree:prePrune ├── domelementtype@1.3.0
+20 silly idealTree:prePrune ├── domhandler@2.4.1
+20 silly idealTree:prePrune ├── domutils@1.6.2
+20 silly idealTree:prePrune ├── duplexer3@0.1.4
+20 silly idealTree:prePrune ├── easydate@2.2.1
+20 silly idealTree:prePrune ├── ecc-jsbn@0.1.1
+20 silly idealTree:prePrune ├─┬ engine.io@1.8.4
+20 silly idealTree:prePrune │ ├── debug@2.3.3
+20 silly idealTree:prePrune │ └── ms@0.7.2
+20 silly idealTree:prePrune ├─┬ engine.io-client@1.8.4
+20 silly idealTree:prePrune │ ├── component-emitter@1.2.1
+20 silly idealTree:prePrune │ ├── debug@2.3.3
+20 silly idealTree:prePrune │ ├── ms@0.7.2
+20 silly idealTree:prePrune │ └── ws@1.1.2
+20 silly idealTree:prePrune ├── engine.io-parser@1.3.2
+20 silly idealTree:prePrune ├── entities@1.1.1
+20 silly idealTree:prePrune ├── error-ex@1.3.1
+20 silly idealTree:prePrune ├── es6-promise@4.0.5
+20 silly idealTree:prePrune ├── escape-string-regexp@1.0.5
+20 silly idealTree:prePrune ├── escodegen@1.8.1
+20 silly idealTree:prePrune ├── esprima@2.7.3
+20 silly idealTree:prePrune ├── estraverse@1.9.3
+20 silly idealTree:prePrune ├── esutils@2.0.2
+20 silly idealTree:prePrune ├── eventemitter2@0.4.14
+20 silly idealTree:prePrune ├── exit@0.1.2
+20 silly idealTree:prePrune ├── expand-brackets@0.1.5
+20 silly idealTree:prePrune ├── expand-range@1.8.2
+20 silly idealTree:prePrune ├── expand-tilde@1.2.2
+20 silly idealTree:prePrune ├── extend@3.0.1
+20 silly idealTree:prePrune ├── extglob@0.3.2
+20 silly idealTree:prePrune ├─┬ extract-zip@1.5.0
+20 silly idealTree:prePrune │ └── debug@0.7.4
+20 silly idealTree:prePrune ├── extsprintf@1.3.0
+20 silly idealTree:prePrune ├── fast-levenshtein@2.0.6
+20 silly idealTree:prePrune ├── fd-slicer@1.0.1
+20 silly idealTree:prePrune ├── file-url@2.0.2
+20 silly idealTree:prePrune ├── filename-regex@2.0.1
+20 silly idealTree:prePrune ├── filename-reserved-regex@2.0.0
+20 silly idealTree:prePrune ├── filenamify@2.0.0
+20 silly idealTree:prePrune ├─┬ filenamify-url@1.0.0
+20 silly idealTree:prePrune │ ├── filename-reserved-regex@1.0.0
+20 silly idealTree:prePrune │ └── filenamify@1.2.1
+20 silly idealTree:prePrune ├── fill-range@2.2.3
+20 silly idealTree:prePrune ├── find-up@1.1.2
+20 silly idealTree:prePrune ├─┬ findup-sync@1.0.0
+20 silly idealTree:prePrune │ └── glob@5.0.15
+20 silly idealTree:prePrune ├── for-in@1.0.2
+20 silly idealTree:prePrune ├── for-own@0.1.5
+20 silly idealTree:prePrune ├── forever-agent@0.6.1
+20 silly idealTree:prePrune ├── form-data@2.1.4
+20 silly idealTree:prePrune ├── fs@0.0.2
+20 silly idealTree:prePrune ├── fs-exists-sync@0.1.0
+20 silly idealTree:prePrune ├── fs-extra@1.0.0
+20 silly idealTree:prePrune ├── fs-write-stream-atomic@1.0.10
+20 silly idealTree:prePrune ├── fs.realpath@1.0.0
+20 silly idealTree:prePrune ├── generate-function@2.0.0
+20 silly idealTree:prePrune ├── generate-object-property@1.2.0
+20 silly idealTree:prePrune ├── get-res@3.0.0
+20 silly idealTree:prePrune ├── get-stdin@4.0.1
+20 silly idealTree:prePrune ├── get-stream@3.0.0
+20 silly idealTree:prePrune ├── getobject@0.1.0
+20 silly idealTree:prePrune ├─┬ getpass@0.1.7
+20 silly idealTree:prePrune │ └── assert-plus@1.0.0
+20 silly idealTree:prePrune ├── glob@7.1.1
+20 silly idealTree:prePrune ├── glob-base@0.3.0
+20 silly idealTree:prePrune ├── glob-parent@2.0.0
+20 silly idealTree:prePrune ├── global-modules@0.2.3
+20 silly idealTree:prePrune ├── global-prefix@0.1.5
+20 silly idealTree:prePrune ├── globby@6.1.0
+20 silly idealTree:prePrune ├── got@6.7.1
+20 silly idealTree:prePrune ├── graceful-fs@4.1.11
+20 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+20 silly idealTree:prePrune ├── growl@1.9.2
+20 silly idealTree:prePrune ├─┬ grunt@1.0.1
+20 silly idealTree:prePrune │ ├─┬ findup-sync@0.3.0
+20 silly idealTree:prePrune │ │ └── glob@5.0.15
+20 silly idealTree:prePrune │ ├── glob@7.0.6
+20 silly idealTree:prePrune │ ├── grunt-cli@1.2.0
+20 silly idealTree:prePrune │ └── js-yaml@3.5.5
+20 silly idealTree:prePrune ├── grunt-known-options@1.1.0
+20 silly idealTree:prePrune ├─┬ grunt-legacy-log@1.0.0
+20 silly idealTree:prePrune │ └── lodash@3.10.1
+20 silly idealTree:prePrune ├─┬ grunt-legacy-log-utils@1.0.0
+20 silly idealTree:prePrune │ ├── chalk@1.1.3
+20 silly idealTree:prePrune │ └── lodash@4.3.0
+20 silly idealTree:prePrune ├─┬ grunt-legacy-util@1.0.0
+20 silly idealTree:prePrune │ └── lodash@4.3.0
+20 silly idealTree:prePrune ├── grunt-pageres@3.0.0
+20 silly idealTree:prePrune ├── har-schema@1.0.5
+20 silly idealTree:prePrune ├── har-validator@4.2.1
+20 silly idealTree:prePrune ├── has-ansi@2.0.0
+20 silly idealTree:prePrune ├─┬ has-binary@0.1.7
+20 silly idealTree:prePrune │ └── isarray@0.0.1
+20 silly idealTree:prePrune ├── has-cors@1.1.0
+20 silly idealTree:prePrune ├── has-flag@2.0.0
+20 silly idealTree:prePrune ├── hasha@2.2.0
+20 silly idealTree:prePrune ├── hawk@3.1.3
+20 silly idealTree:prePrune ├── hoek@2.16.3
+20 silly idealTree:prePrune ├── homedir-polyfill@1.0.1
+20 silly idealTree:prePrune ├── hooker@0.2.3
+20 silly idealTree:prePrune ├── hosted-git-info@2.4.1
+20 silly idealTree:prePrune ├── html-encoding-sniffer@1.0.1
+20 silly idealTree:prePrune ├── html2png@1.1.2
+20 silly idealTree:prePrune ├── htmlparser2@3.9.2
+20 silly idealTree:prePrune ├── http-signature@1.1.1
+20 silly idealTree:prePrune ├── humanize-url@1.0.1
+20 silly idealTree:prePrune ├── iconv-lite@0.4.18
+20 silly idealTree:prePrune ├── iferr@0.1.5
+20 silly idealTree:prePrune ├── imurmurhash@0.1.4
+20 silly idealTree:prePrune ├── indent-string@2.1.0
+20 silly idealTree:prePrune ├── indexof@0.0.1
+20 silly idealTree:prePrune ├── inflight@1.0.6
+20 silly idealTree:prePrune ├── inherits@2.0.3
+20 silly idealTree:prePrune ├── ini@1.3.4
+20 silly idealTree:prePrune ├── invert-kv@1.0.0
+20 silly idealTree:prePrune ├── irregular-plurals@1.3.0
+20 silly idealTree:prePrune ├── is-arrayish@0.2.1
+20 silly idealTree:prePrune ├── is-buffer@1.1.5
+20 silly idealTree:prePrune ├── is-builtin-module@1.0.0
+20 silly idealTree:prePrune ├── is-dotfile@1.0.3
+20 silly idealTree:prePrune ├── is-equal-shallow@0.1.3
+20 silly idealTree:prePrune ├── is-extendable@0.1.1
+20 silly idealTree:prePrune ├── is-extglob@1.0.0
+20 silly idealTree:prePrune ├── is-finite@1.0.2
+20 silly idealTree:prePrune ├── is-fullwidth-code-point@1.0.0
+20 silly idealTree:prePrune ├── is-glob@2.0.1
+20 silly idealTree:prePrune ├── is-my-json-valid@2.16.0
+20 silly idealTree:prePrune ├── is-number@2.1.0
+20 silly idealTree:prePrune ├── is-path-cwd@1.0.0
+20 silly idealTree:prePrune ├── is-path-in-cwd@1.0.0
+20 silly idealTree:prePrune ├── is-path-inside@1.0.0
+20 silly idealTree:prePrune ├── is-plain-obj@1.1.0
+20 silly idealTree:prePrune ├── is-posix-bracket@0.1.1
+20 silly idealTree:prePrune ├── is-primitive@2.0.0
+20 silly idealTree:prePrune ├── is-property@1.0.2
+20 silly idealTree:prePrune ├── is-redirect@1.0.0
+20 silly idealTree:prePrune ├── is-retry-allowed@1.1.0
+20 silly idealTree:prePrune ├── is-stream@1.1.0
+20 silly idealTree:prePrune ├── is-typedarray@1.0.0
+20 silly idealTree:prePrune ├── is-utf8@0.2.1
+20 silly idealTree:prePrune ├── is-windows@0.2.0
+20 silly idealTree:prePrune ├── isarray@1.0.0
+20 silly idealTree:prePrune ├── isexe@1.1.2
+20 silly idealTree:prePrune ├── isobject@2.1.0
+20 silly idealTree:prePrune ├── isstream@0.1.2
+20 silly idealTree:prePrune ├── jquery@2.1.4
+20 silly idealTree:prePrune ├─┬ js-yaml@3.8.3
+20 silly idealTree:prePrune │ └── esprima@3.1.3
+20 silly idealTree:prePrune ├── jsbn@0.1.1
+20 silly idealTree:prePrune ├─┬ jsdom@10.1.0
+20 silly idealTree:prePrune │ ├── acorn@4.0.13
+20 silly idealTree:prePrune │ ├── acorn-globals@3.1.0
+20 silly idealTree:prePrune │ └── xml-name-validator@2.0.1
+20 silly idealTree:prePrune ├── json-schema@0.2.3
+20 silly idealTree:prePrune ├── json-stable-stringify@1.0.1
+20 silly idealTree:prePrune ├── json-stringify-safe@5.0.1
+20 silly idealTree:prePrune ├── json3@3.3.2
+20 silly idealTree:prePrune ├── jsonfile@2.4.0
+20 silly idealTree:prePrune ├── jsonify@0.0.0
+20 silly idealTree:prePrune ├── jsonpointer@4.0.1
+20 silly idealTree:prePrune ├─┬ jsprim@1.4.1
+20 silly idealTree:prePrune │ └── assert-plus@1.0.0
+20 silly idealTree:prePrune ├── kew@0.7.0
+20 silly idealTree:prePrune ├── kind-of@3.2.2
+20 silly idealTree:prePrune ├── klaw@1.3.1
+20 silly idealTree:prePrune ├── lcid@1.0.0
+20 silly idealTree:prePrune ├── levn@0.3.0
+20 silly idealTree:prePrune ├── load-grunt-tasks@3.5.2
+20 silly idealTree:prePrune ├── load-json-file@1.1.0
+20 silly idealTree:prePrune ├── lodash@4.17.4
+20 silly idealTree:prePrune ├── lodash._baseassign@3.2.0
+20 silly idealTree:prePrune ├── lodash._basecopy@3.0.1
+20 silly idealTree:prePrune ├── lodash._basecreate@3.0.3
+20 silly idealTree:prePrune ├── lodash._getnative@3.9.1
+20 silly idealTree:prePrune ├── lodash._isiterateecall@3.0.9
+20 silly idealTree:prePrune ├── lodash._reinterpolate@3.0.0
+20 silly idealTree:prePrune ├── lodash.create@3.1.1
+20 silly idealTree:prePrune ├── lodash.isarguments@3.1.0
+20 silly idealTree:prePrune ├── lodash.isarray@3.0.4
+20 silly idealTree:prePrune ├── lodash.keys@3.1.2
+20 silly idealTree:prePrune ├── lodash.template@4.4.0
+20 silly idealTree:prePrune ├── lodash.templatesettings@4.1.0
+20 silly idealTree:prePrune ├─┬ log-symbols@1.0.2
+20 silly idealTree:prePrune │ └── chalk@1.1.3
+20 silly idealTree:prePrune ├── loud-rejection@1.6.0
+20 silly idealTree:prePrune ├── lowercase-keys@1.0.0
+20 silly idealTree:prePrune ├── lru-cache@4.1.1
+20 silly idealTree:prePrune ├── make-dir@1.0.0
+20 silly idealTree:prePrune ├── map-obj@1.0.1
+20 silly idealTree:prePrune ├── mem@1.1.0
+20 silly idealTree:prePrune ├─┬ meow@3.7.0
+20 silly idealTree:prePrune │ └── minimist@1.2.0
+20 silly idealTree:prePrune ├── micromatch@2.3.11
+20 silly idealTree:prePrune ├── mime-db@1.29.0
+20 silly idealTree:prePrune ├── mime-types@2.1.16
+20 silly idealTree:prePrune ├── mimic-fn@1.1.0
+20 silly idealTree:prePrune ├── minimatch@3.0.3
+20 silly idealTree:prePrune ├── minimist@0.0.8
+20 silly idealTree:prePrune ├── mkdirp@0.5.0
+20 silly idealTree:prePrune ├─┬ mocha@3.5.0
+20 silly idealTree:prePrune │ ├── commander@2.9.0
+20 silly idealTree:prePrune │ ├── has-flag@1.0.0
+20 silly idealTree:prePrune │ ├── mkdirp@0.5.1
+20 silly idealTree:prePrune │ └── supports-color@3.1.2
+20 silly idealTree:prePrune ├── modify-filename@1.1.0
+20 silly idealTree:prePrune ├── ms@2.0.0
+20 silly idealTree:prePrune ├── mt-printscreen@1.0.1
+20 silly idealTree:prePrune ├── multimatch@2.1.0
+20 silly idealTree:prePrune ├── natives@1.1.0
+20 silly idealTree:prePrune ├── negotiator@0.6.1
+20 silly idealTree:prePrune ├── node-phantom-simple@2.2.4
+20 silly idealTree:prePrune ├── nopt@3.0.6
+20 silly idealTree:prePrune ├── normalize-package-data@2.3.6
+20 silly idealTree:prePrune ├── normalize-path@2.1.1
+20 silly idealTree:prePrune ├── normalize-url@1.9.1
+20 silly idealTree:prePrune ├── nth-check@1.0.1
+20 silly idealTree:prePrune ├── number-is-nan@1.0.1
+20 silly idealTree:prePrune ├── nwmatcher@1.4.1
+20 silly idealTree:prePrune ├── oauth-sign@0.8.2
+20 silly idealTree:prePrune ├── object-assign@4.1.1
+20 silly idealTree:prePrune ├── object-component@0.0.3
+20 silly idealTree:prePrune ├── object.omit@2.0.1
+20 silly idealTree:prePrune ├── once@1.4.0
+20 silly idealTree:prePrune ├── optionator@0.8.2
+20 silly idealTree:prePrune ├── options@0.0.6
+20 silly idealTree:prePrune ├── os-homedir@1.0.2
+20 silly idealTree:prePrune ├── os-locale@1.4.0
+20 silly idealTree:prePrune ├── os-shim@0.1.3
+20 silly idealTree:prePrune ├── os-tmpdir@1.0.2
+20 silly idealTree:prePrune ├── p-map@1.1.1
+20 silly idealTree:prePrune ├── package@1.0.1
+20 silly idealTree:prePrune ├── pageres@4.5.1
+20 silly idealTree:prePrune ├── parse-cookie-phantomjs@1.2.0
+20 silly idealTree:prePrune ├── parse-glob@3.0.4
+20 silly idealTree:prePrune ├── parse-json@2.2.0
+20 silly idealTree:prePrune ├── parse-passwd@1.0.0
+20 silly idealTree:prePrune ├── parse5@1.5.1
+20 silly idealTree:prePrune ├── parsejson@0.0.3
+20 silly idealTree:prePrune ├── parseqs@0.0.5
+20 silly idealTree:prePrune ├── parseuri@0.0.5
+20 silly idealTree:prePrune ├── path-exists@2.1.0
+20 silly idealTree:prePrune ├── path-is-absolute@1.0.1
+20 silly idealTree:prePrune ├── path-is-inside@1.0.2
+20 silly idealTree:prePrune ├── path-type@1.1.0
+20 silly idealTree:prePrune ├─┬ pdfkitjs@0.0.5
+20 silly idealTree:prePrune │ └── lodash@2.0.0
+20 silly idealTree:prePrune ├── pend@1.2.0
+20 silly idealTree:prePrune ├── performance-now@0.2.0
+20 silly idealTree:prePrune ├── phantom-bridge@2.0.1
+20 silly idealTree:prePrune ├─┬ phantomjs@2.1.7
+20 silly idealTree:prePrune │ ├── async@2.5.0
+20 silly idealTree:prePrune │ ├── caseless@0.11.0
+20 silly idealTree:prePrune │ ├── chalk@1.1.3
+20 silly idealTree:prePrune │ ├── form-data@1.0.1
+20 silly idealTree:prePrune │ ├── fs-extra@0.26.7
+20 silly idealTree:prePrune │ ├── har-validator@2.0.6
+20 silly idealTree:prePrune │ ├── node-uuid@1.4.8
+20 silly idealTree:prePrune │ ├── qs@5.2.1
+20 silly idealTree:prePrune │ ├── request@2.67.0
+20 silly idealTree:prePrune │ ├── tough-cookie@2.2.2
+20 silly idealTree:prePrune │ └── tunnel-agent@0.4.3
+20 silly idealTree:prePrune ├── phantomjs-bin@1.0.1
+20 silly idealTree:prePrune ├─┬ phantomjs-prebuilt@2.1.14
+20 silly idealTree:prePrune │ ├── caseless@0.11.0
+20 silly idealTree:prePrune │ ├── chalk@1.1.3
+20 silly idealTree:prePrune │ ├── har-validator@2.0.6
+20 silly idealTree:prePrune │ ├── qs@6.3.2
+20 silly idealTree:prePrune │ ├── request@2.79.0
+20 silly idealTree:prePrune │ └── tunnel-agent@0.4.3
+20 silly idealTree:prePrune ├── pify@2.3.0
+20 silly idealTree:prePrune ├── pinkie@2.0.4
+20 silly idealTree:prePrune ├── pinkie-promise@2.0.1
+20 silly idealTree:prePrune ├── pkg-up@1.0.0
+20 silly idealTree:prePrune ├── plur@2.1.2
+20 silly idealTree:prePrune ├── pn@1.0.0
+20 silly idealTree:prePrune ├── prelude-ls@1.1.2
+20 silly idealTree:prePrune ├── prepend-http@1.0.4
+20 silly idealTree:prePrune ├── preserve@0.2.0
+20 silly idealTree:prePrune ├── process-nextick-args@1.0.7
+20 silly idealTree:prePrune ├── progress@1.1.8
+20 silly idealTree:prePrune ├── protocolify@2.0.0
+20 silly idealTree:prePrune ├── pseudomap@1.0.2
+20 silly idealTree:prePrune ├── punycode@1.4.1
+20 silly idealTree:prePrune ├── qs@6.4.0
+20 silly idealTree:prePrune ├── query-string@4.3.4
+20 silly idealTree:prePrune ├─┬ randomatic@1.1.7
+20 silly idealTree:prePrune │ ├─┬ is-number@3.0.0
+20 silly idealTree:prePrune │ │ └── kind-of@3.2.2
+20 silly idealTree:prePrune │ └── kind-of@4.0.0
+20 silly idealTree:prePrune ├── read-pkg@1.1.0
+20 silly idealTree:prePrune ├── read-pkg-up@1.0.1
+20 silly idealTree:prePrune ├── readable-stream@2.3.3
+20 silly idealTree:prePrune ├── redent@1.0.0
+20 silly idealTree:prePrune ├── regenerator-runtime@0.10.5
+20 silly idealTree:prePrune ├── regex-cache@0.4.3
+20 silly idealTree:prePrune ├── remove-trailing-separator@1.0.2
+20 silly idealTree:prePrune ├── repeat-element@1.1.2
+20 silly idealTree:prePrune ├── repeat-string@1.6.1
+20 silly idealTree:prePrune ├── repeating@2.0.1
+20 silly idealTree:prePrune ├── request@2.81.0
+20 silly idealTree:prePrune ├── request-progress@2.0.1
+20 silly idealTree:prePrune ├── request-promise-core@1.1.1
+20 silly idealTree:prePrune ├── request-promise-native@1.0.4
+20 silly idealTree:prePrune ├── resolve@1.1.7
+20 silly idealTree:prePrune ├── resolve-dir@0.1.1
+20 silly idealTree:prePrune ├── resolve-from@2.0.0
+20 silly idealTree:prePrune ├── resolve-pkg@0.1.0
+20 silly idealTree:prePrune ├── rimraf@2.2.8
+20 silly idealTree:prePrune ├── safe-buffer@5.1.1
+20 silly idealTree:prePrune ├── sax@1.2.4
+20 silly idealTree:prePrune ├── screenshot-stream@4.2.0
+20 silly idealTree:prePrune ├── selenium-webdriver@2.53.3
+20 silly idealTree:prePrune ├── semver@5.3.0
+20 silly idealTree:prePrune ├── signal-exit@3.0.2
+20 silly idealTree:prePrune ├── sntp@1.0.9
+20 silly idealTree:prePrune ├─┬ socket.io@1.7.4
+20 silly idealTree:prePrune │ ├── debug@2.3.3
+20 silly idealTree:prePrune │ ├── ms@0.7.2
+20 silly idealTree:prePrune │ └── object-assign@4.1.0
+20 silly idealTree:prePrune ├─┬ socket.io-adapter@0.5.0
+20 silly idealTree:prePrune │ ├── debug@2.3.3
+20 silly idealTree:prePrune │ └── ms@0.7.2
+20 silly idealTree:prePrune ├─┬ socket.io-client@1.7.4
+20 silly idealTree:prePrune │ ├── component-emitter@1.2.1
+20 silly idealTree:prePrune │ ├── debug@2.3.3
+20 silly idealTree:prePrune │ └── ms@0.7.2
+20 silly idealTree:prePrune ├─┬ socket.io-parser@2.3.1
+20 silly idealTree:prePrune │ ├── debug@2.2.0
+20 silly idealTree:prePrune │ ├── isarray@0.0.1
+20 silly idealTree:prePrune │ └── ms@0.7.1
+20 silly idealTree:prePrune ├── sort-keys@1.1.2
+20 silly idealTree:prePrune ├── source-map@0.2.0
+20 silly idealTree:prePrune ├── spawn-sync@1.0.15
+20 silly idealTree:prePrune ├── spdx-correct@1.0.2
+20 silly idealTree:prePrune ├── spdx-expression-parse@1.0.4
+20 silly idealTree:prePrune ├── spdx-license-ids@1.2.2
+20 silly idealTree:prePrune ├── sprintf-js@1.0.3
+20 silly idealTree:prePrune ├─┬ sshpk@1.13.1
+20 silly idealTree:prePrune │ └── assert-plus@1.0.0
+20 silly idealTree:prePrune ├── stealthy-require@1.1.1
+20 silly idealTree:prePrune ├── strict-uri-encode@1.1.0
+20 silly idealTree:prePrune ├── string_decoder@1.0.3
+20 silly idealTree:prePrune ├── string-width@1.0.2
+20 silly idealTree:prePrune ├── stringstream@0.0.5
+20 silly idealTree:prePrune ├── strip-ansi@3.0.1
+20 silly idealTree:prePrune ├── strip-bom@2.0.0
+20 silly idealTree:prePrune ├── strip-indent@1.0.1
+20 silly idealTree:prePrune ├── strip-outer@1.0.0
+20 silly idealTree:prePrune ├── strip-url-auth@1.0.1
+20 silly idealTree:prePrune ├── supports-color@2.0.0
+20 silly idealTree:prePrune ├── symbol-tree@3.2.2
+20 silly idealTree:prePrune ├── temporary@0.0.6
+20 silly idealTree:prePrune ├── throttleit@1.0.0
+20 silly idealTree:prePrune ├── timed-out@4.0.1
+20 silly idealTree:prePrune ├── tmp@0.0.24
+20 silly idealTree:prePrune ├── to-array@0.1.4
+20 silly idealTree:prePrune ├── tough-cookie@2.3.2
+20 silly idealTree:prePrune ├── tr46@0.0.3
+20 silly idealTree:prePrune ├── trim-newlines@1.0.0
+20 silly idealTree:prePrune ├── trim-repeated@1.0.0
+20 silly idealTree:prePrune ├── tunnel-agent@0.6.0
+20 silly idealTree:prePrune ├── tweetnacl@0.14.5
+20 silly idealTree:prePrune ├── type-check@0.3.2
+20 silly idealTree:prePrune ├── typedarray@0.0.6
+20 silly idealTree:prePrune ├── typescript@2.2.2
+20 silly idealTree:prePrune ├── ultron@1.0.2
+20 silly idealTree:prePrune ├── underscore.string@3.2.3
+20 silly idealTree:prePrune ├─┬ unused-filename@1.0.0
+20 silly idealTree:prePrune │ └── path-exists@3.0.0
+20 silly idealTree:prePrune ├── unzip-response@2.0.1
+20 silly idealTree:prePrune ├── url-parse-lax@1.0.0
+20 silly idealTree:prePrune ├─┬ url-to-image@1.0.0
+20 silly idealTree:prePrune │ ├─┬ async@2.5.0
+20 silly idealTree:prePrune │ │ └── lodash@4.17.4
+20 silly idealTree:prePrune │ ├── caseless@0.11.0
+20 silly idealTree:prePrune │ ├── chalk@1.1.3
+20 silly idealTree:prePrune │ ├── form-data@1.0.1
+20 silly idealTree:prePrune │ ├── fs-extra@0.26.7
+20 silly idealTree:prePrune │ ├── har-validator@2.0.6
+20 silly idealTree:prePrune │ ├── lodash@3.10.1
+20 silly idealTree:prePrune │ ├── node-uuid@1.4.8
+20 silly idealTree:prePrune │ ├── phantomjs@1.9.20
+20 silly idealTree:prePrune │ ├── qs@5.2.1
+20 silly idealTree:prePrune │ ├── request@2.67.0
+20 silly idealTree:prePrune │ ├── tough-cookie@2.2.2
+20 silly idealTree:prePrune │ └── tunnel-agent@0.4.3
+20 silly idealTree:prePrune ├── util-deprecate@1.0.2
+20 silly idealTree:prePrune ├── uuid@3.1.0
+20 silly idealTree:prePrune ├── validate-npm-package-license@3.0.1
+20 silly idealTree:prePrune ├─┬ verror@1.10.0
+20 silly idealTree:prePrune │ └── assert-plus@1.0.0
+20 silly idealTree:prePrune ├── viewport-list@5.1.1
+20 silly idealTree:prePrune ├── w3counter@3.0.1
+20 silly idealTree:prePrune ├── webidl-conversions@4.0.1
+20 silly idealTree:prePrune ├─┬ webshot@0.18.0
+20 silly idealTree:prePrune │ ├── cross-spawn@0.2.9
+20 silly idealTree:prePrune │ ├── graceful-fs@3.0.11
+20 silly idealTree:prePrune │ ├── lru-cache@2.7.3
+20 silly idealTree:prePrune │ └── tmp@0.0.31
+20 silly idealTree:prePrune ├─┬ whatwg-encoding@1.0.1
+20 silly idealTree:prePrune │ └── iconv-lite@0.4.13
+20 silly idealTree:prePrune ├─┬ whatwg-url@4.8.0
+20 silly idealTree:prePrune │ └── webidl-conversions@3.0.1
+20 silly idealTree:prePrune ├─┬ which@1.2.14
+20 silly idealTree:prePrune │ └── isexe@2.0.0
+20 silly idealTree:prePrune ├── window-size@0.1.4
+20 silly idealTree:prePrune ├── wordwrap@1.0.0
+20 silly idealTree:prePrune ├── wrap-ansi@2.1.0
+20 silly idealTree:prePrune ├── wrappy@1.0.2
+20 silly idealTree:prePrune ├── ws@1.1.4
+20 silly idealTree:prePrune ├── wtf-8@1.0.0
+20 silly idealTree:prePrune ├── xml-name-validator@2.0.1
+20 silly idealTree:prePrune ├─┬ xml2js@0.4.4
+20 silly idealTree:prePrune │ └── sax@0.6.1
+20 silly idealTree:prePrune ├── xmlbuilder@9.0.1
+20 silly idealTree:prePrune ├── xmlhttprequest@1.8.0
+20 silly idealTree:prePrune ├── xmlhttprequest-ssl@1.5.3
+20 silly idealTree:prePrune ├── xtend@4.0.1
+20 silly idealTree:prePrune ├── y18n@3.2.1
+20 silly idealTree:prePrune ├── yallist@2.1.2
+20 silly idealTree:prePrune ├─┬ yargs@3.29.0
+20 silly idealTree:prePrune │ └── camelcase@1.2.1
+20 silly idealTree:prePrune ├── yauzl@2.4.1
+20 silly idealTree:prePrune └── yeast@0.1.2
+21 silly loadIdealTree Finishing
+22 silly currentTree myproject@1.0.0
+22 silly currentTree ├── abab@1.0.3
+22 silly currentTree ├── abbrev@1.1.0
+22 silly currentTree ├── accepts@1.3.3
+22 silly currentTree ├── acorn@5.1.1
+22 silly currentTree ├── acorn-globals@4.0.0
+22 silly currentTree ├── adm-zip@0.4.4
+22 silly currentTree ├── after@0.8.2
+22 silly currentTree ├── ajv@4.11.8
+22 silly currentTree ├── amdefine@1.0.1
+22 silly currentTree ├── ansi-regex@2.1.1
+22 silly currentTree ├── ansi-styles@2.2.1
+22 silly currentTree ├── argparse@1.0.9
+22 silly currentTree ├── arr-diff@2.0.0
+22 silly currentTree ├── arr-flatten@1.1.0
+22 silly currentTree ├── array-differ@1.0.0
+22 silly currentTree ├── array-equal@1.0.0
+22 silly currentTree ├── array-find-index@1.0.2
+22 silly currentTree ├── array-union@1.0.2
+22 silly currentTree ├── array-uniq@1.0.3
+22 silly currentTree ├── array-unique@0.2.1
+22 silly currentTree ├── arraybuffer.slice@0.0.6
+22 silly currentTree ├── arrify@1.0.1
+22 silly currentTree ├── asn1@0.2.3
+22 silly currentTree ├── assert-plus@0.2.0
+22 silly currentTree ├── async@1.5.2
+22 silly currentTree ├── asynckit@0.4.0
+22 silly currentTree ├── aws-sign2@0.6.0
+22 silly currentTree ├── aws4@1.6.0
+22 silly currentTree ├── babel-runtime@6.25.0
+22 silly currentTree ├── backo2@1.0.2
+22 silly currentTree ├── balanced-match@0.4.2
+22 silly currentTree ├── base64-arraybuffer@0.1.5
+22 silly currentTree ├── base64-stream@0.1.3
+22 silly currentTree ├── base64id@1.0.0
+22 silly currentTree ├── bcrypt-pbkdf@1.0.1
+22 silly currentTree ├── better-assert@1.0.2
+22 silly currentTree ├─┬ bl@1.0.3
+22 silly currentTree │ ├── readable-stream@2.0.6
+22 silly currentTree │ └── string_decoder@0.10.31
+22 silly currentTree ├── blob@0.0.4
+22 silly currentTree ├── bluebird@3.0.6
+22 silly currentTree ├── boolbase@1.0.0
+22 silly currentTree ├── boom@2.10.1
+22 silly currentTree ├── bootstrap@3.3.7
+22 silly currentTree ├── bootstrap-tooltip@3.1.1
+22 silly currentTree ├── brace-expansion@1.1.6
+22 silly currentTree ├── braces@1.8.5
+22 silly currentTree ├── browser-request@0.3.3
+22 silly currentTree ├── browser-stdout@1.3.0
+22 silly currentTree ├── builtin-modules@1.1.1
+22 silly currentTree ├── byline@4.2.2
+22 silly currentTree ├── callsite@1.0.0
+22 silly currentTree ├── camelcase@2.1.1
+22 silly currentTree ├── camelcase-keys@2.1.0
+22 silly currentTree ├── capture-stack-trace@1.0.0
+22 silly currentTree ├── caseless@0.12.0
+22 silly currentTree ├─┬ chalk@2.0.1
+22 silly currentTree │ ├── ansi-styles@3.2.0
+22 silly currentTree │ └── supports-color@4.2.1
+22 silly currentTree ├─┬ cheerio@0.19.0
+22 silly currentTree │ ├── domhandler@2.3.0
+22 silly currentTree │ ├── domutils@1.5.1
+22 silly currentTree │ ├─┬ htmlparser2@3.8.3
+22 silly currentTree │ │ └── entities@1.0.0
+22 silly currentTree │ ├── isarray@0.0.1
+22 silly currentTree │ ├── lodash@3.10.1
+22 silly currentTree │ ├── readable-stream@1.1.14
+22 silly currentTree │ └── string_decoder@0.10.31
+22 silly currentTree ├── cliui@3.2.0
+22 silly currentTree ├── co@4.6.0
+22 silly currentTree ├── code-point-at@1.1.0
+22 silly currentTree ├── coffee-script@1.10.0
+22 silly currentTree ├── color-convert@1.9.0
+22 silly currentTree ├── color-name@1.1.3
+22 silly currentTree ├── colors@1.1.2
+22 silly currentTree ├── combined-stream@1.0.5
+22 silly currentTree ├── commander@2.11.0
+22 silly currentTree ├── component-bind@1.0.0
+22 silly currentTree ├── component-emitter@1.1.2
+22 silly currentTree ├── component-inherit@0.0.3
+22 silly currentTree ├── concat-map@0.0.1
+22 silly currentTree ├─┬ concat-stream@1.5.0
+22 silly currentTree │ ├── readable-stream@2.0.6
+22 silly currentTree │ └── string_decoder@0.10.31
+22 silly currentTree ├── content-type-parser@1.0.1
+22 silly currentTree ├── cookie@0.3.1
+22 silly currentTree ├── core-js@2.5.0
+22 silly currentTree ├── core-util-is@1.0.2
+22 silly currentTree ├── create-error-class@3.0.2
+22 silly currentTree ├── cross-spawn@2.2.3
+22 silly currentTree ├── cross-spawn-async@2.2.5
+22 silly currentTree ├── cryptiles@2.0.5
+22 silly currentTree ├─┬ css-select@1.0.0
+22 silly currentTree │ └── domutils@1.4.3
+22 silly currentTree ├── css-what@1.0.0
+22 silly currentTree ├── cssom@0.3.2
+22 silly currentTree ├── cssstyle@0.2.37
+22 silly currentTree ├── currently-unhandled@0.4.1
+22 silly currentTree ├── d3@3.5.17
+22 silly currentTree ├─┬ dashdash@1.14.1
+22 silly currentTree │ └── assert-plus@1.0.0
+22 silly currentTree ├── dateformat@1.0.12
+22 silly currentTree ├── debug@2.6.8
+22 silly currentTree ├── decamelize@1.2.0
+22 silly currentTree ├── deep-is@0.1.3
+22 silly currentTree ├─┬ del@3.0.0
+22 silly currentTree │ └── pify@3.0.0
+22 silly currentTree ├── delayed-stream@1.0.0
+22 silly currentTree ├── detect-file@0.1.0
+22 silly currentTree ├── diff@3.2.0
+22 silly currentTree ├─┬ dom-serializer@0.1.0
+22 silly currentTree │ └── domelementtype@1.1.3
+22 silly currentTree ├── domelementtype@1.3.0
+22 silly currentTree ├── domhandler@2.4.1
+22 silly currentTree ├── domutils@1.6.2
+22 silly currentTree ├── duplexer3@0.1.4
+22 silly currentTree ├── easydate@2.2.1
+22 silly currentTree ├── ecc-jsbn@0.1.1
+22 silly currentTree ├─┬ engine.io@1.8.4
+22 silly currentTree │ ├── debug@2.3.3
+22 silly currentTree │ └── ms@0.7.2
+22 silly currentTree ├─┬ engine.io-client@1.8.4
+22 silly currentTree │ ├── component-emitter@1.2.1
+22 silly currentTree │ ├── debug@2.3.3
+22 silly currentTree │ ├── ms@0.7.2
+22 silly currentTree │ └── ws@1.1.2
+22 silly currentTree ├── engine.io-parser@1.3.2
+22 silly currentTree ├── entities@1.1.1
+22 silly currentTree ├── error-ex@1.3.1
+22 silly currentTree ├── es6-promise@4.0.5
+22 silly currentTree ├── escape-string-regexp@1.0.5
+22 silly currentTree ├── escodegen@1.8.1
+22 silly currentTree ├── esprima@2.7.3
+22 silly currentTree ├── estraverse@1.9.3
+22 silly currentTree ├── esutils@2.0.2
+22 silly currentTree ├── eventemitter2@0.4.14
+22 silly currentTree ├── exit@0.1.2
+22 silly currentTree ├── expand-brackets@0.1.5
+22 silly currentTree ├── expand-range@1.8.2
+22 silly currentTree ├── expand-tilde@1.2.2
+22 silly currentTree ├── extend@3.0.1
+22 silly currentTree ├── extglob@0.3.2
+22 silly currentTree ├─┬ extract-zip@1.5.0
+22 silly currentTree │ └── debug@0.7.4
+22 silly currentTree ├── extsprintf@1.3.0
+22 silly currentTree ├── fast-levenshtein@2.0.6
+22 silly currentTree ├── fd-slicer@1.0.1
+22 silly currentTree ├── file-url@2.0.2
+22 silly currentTree ├── filename-regex@2.0.1
+22 silly currentTree ├── filename-reserved-regex@2.0.0
+22 silly currentTree ├── filenamify@2.0.0
+22 silly currentTree ├─┬ filenamify-url@1.0.0
+22 silly currentTree │ ├── filename-reserved-regex@1.0.0
+22 silly currentTree │ └── filenamify@1.2.1
+22 silly currentTree ├── fill-range@2.2.3
+22 silly currentTree ├── find-up@1.1.2
+22 silly currentTree ├─┬ findup-sync@1.0.0
+22 silly currentTree │ └── glob@5.0.15
+22 silly currentTree ├── for-in@1.0.2
+22 silly currentTree ├── for-own@0.1.5
+22 silly currentTree ├── forever-agent@0.6.1
+22 silly currentTree ├── form-data@2.1.4
+22 silly currentTree ├── fs@0.0.2
+22 silly currentTree ├── fs-exists-sync@0.1.0
+22 silly currentTree ├── fs-extra@1.0.0
+22 silly currentTree ├── fs-write-stream-atomic@1.0.10
+22 silly currentTree ├── fs.realpath@1.0.0
+22 silly currentTree ├── generate-function@2.0.0
+22 silly currentTree ├── generate-object-property@1.2.0
+22 silly currentTree ├── get-res@3.0.0
+22 silly currentTree ├── get-stdin@4.0.1
+22 silly currentTree ├── get-stream@3.0.0
+22 silly currentTree ├── getobject@0.1.0
+22 silly currentTree ├─┬ getpass@0.1.7
+22 silly currentTree │ └── assert-plus@1.0.0
+22 silly currentTree ├── glob@7.1.1
+22 silly currentTree ├── glob-base@0.3.0
+22 silly currentTree ├── glob-parent@2.0.0
+22 silly currentTree ├── global-modules@0.2.3
+22 silly currentTree ├── global-prefix@0.1.5
+22 silly currentTree ├── globby@6.1.0
+22 silly currentTree ├── got@6.7.1
+22 silly currentTree ├── graceful-fs@4.1.11
+22 silly currentTree ├── graceful-readlink@1.0.1
+22 silly currentTree ├── growl@1.9.2
+22 silly currentTree ├─┬ grunt@1.0.1
+22 silly currentTree │ ├─┬ findup-sync@0.3.0
+22 silly currentTree │ │ └── glob@5.0.15
+22 silly currentTree │ ├── glob@7.0.6
+22 silly currentTree │ ├── grunt-cli@1.2.0
+22 silly currentTree │ └── js-yaml@3.5.5
+22 silly currentTree ├── grunt-known-options@1.1.0
+22 silly currentTree ├─┬ grunt-legacy-log@1.0.0
+22 silly currentTree │ └── lodash@3.10.1
+22 silly currentTree ├─┬ grunt-legacy-log-utils@1.0.0
+22 silly currentTree │ ├── chalk@1.1.3
+22 silly currentTree │ └── lodash@4.3.0
+22 silly currentTree ├─┬ grunt-legacy-util@1.0.0
+22 silly currentTree │ └── lodash@4.3.0
+22 silly currentTree ├── grunt-pageres@3.0.0
+22 silly currentTree ├── har-schema@1.0.5
+22 silly currentTree ├── har-validator@4.2.1
+22 silly currentTree ├── has-ansi@2.0.0
+22 silly currentTree ├─┬ has-binary@0.1.7
+22 silly currentTree │ └── isarray@0.0.1
+22 silly currentTree ├── has-cors@1.1.0
+22 silly currentTree ├── has-flag@2.0.0
+22 silly currentTree ├── hasha@2.2.0
+22 silly currentTree ├── hawk@3.1.3
+22 silly currentTree ├── hoek@2.16.3
+22 silly currentTree ├── homedir-polyfill@1.0.1
+22 silly currentTree ├── hooker@0.2.3
+22 silly currentTree ├── hosted-git-info@2.4.1
+22 silly currentTree ├── html-encoding-sniffer@1.0.1
+22 silly currentTree ├── html2png@1.1.2
+22 silly currentTree ├── htmlparser2@3.9.2
+22 silly currentTree ├── http-signature@1.1.1
+22 silly currentTree ├── humanize-url@1.0.1
+22 silly currentTree ├── iconv-lite@0.4.18
+22 silly currentTree ├── iferr@0.1.5
+22 silly currentTree ├── imurmurhash@0.1.4
+22 silly currentTree ├── indent-string@2.1.0
+22 silly currentTree ├── indexof@0.0.1
+22 silly currentTree ├── inflight@1.0.6
+22 silly currentTree ├── inherits@2.0.3
+22 silly currentTree ├── ini@1.3.4
+22 silly currentTree ├── invert-kv@1.0.0
+22 silly currentTree ├── irregular-plurals@1.3.0
+22 silly currentTree ├── is-arrayish@0.2.1
+22 silly currentTree ├── is-buffer@1.1.5
+22 silly currentTree ├── is-builtin-module@1.0.0
+22 silly currentTree ├── is-dotfile@1.0.3
+22 silly currentTree ├── is-equal-shallow@0.1.3
+22 silly currentTree ├── is-extendable@0.1.1
+22 silly currentTree ├── is-extglob@1.0.0
+22 silly currentTree ├── is-finite@1.0.2
+22 silly currentTree ├── is-fullwidth-code-point@1.0.0
+22 silly currentTree ├── is-glob@2.0.1
+22 silly currentTree ├── is-my-json-valid@2.16.0
+22 silly currentTree ├── is-number@2.1.0
+22 silly currentTree ├── is-path-cwd@1.0.0
+22 silly currentTree ├── is-path-in-cwd@1.0.0
+22 silly currentTree ├── is-path-inside@1.0.0
+22 silly currentTree ├── is-plain-obj@1.1.0
+22 silly currentTree ├── is-posix-bracket@0.1.1
+22 silly currentTree ├── is-primitive@2.0.0
+22 silly currentTree ├── is-property@1.0.2
+22 silly currentTree ├── is-redirect@1.0.0
+22 silly currentTree ├── is-retry-allowed@1.1.0
+22 silly currentTree ├── is-stream@1.1.0
+22 silly currentTree ├── is-typedarray@1.0.0
+22 silly currentTree ├── is-utf8@0.2.1
+22 silly currentTree ├── is-windows@0.2.0
+22 silly currentTree ├── isarray@1.0.0
+22 silly currentTree ├── isexe@1.1.2
+22 silly currentTree ├── isobject@2.1.0
+22 silly currentTree ├── isstream@0.1.2
+22 silly currentTree ├── jquery@2.1.4
+22 silly currentTree ├─┬ js-yaml@3.8.3
+22 silly currentTree │ └── esprima@3.1.3
+22 silly currentTree ├── jsbn@0.1.1
+22 silly currentTree ├─┬ jsdom@10.1.0
+22 silly currentTree │ ├── acorn@4.0.13
+22 silly currentTree │ ├── acorn-globals@3.1.0
+22 silly currentTree │ └── xml-name-validator@2.0.1
+22 silly currentTree ├── json-schema@0.2.3
+22 silly currentTree ├── json-stable-stringify@1.0.1
+22 silly currentTree ├── json-stringify-safe@5.0.1
+22 silly currentTree ├── json3@3.3.2
+22 silly currentTree ├── jsonfile@2.4.0
+22 silly currentTree ├── jsonify@0.0.0
+22 silly currentTree ├── jsonpointer@4.0.1
+22 silly currentTree ├─┬ jsprim@1.4.1
+22 silly currentTree │ └── assert-plus@1.0.0
+22 silly currentTree ├── kew@0.7.0
+22 silly currentTree ├── kind-of@3.2.2
+22 silly currentTree ├── klaw@1.3.1
+22 silly currentTree ├── lcid@1.0.0
+22 silly currentTree ├── levn@0.3.0
+22 silly currentTree ├── load-grunt-tasks@3.5.2
+22 silly currentTree ├── load-json-file@1.1.0
+22 silly currentTree ├── lodash@4.17.4
+22 silly currentTree ├── lodash._baseassign@3.2.0
+22 silly currentTree ├── lodash._basecopy@3.0.1
+22 silly currentTree ├── lodash._basecreate@3.0.3
+22 silly currentTree ├── lodash._getnative@3.9.1
+22 silly currentTree ├── lodash._isiterateecall@3.0.9
+22 silly currentTree ├── lodash._reinterpolate@3.0.0
+22 silly currentTree ├── lodash.create@3.1.1
+22 silly currentTree ├── lodash.isarguments@3.1.0
+22 silly currentTree ├── lodash.isarray@3.0.4
+22 silly currentTree ├── lodash.keys@3.1.2
+22 silly currentTree ├── lodash.template@4.4.0
+22 silly currentTree ├── lodash.templatesettings@4.1.0
+22 silly currentTree ├─┬ log-symbols@1.0.2
+22 silly currentTree │ └── chalk@1.1.3
+22 silly currentTree ├── loud-rejection@1.6.0
+22 silly currentTree ├── lowercase-keys@1.0.0
+22 silly currentTree ├── lru-cache@4.1.1
+22 silly currentTree ├── make-dir@1.0.0
+22 silly currentTree ├── map-obj@1.0.1
+22 silly currentTree ├── mem@1.1.0
+22 silly currentTree ├─┬ meow@3.7.0
+22 silly currentTree │ └── minimist@1.2.0
+22 silly currentTree ├── micromatch@2.3.11
+22 silly currentTree ├── mime-db@1.29.0
+22 silly currentTree ├── mime-types@2.1.16
+22 silly currentTree ├── mimic-fn@1.1.0
+22 silly currentTree ├── minimatch@3.0.3
+22 silly currentTree ├── minimist@0.0.8
+22 silly currentTree ├── mkdirp@0.5.0
+22 silly currentTree ├─┬ mocha@3.5.0
+22 silly currentTree │ ├── commander@2.9.0
+22 silly currentTree │ ├── has-flag@1.0.0
+22 silly currentTree │ ├── mkdirp@0.5.1
+22 silly currentTree │ └── supports-color@3.1.2
+22 silly currentTree ├── modify-filename@1.1.0
+22 silly currentTree ├── ms@2.0.0
+22 silly currentTree ├── mt-printscreen@1.0.1
+22 silly currentTree ├── multimatch@2.1.0
+22 silly currentTree ├── natives@1.1.0
+22 silly currentTree ├── negotiator@0.6.1
+22 silly currentTree ├── node-phantom-simple@2.2.4
+22 silly currentTree ├── nopt@3.0.6
+22 silly currentTree ├── normalize-package-data@2.3.6
+22 silly currentTree ├── normalize-path@2.1.1
+22 silly currentTree ├── normalize-url@1.9.1
+22 silly currentTree ├── nth-check@1.0.1
+22 silly currentTree ├── number-is-nan@1.0.1
+22 silly currentTree ├── nwmatcher@1.4.1
+22 silly currentTree ├── oauth-sign@0.8.2
+22 silly currentTree ├── object-assign@4.1.1
+22 silly currentTree ├── object-component@0.0.3
+22 silly currentTree ├── object.omit@2.0.1
+22 silly currentTree ├── once@1.4.0
+22 silly currentTree ├── optionator@0.8.2
+22 silly currentTree ├── options@0.0.6
+22 silly currentTree ├── os-homedir@1.0.2
+22 silly currentTree ├── os-locale@1.4.0
+22 silly currentTree ├── os-shim@0.1.3
+22 silly currentTree ├── os-tmpdir@1.0.2
+22 silly currentTree ├── p-map@1.1.1
+22 silly currentTree ├── package@1.0.1
+22 silly currentTree ├── pageres@4.5.1
+22 silly currentTree ├── parse-cookie-phantomjs@1.2.0
+22 silly currentTree ├── parse-glob@3.0.4
+22 silly currentTree ├── parse-json@2.2.0
+22 silly currentTree ├── parse-passwd@1.0.0
+22 silly currentTree ├── parse5@1.5.1
+22 silly currentTree ├── parsejson@0.0.3
+22 silly currentTree ├── parseqs@0.0.5
+22 silly currentTree ├── parseuri@0.0.5
+22 silly currentTree ├── path-exists@2.1.0
+22 silly currentTree ├── path-is-absolute@1.0.1
+22 silly currentTree ├── path-is-inside@1.0.2
+22 silly currentTree ├── path-type@1.1.0
+22 silly currentTree ├─┬ pdfkitjs@0.0.5
+22 silly currentTree │ └── lodash@2.0.0
+22 silly currentTree ├── pend@1.2.0
+22 silly currentTree ├── performance-now@0.2.0
+22 silly currentTree ├── phantom-bridge@2.0.1
+22 silly currentTree ├─┬ phantomjs@2.1.7
+22 silly currentTree │ ├── async@2.5.0
+22 silly currentTree │ ├── caseless@0.11.0
+22 silly currentTree │ ├── chalk@1.1.3
+22 silly currentTree │ ├── form-data@1.0.1
+22 silly currentTree │ ├── fs-extra@0.26.7
+22 silly currentTree │ ├── har-validator@2.0.6
+22 silly currentTree │ ├── node-uuid@1.4.8
+22 silly currentTree │ ├── qs@5.2.1
+22 silly currentTree │ ├── request@2.67.0
+22 silly currentTree │ ├── tough-cookie@2.2.2
+22 silly currentTree │ └── tunnel-agent@0.4.3
+22 silly currentTree ├── phantomjs-bin@1.0.1
+22 silly currentTree ├─┬ phantomjs-prebuilt@2.1.14
+22 silly currentTree │ ├── caseless@0.11.0
+22 silly currentTree │ ├── chalk@1.1.3
+22 silly currentTree │ ├── har-validator@2.0.6
+22 silly currentTree │ ├── qs@6.3.2
+22 silly currentTree │ ├── request@2.79.0
+22 silly currentTree │ └── tunnel-agent@0.4.3
+22 silly currentTree ├── pify@2.3.0
+22 silly currentTree ├── pinkie@2.0.4
+22 silly currentTree ├── pinkie-promise@2.0.1
+22 silly currentTree ├── pkg-up@1.0.0
+22 silly currentTree ├── plur@2.1.2
+22 silly currentTree ├── pn@1.0.0
+22 silly currentTree ├── prelude-ls@1.1.2
+22 silly currentTree ├── prepend-http@1.0.4
+22 silly currentTree ├── preserve@0.2.0
+22 silly currentTree ├── process-nextick-args@1.0.7
+22 silly currentTree ├── progress@1.1.8
+22 silly currentTree ├── protocolify@2.0.0
+22 silly currentTree ├── pseudomap@1.0.2
+22 silly currentTree ├── punycode@1.4.1
+22 silly currentTree ├── qs@6.4.0
+22 silly currentTree ├── query-string@4.3.4
+22 silly currentTree ├─┬ randomatic@1.1.7
+22 silly currentTree │ ├─┬ is-number@3.0.0
+22 silly currentTree │ │ └── kind-of@3.2.2
+22 silly currentTree │ └── kind-of@4.0.0
+22 silly currentTree ├── read-pkg@1.1.0
+22 silly currentTree ├── read-pkg-up@1.0.1
+22 silly currentTree ├── readable-stream@2.3.3
+22 silly currentTree ├── redent@1.0.0
+22 silly currentTree ├── regenerator-runtime@0.10.5
+22 silly currentTree ├── regex-cache@0.4.3
+22 silly currentTree ├── remove-trailing-separator@1.0.2
+22 silly currentTree ├── repeat-element@1.1.2
+22 silly currentTree ├── repeat-string@1.6.1
+22 silly currentTree ├── repeating@2.0.1
+22 silly currentTree ├── request@2.81.0
+22 silly currentTree ├── request-progress@2.0.1
+22 silly currentTree ├── request-promise-core@1.1.1
+22 silly currentTree ├── request-promise-native@1.0.4
+22 silly currentTree ├── resolve@1.1.7
+22 silly currentTree ├── resolve-dir@0.1.1
+22 silly currentTree ├── resolve-from@2.0.0
+22 silly currentTree ├── resolve-pkg@0.1.0
+22 silly currentTree ├── rimraf@2.2.8
+22 silly currentTree ├── safe-buffer@5.1.1
+22 silly currentTree ├── sax@1.2.4
+22 silly currentTree ├── screenshot-stream@4.2.0
+22 silly currentTree ├── selenium-webdriver@2.53.3
+22 silly currentTree ├── semver@5.3.0
+22 silly currentTree ├── signal-exit@3.0.2
+22 silly currentTree ├── sntp@1.0.9
+22 silly currentTree ├─┬ socket.io@1.7.4
+22 silly currentTree │ ├── debug@2.3.3
+22 silly currentTree │ ├── ms@0.7.2
+22 silly currentTree │ └── object-assign@4.1.0
+22 silly currentTree ├─┬ socket.io-adapter@0.5.0
+22 silly currentTree │ ├── debug@2.3.3
+22 silly currentTree │ └── ms@0.7.2
+22 silly currentTree ├─┬ socket.io-client@1.7.4
+22 silly currentTree │ ├── component-emitter@1.2.1
+22 silly currentTree │ ├── debug@2.3.3
+22 silly currentTree │ └── ms@0.7.2
+22 silly currentTree ├─┬ socket.io-parser@2.3.1
+22 silly currentTree │ ├── debug@2.2.0
+22 silly currentTree │ ├── isarray@0.0.1
+22 silly currentTree │ └── ms@0.7.1
+22 silly currentTree ├── sort-keys@1.1.2
+22 silly currentTree ├── source-map@0.2.0
+22 silly currentTree ├── spawn-sync@1.0.15
+22 silly currentTree ├── spdx-correct@1.0.2
+22 silly currentTree ├── spdx-expression-parse@1.0.4
+22 silly currentTree ├── spdx-license-ids@1.2.2
+22 silly currentTree ├── sprintf-js@1.0.3
+22 silly currentTree ├─┬ sshpk@1.13.1
+22 silly currentTree │ └── assert-plus@1.0.0
+22 silly currentTree ├── stealthy-require@1.1.1
+22 silly currentTree ├── strict-uri-encode@1.1.0
+22 silly currentTree ├── string_decoder@1.0.3
+22 silly currentTree ├── string-width@1.0.2
+22 silly currentTree ├── stringstream@0.0.5
+22 silly currentTree ├── strip-ansi@3.0.1
+22 silly currentTree ├── strip-bom@2.0.0
+22 silly currentTree ├── strip-indent@1.0.1
+22 silly currentTree ├── strip-outer@1.0.0
+22 silly currentTree ├── strip-url-auth@1.0.1
+22 silly currentTree ├── supports-color@2.0.0
+22 silly currentTree ├── symbol-tree@3.2.2
+22 silly currentTree ├── temporary@0.0.6
+22 silly currentTree ├── throttleit@1.0.0
+22 silly currentTree ├── timed-out@4.0.1
+22 silly currentTree ├── tmp@0.0.24
+22 silly currentTree ├── to-array@0.1.4
+22 silly currentTree ├── tough-cookie@2.3.2
+22 silly currentTree ├── tr46@0.0.3
+22 silly currentTree ├── trim-newlines@1.0.0
+22 silly currentTree ├── trim-repeated@1.0.0
+22 silly currentTree ├── tunnel-agent@0.6.0
+22 silly currentTree ├── tweetnacl@0.14.5
+22 silly currentTree ├── type-check@0.3.2
+22 silly currentTree ├── typedarray@0.0.6
+22 silly currentTree ├── typescript@2.2.2
+22 silly currentTree ├── ultron@1.0.2
+22 silly currentTree ├── underscore.string@3.2.3
+22 silly currentTree ├─┬ unused-filename@1.0.0
+22 silly currentTree │ └── path-exists@3.0.0
+22 silly currentTree ├── unzip-response@2.0.1
+22 silly currentTree ├── url-parse-lax@1.0.0
+22 silly currentTree ├─┬ url-to-image@1.0.0
+22 silly currentTree │ ├─┬ async@2.5.0
+22 silly currentTree │ │ └── lodash@4.17.4
+22 silly currentTree │ ├── caseless@0.11.0
+22 silly currentTree │ ├── chalk@1.1.3
+22 silly currentTree │ ├── form-data@1.0.1
+22 silly currentTree │ ├── fs-extra@0.26.7
+22 silly currentTree │ ├── har-validator@2.0.6
+22 silly currentTree │ ├── lodash@3.10.1
+22 silly currentTree │ ├── node-uuid@1.4.8
+22 silly currentTree │ ├── phantomjs@1.9.20
+22 silly currentTree │ ├── qs@5.2.1
+22 silly currentTree │ ├── request@2.67.0
+22 silly currentTree │ ├── tough-cookie@2.2.2
+22 silly currentTree │ └── tunnel-agent@0.4.3
+22 silly currentTree ├── util-deprecate@1.0.2
+22 silly currentTree ├── uuid@3.1.0
+22 silly currentTree ├── validate-npm-package-license@3.0.1
+22 silly currentTree ├─┬ verror@1.10.0
+22 silly currentTree │ └── assert-plus@1.0.0
+22 silly currentTree ├── viewport-list@5.1.1
+22 silly currentTree ├── w3counter@3.0.1
+22 silly currentTree ├── webidl-conversions@4.0.1
+22 silly currentTree ├─┬ webshot@0.18.0
+22 silly currentTree │ ├── cross-spawn@0.2.9
+22 silly currentTree │ ├── graceful-fs@3.0.11
+22 silly currentTree │ ├── lru-cache@2.7.3
+22 silly currentTree │ └── tmp@0.0.31
+22 silly currentTree ├─┬ whatwg-encoding@1.0.1
+22 silly currentTree │ └── iconv-lite@0.4.13
+22 silly currentTree ├─┬ whatwg-url@4.8.0
+22 silly currentTree │ └── webidl-conversions@3.0.1
+22 silly currentTree ├─┬ which@1.2.14
+22 silly currentTree │ └── isexe@2.0.0
+22 silly currentTree ├── window-size@0.1.4
+22 silly currentTree ├── wordwrap@1.0.0
+22 silly currentTree ├── wrap-ansi@2.1.0
+22 silly currentTree ├── wrappy@1.0.2
+22 silly currentTree ├── ws@1.1.4
+22 silly currentTree ├── wtf-8@1.0.0
+22 silly currentTree ├── xml-name-validator@2.0.1
+22 silly currentTree ├─┬ xml2js@0.4.4
+22 silly currentTree │ └── sax@0.6.1
+22 silly currentTree ├── xmlbuilder@9.0.1
+22 silly currentTree ├── xmlhttprequest@1.8.0
+22 silly currentTree ├── xmlhttprequest-ssl@1.5.3
+22 silly currentTree ├── xtend@4.0.1
+22 silly currentTree ├── y18n@3.2.1
+22 silly currentTree ├── yallist@2.1.2
+22 silly currentTree ├─┬ yargs@3.29.0
+22 silly currentTree │ └── camelcase@1.2.1
+22 silly currentTree ├── yauzl@2.4.1
+22 silly currentTree └── yeast@0.1.2
+23 silly idealTree myproject@1.0.0
+23 silly idealTree ├── abab@1.0.3
+23 silly idealTree ├── abbrev@1.1.0
+23 silly idealTree ├── accepts@1.3.3
+23 silly idealTree ├── acorn@5.1.1
+23 silly idealTree ├── acorn-globals@4.0.0
+23 silly idealTree ├── adm-zip@0.4.4
+23 silly idealTree ├── after@0.8.2
+23 silly idealTree ├── ajv@4.11.8
+23 silly idealTree ├── amdefine@1.0.1
+23 silly idealTree ├── ansi-regex@2.1.1
+23 silly idealTree ├── ansi-styles@2.2.1
+23 silly idealTree ├── argparse@1.0.9
+23 silly idealTree ├── arr-diff@2.0.0
+23 silly idealTree ├── arr-flatten@1.1.0
+23 silly idealTree ├── array-differ@1.0.0
+23 silly idealTree ├── array-equal@1.0.0
+23 silly idealTree ├── array-find-index@1.0.2
+23 silly idealTree ├── array-union@1.0.2
+23 silly idealTree ├── array-uniq@1.0.3
+23 silly idealTree ├── array-unique@0.2.1
+23 silly idealTree ├── arraybuffer.slice@0.0.6
+23 silly idealTree ├── arrify@1.0.1
+23 silly idealTree ├── asn1@0.2.3
+23 silly idealTree ├── assert-plus@0.2.0
+23 silly idealTree ├── async@1.5.2
+23 silly idealTree ├── asynckit@0.4.0
+23 silly idealTree ├── aws-sign2@0.6.0
+23 silly idealTree ├── aws4@1.6.0
+23 silly idealTree ├── babel-runtime@6.25.0
+23 silly idealTree ├── backo2@1.0.2
+23 silly idealTree ├── balanced-match@0.4.2
+23 silly idealTree ├── base64-arraybuffer@0.1.5
+23 silly idealTree ├── base64-stream@0.1.3
+23 silly idealTree ├── base64id@1.0.0
+23 silly idealTree ├── bcrypt-pbkdf@1.0.1
+23 silly idealTree ├── better-assert@1.0.2
+23 silly idealTree ├─┬ bl@1.0.3
+23 silly idealTree │ ├── readable-stream@2.0.6
+23 silly idealTree │ └── string_decoder@0.10.31
+23 silly idealTree ├── blob@0.0.4
+23 silly idealTree ├── bluebird@3.0.6
+23 silly idealTree ├── boolbase@1.0.0
+23 silly idealTree ├── boom@2.10.1
+23 silly idealTree ├── bootstrap@3.3.7
+23 silly idealTree ├── bootstrap-tooltip@3.1.1
+23 silly idealTree ├── brace-expansion@1.1.6
+23 silly idealTree ├── braces@1.8.5
+23 silly idealTree ├── browser-request@0.3.3
+23 silly idealTree ├── browser-stdout@1.3.0
+23 silly idealTree ├── builtin-modules@1.1.1
+23 silly idealTree ├── byline@4.2.2
+23 silly idealTree ├── callsite@1.0.0
+23 silly idealTree ├── camelcase@2.1.1
+23 silly idealTree ├── camelcase-keys@2.1.0
+23 silly idealTree ├── capture-stack-trace@1.0.0
+23 silly idealTree ├── caseless@0.12.0
+23 silly idealTree ├─┬ chalk@2.0.1
+23 silly idealTree │ ├── ansi-styles@3.2.0
+23 silly idealTree │ └── supports-color@4.2.1
+23 silly idealTree ├─┬ cheerio@0.19.0
+23 silly idealTree │ ├── domhandler@2.3.0
+23 silly idealTree │ ├── domutils@1.5.1
+23 silly idealTree │ ├─┬ htmlparser2@3.8.3
+23 silly idealTree │ │ └── entities@1.0.0
+23 silly idealTree │ ├── isarray@0.0.1
+23 silly idealTree │ ├── lodash@3.10.1
+23 silly idealTree │ ├── readable-stream@1.1.14
+23 silly idealTree │ └── string_decoder@0.10.31
+23 silly idealTree ├── cliui@3.2.0
+23 silly idealTree ├── co@4.6.0
+23 silly idealTree ├── code-point-at@1.1.0
+23 silly idealTree ├── coffee-script@1.10.0
+23 silly idealTree ├── color-convert@1.9.0
+23 silly idealTree ├── color-name@1.1.3
+23 silly idealTree ├── colors@1.1.2
+23 silly idealTree ├── combined-stream@1.0.5
+23 silly idealTree ├── commander@2.11.0
+23 silly idealTree ├── component-bind@1.0.0
+23 silly idealTree ├── component-emitter@1.1.2
+23 silly idealTree ├── component-inherit@0.0.3
+23 silly idealTree ├── concat-map@0.0.1
+23 silly idealTree ├─┬ concat-stream@1.5.0
+23 silly idealTree │ ├── readable-stream@2.0.6
+23 silly idealTree │ └── string_decoder@0.10.31
+23 silly idealTree ├── content-type-parser@1.0.1
+23 silly idealTree ├── cookie@0.3.1
+23 silly idealTree ├── core-js@2.5.0
+23 silly idealTree ├── core-util-is@1.0.2
+23 silly idealTree ├── create-error-class@3.0.2
+23 silly idealTree ├── cross-spawn@2.2.3
+23 silly idealTree ├── cross-spawn-async@2.2.5
+23 silly idealTree ├── cryptiles@2.0.5
+23 silly idealTree ├─┬ css-select@1.0.0
+23 silly idealTree │ └── domutils@1.4.3
+23 silly idealTree ├── css-what@1.0.0
+23 silly idealTree ├── cssom@0.3.2
+23 silly idealTree ├── cssstyle@0.2.37
+23 silly idealTree ├── currently-unhandled@0.4.1
+23 silly idealTree ├── d3@3.5.17
+23 silly idealTree ├─┬ dashdash@1.14.1
+23 silly idealTree │ └── assert-plus@1.0.0
+23 silly idealTree ├── dateformat@1.0.12
+23 silly idealTree ├── debug@2.6.8
+23 silly idealTree ├── decamelize@1.2.0
+23 silly idealTree ├── deep-is@0.1.3
+23 silly idealTree ├─┬ del@3.0.0
+23 silly idealTree │ └── pify@3.0.0
+23 silly idealTree ├── delayed-stream@1.0.0
+23 silly idealTree ├── detect-file@0.1.0
+23 silly idealTree ├── diff@3.2.0
+23 silly idealTree ├─┬ dom-serializer@0.1.0
+23 silly idealTree │ └── domelementtype@1.1.3
+23 silly idealTree ├── domelementtype@1.3.0
+23 silly idealTree ├── domhandler@2.4.1
+23 silly idealTree ├── domutils@1.6.2
+23 silly idealTree ├── duplexer3@0.1.4
+23 silly idealTree ├── easydate@2.2.1
+23 silly idealTree ├── ecc-jsbn@0.1.1
+23 silly idealTree ├─┬ engine.io@1.8.4
+23 silly idealTree │ ├── debug@2.3.3
+23 silly idealTree │ └── ms@0.7.2
+23 silly idealTree ├─┬ engine.io-client@1.8.4
+23 silly idealTree │ ├── component-emitter@1.2.1
+23 silly idealTree │ ├── debug@2.3.3
+23 silly idealTree │ ├── ms@0.7.2
+23 silly idealTree │ └── ws@1.1.2
+23 silly idealTree ├── engine.io-parser@1.3.2
+23 silly idealTree ├── entities@1.1.1
+23 silly idealTree ├── error-ex@1.3.1
+23 silly idealTree ├── es6-promise@4.0.5
+23 silly idealTree ├── escape-string-regexp@1.0.5
+23 silly idealTree ├── escodegen@1.8.1
+23 silly idealTree ├── esprima@2.7.3
+23 silly idealTree ├── estraverse@1.9.3
+23 silly idealTree ├── esutils@2.0.2
+23 silly idealTree ├── eventemitter2@0.4.14
+23 silly idealTree ├── exit@0.1.2
+23 silly idealTree ├── expand-brackets@0.1.5
+23 silly idealTree ├── expand-range@1.8.2
+23 silly idealTree ├── expand-tilde@1.2.2
+23 silly idealTree ├── extend@3.0.1
+23 silly idealTree ├── extglob@0.3.2
+23 silly idealTree ├─┬ extract-zip@1.5.0
+23 silly idealTree │ └── debug@0.7.4
+23 silly idealTree ├── extsprintf@1.3.0
+23 silly idealTree ├── fast-levenshtein@2.0.6
+23 silly idealTree ├── fd-slicer@1.0.1
+23 silly idealTree ├── file-url@2.0.2
+23 silly idealTree ├── filename-regex@2.0.1
+23 silly idealTree ├── filename-reserved-regex@2.0.0
+23 silly idealTree ├── filenamify@2.0.0
+23 silly idealTree ├─┬ filenamify-url@1.0.0
+23 silly idealTree │ ├── filename-reserved-regex@1.0.0
+23 silly idealTree │ └── filenamify@1.2.1
+23 silly idealTree ├── fill-range@2.2.3
+23 silly idealTree ├── find-up@1.1.2
+23 silly idealTree ├── findup-sync@1.0.0
+23 silly idealTree ├── for-in@1.0.2
+23 silly idealTree ├── for-own@0.1.5
+23 silly idealTree ├── forever-agent@0.6.1
+23 silly idealTree ├── form-data@2.1.4
+23 silly idealTree ├── fs@0.0.2
+23 silly idealTree ├── fs-exists-sync@0.1.0
+23 silly idealTree ├── fs-extra@1.0.0
+23 silly idealTree ├── fs-write-stream-atomic@1.0.10
+23 silly idealTree ├── fs.realpath@1.0.0
+23 silly idealTree ├── generate-function@2.0.0
+23 silly idealTree ├── generate-object-property@1.2.0
+23 silly idealTree ├── get-res@3.0.0
+23 silly idealTree ├── get-stdin@4.0.1
+23 silly idealTree ├── get-stream@3.0.0
+23 silly idealTree ├── getobject@0.1.0
+23 silly idealTree ├─┬ getpass@0.1.7
+23 silly idealTree │ └── assert-plus@1.0.0
+23 silly idealTree ├── glob@7.1.1
+23 silly idealTree ├── glob-base@0.3.0
+23 silly idealTree ├── glob-parent@2.0.0
+23 silly idealTree ├── global-modules@0.2.3
+23 silly idealTree ├── global-prefix@0.1.5
+23 silly idealTree ├── globby@6.1.0
+23 silly idealTree ├── got@6.7.1
+23 silly idealTree ├── graceful-fs@4.1.11
+23 silly idealTree ├── graceful-readlink@1.0.1
+23 silly idealTree ├── growl@1.9.2
+23 silly idealTree ├─┬ grunt@1.0.1
+23 silly idealTree │ ├─┬ findup-sync@0.3.0
+23 silly idealTree │ │ └── glob@5.0.15
+23 silly idealTree │ ├── glob@7.0.6
+23 silly idealTree │ ├── grunt-cli@1.2.0
+23 silly idealTree │ └── js-yaml@3.5.5
+23 silly idealTree ├── grunt-known-options@1.1.0
+23 silly idealTree ├─┬ grunt-legacy-log@1.0.0
+23 silly idealTree │ └── lodash@3.10.1
+23 silly idealTree ├─┬ grunt-legacy-log-utils@1.0.0
+23 silly idealTree │ ├── chalk@1.1.3
+23 silly idealTree │ └── lodash@4.3.0
+23 silly idealTree ├─┬ grunt-legacy-util@1.0.0
+23 silly idealTree │ └── lodash@4.3.0
+23 silly idealTree ├── grunt-pageres@3.0.0
+23 silly idealTree ├── har-schema@1.0.5
+23 silly idealTree ├── har-validator@4.2.1
+23 silly idealTree ├── has-ansi@2.0.0
+23 silly idealTree ├─┬ has-binary@0.1.7
+23 silly idealTree │ └── isarray@0.0.1
+23 silly idealTree ├── has-cors@1.1.0
+23 silly idealTree ├── has-flag@2.0.0
+23 silly idealTree ├── hasha@2.2.0
+23 silly idealTree ├── hawk@3.1.3
+23 silly idealTree ├── hoek@2.16.3
+23 silly idealTree ├── homedir-polyfill@1.0.1
+23 silly idealTree ├── hooker@0.2.3
+23 silly idealTree ├── hosted-git-info@2.4.1
+23 silly idealTree ├── html-encoding-sniffer@1.0.1
+23 silly idealTree ├── html2png@1.1.2
+23 silly idealTree ├── htmlparser2@3.9.2
+23 silly idealTree ├── http-signature@1.1.1
+23 silly idealTree ├── humanize-url@1.0.1
+23 silly idealTree ├── iconv-lite@0.4.18
+23 silly idealTree ├── iferr@0.1.5
+23 silly idealTree ├── imurmurhash@0.1.4
+23 silly idealTree ├── indent-string@2.1.0
+23 silly idealTree ├── indexof@0.0.1
+23 silly idealTree ├── inflight@1.0.6
+23 silly idealTree ├── inherits@2.0.3
+23 silly idealTree ├── ini@1.3.4
+23 silly idealTree ├── invert-kv@1.0.0
+23 silly idealTree ├── irregular-plurals@1.3.0
+23 silly idealTree ├── is-arrayish@0.2.1
+23 silly idealTree ├── is-buffer@1.1.5
+23 silly idealTree ├── is-builtin-module@1.0.0
+23 silly idealTree ├── is-dotfile@1.0.3
+23 silly idealTree ├── is-equal-shallow@0.1.3
+23 silly idealTree ├── is-extendable@0.1.1
+23 silly idealTree ├── is-extglob@1.0.0
+23 silly idealTree ├── is-finite@1.0.2
+23 silly idealTree ├── is-fullwidth-code-point@1.0.0
+23 silly idealTree ├── is-glob@2.0.1
+23 silly idealTree ├── is-my-json-valid@2.16.0
+23 silly idealTree ├── is-number@2.1.0
+23 silly idealTree ├── is-path-cwd@1.0.0
+23 silly idealTree ├── is-path-in-cwd@1.0.0
+23 silly idealTree ├── is-path-inside@1.0.0
+23 silly idealTree ├── is-plain-obj@1.1.0
+23 silly idealTree ├── is-posix-bracket@0.1.1
+23 silly idealTree ├── is-primitive@2.0.0
+23 silly idealTree ├── is-property@1.0.2
+23 silly idealTree ├── is-redirect@1.0.0
+23 silly idealTree ├── is-retry-allowed@1.1.0
+23 silly idealTree ├── is-stream@1.1.0
+23 silly idealTree ├── is-typedarray@1.0.0
+23 silly idealTree ├── is-utf8@0.2.1
+23 silly idealTree ├── is-windows@0.2.0
+23 silly idealTree ├── isarray@1.0.0
+23 silly idealTree ├── isexe@1.1.2
+23 silly idealTree ├── isobject@2.1.0
+23 silly idealTree ├── isstream@0.1.2
+23 silly idealTree ├── jquery@2.1.4
+23 silly idealTree ├─┬ js-yaml@3.8.3
+23 silly idealTree │ └── esprima@3.1.3
+23 silly idealTree ├── jsbn@0.1.1
+23 silly idealTree ├─┬ jsdom@10.1.0
+23 silly idealTree │ ├── acorn@4.0.13
+23 silly idealTree │ ├── acorn-globals@3.1.0
+23 silly idealTree │ └── xml-name-validator@2.0.1
+23 silly idealTree ├── json-schema@0.2.3
+23 silly idealTree ├── json-stable-stringify@1.0.1
+23 silly idealTree ├── json-stringify-safe@5.0.1
+23 silly idealTree ├── json3@3.3.2
+23 silly idealTree ├── jsonfile@2.4.0
+23 silly idealTree ├── jsonify@0.0.0
+23 silly idealTree ├── jsonpointer@4.0.1
+23 silly idealTree ├─┬ jsprim@1.4.1
+23 silly idealTree │ └── assert-plus@1.0.0
+23 silly idealTree ├── kew@0.7.0
+23 silly idealTree ├── kind-of@3.2.2
+23 silly idealTree ├── klaw@1.3.1
+23 silly idealTree ├── lcid@1.0.0
+23 silly idealTree ├── levn@0.3.0
+23 silly idealTree ├── load-grunt-tasks@3.5.2
+23 silly idealTree ├── load-json-file@1.1.0
+23 silly idealTree ├── lodash@4.17.4
+23 silly idealTree ├── lodash._baseassign@3.2.0
+23 silly idealTree ├── lodash._basecopy@3.0.1
+23 silly idealTree ├── lodash._basecreate@3.0.3
+23 silly idealTree ├── lodash._getnative@3.9.1
+23 silly idealTree ├── lodash._isiterateecall@3.0.9
+23 silly idealTree ├── lodash._reinterpolate@3.0.0
+23 silly idealTree ├── lodash.create@3.1.1
+23 silly idealTree ├── lodash.isarguments@3.1.0
+23 silly idealTree ├── lodash.isarray@3.0.4
+23 silly idealTree ├── lodash.keys@3.1.2
+23 silly idealTree ├── lodash.template@4.4.0
+23 silly idealTree ├── lodash.templatesettings@4.1.0
+23 silly idealTree ├─┬ log-symbols@1.0.2
+23 silly idealTree │ └── chalk@1.1.3
+23 silly idealTree ├── loud-rejection@1.6.0
+23 silly idealTree ├── lowercase-keys@1.0.0
+23 silly idealTree ├── lru-cache@4.1.1
+23 silly idealTree ├── make-dir@1.0.0
+23 silly idealTree ├── map-obj@1.0.1
+23 silly idealTree ├── mem@1.1.0
+23 silly idealTree ├─┬ meow@3.7.0
+23 silly idealTree │ └── minimist@1.2.0
+23 silly idealTree ├── micromatch@2.3.11
+23 silly idealTree ├── mime-db@1.29.0
+23 silly idealTree ├── mime-types@2.1.16
+23 silly idealTree ├── mimic-fn@1.1.0
+23 silly idealTree ├── minimatch@3.0.3
+23 silly idealTree ├── minimist@0.0.8
+23 silly idealTree ├── mkdirp@0.5.0
+23 silly idealTree ├─┬ mocha@3.5.0
+23 silly idealTree │ ├── commander@2.9.0
+23 silly idealTree │ ├── has-flag@1.0.0
+23 silly idealTree │ ├── mkdirp@0.5.1
+23 silly idealTree │ └── supports-color@3.1.2
+23 silly idealTree ├── modify-filename@1.1.0
+23 silly idealTree ├── ms@2.0.0
+23 silly idealTree ├── mt-printscreen@1.0.1
+23 silly idealTree ├── multimatch@2.1.0
+23 silly idealTree ├── natives@1.1.0
+23 silly idealTree ├── negotiator@0.6.1
+23 silly idealTree ├── node-phantom-simple@2.2.4
+23 silly idealTree ├── nopt@3.0.6
+23 silly idealTree ├── normalize-package-data@2.3.6
+23 silly idealTree ├── normalize-path@2.1.1
+23 silly idealTree ├── normalize-url@1.9.1
+23 silly idealTree ├── nth-check@1.0.1
+23 silly idealTree ├── number-is-nan@1.0.1
+23 silly idealTree ├── nwmatcher@1.4.1
+23 silly idealTree ├── oauth-sign@0.8.2
+23 silly idealTree ├── object-assign@4.1.1
+23 silly idealTree ├── object-component@0.0.3
+23 silly idealTree ├── object.omit@2.0.1
+23 silly idealTree ├── once@1.4.0
+23 silly idealTree ├── optionator@0.8.2
+23 silly idealTree ├── options@0.0.6
+23 silly idealTree ├── os-homedir@1.0.2
+23 silly idealTree ├── os-locale@1.4.0
+23 silly idealTree ├── os-shim@0.1.3
+23 silly idealTree ├── os-tmpdir@1.0.2
+23 silly idealTree ├── p-map@1.1.1
+23 silly idealTree ├── package@1.0.1
+23 silly idealTree ├── pageres@4.5.1
+23 silly idealTree ├── parse-cookie-phantomjs@1.2.0
+23 silly idealTree ├── parse-glob@3.0.4
+23 silly idealTree ├── parse-json@2.2.0
+23 silly idealTree ├── parse-passwd@1.0.0
+23 silly idealTree ├── parse5@1.5.1
+23 silly idealTree ├── parsejson@0.0.3
+23 silly idealTree ├── parseqs@0.0.5
+23 silly idealTree ├── parseuri@0.0.5
+23 silly idealTree ├── path-exists@2.1.0
+23 silly idealTree ├── path-is-absolute@1.0.1
+23 silly idealTree ├── path-is-inside@1.0.2
+23 silly idealTree ├── path-type@1.1.0
+23 silly idealTree ├─┬ pdfkitjs@0.0.5
+23 silly idealTree │ └── lodash@2.0.0
+23 silly idealTree ├── pend@1.2.0
+23 silly idealTree ├── performance-now@0.2.0
+23 silly idealTree ├── phantom-bridge@2.0.1
+23 silly idealTree ├─┬ phantomjs@2.1.7
+23 silly idealTree │ ├── async@2.5.0
+23 silly idealTree │ ├── caseless@0.11.0
+23 silly idealTree │ ├── chalk@1.1.3
+23 silly idealTree │ ├── form-data@1.0.1
+23 silly idealTree │ ├── fs-extra@0.26.7
+23 silly idealTree │ ├── har-validator@2.0.6
+23 silly idealTree │ ├── node-uuid@1.4.8
+23 silly idealTree │ ├── qs@5.2.1
+23 silly idealTree │ ├── request@2.67.0
+23 silly idealTree │ ├── tough-cookie@2.2.2
+23 silly idealTree │ └── tunnel-agent@0.4.3
+23 silly idealTree ├── phantomjs-bin@1.0.1
+23 silly idealTree ├─┬ phantomjs-prebuilt@2.1.14
+23 silly idealTree │ ├── caseless@0.11.0
+23 silly idealTree │ ├── chalk@1.1.3
+23 silly idealTree │ ├── har-validator@2.0.6
+23 silly idealTree │ ├── qs@6.3.2
+23 silly idealTree │ ├── request@2.79.0
+23 silly idealTree │ └── tunnel-agent@0.4.3
+23 silly idealTree ├── pify@2.3.0
+23 silly idealTree ├── pinkie@2.0.4
+23 silly idealTree ├── pinkie-promise@2.0.1
+23 silly idealTree ├── pkg-up@1.0.0
+23 silly idealTree ├── plur@2.1.2
+23 silly idealTree ├── pn@1.0.0
+23 silly idealTree ├── prelude-ls@1.1.2
+23 silly idealTree ├── prepend-http@1.0.4
+23 silly idealTree ├── preserve@0.2.0
+23 silly idealTree ├── process-nextick-args@1.0.7
+23 silly idealTree ├── progress@1.1.8
+23 silly idealTree ├── protocolify@2.0.0
+23 silly idealTree ├── pseudomap@1.0.2
+23 silly idealTree ├── punycode@1.4.1
+23 silly idealTree ├── qs@6.4.0
+23 silly idealTree ├── query-string@4.3.4
+23 silly idealTree ├─┬ randomatic@1.1.7
+23 silly idealTree │ ├─┬ is-number@3.0.0
+23 silly idealTree │ │ └── kind-of@3.2.2
+23 silly idealTree │ └── kind-of@4.0.0
+23 silly idealTree ├── read-pkg@1.1.0
+23 silly idealTree ├── read-pkg-up@1.0.1
+23 silly idealTree ├── readable-stream@2.3.3
+23 silly idealTree ├── redent@1.0.0
+23 silly idealTree ├── regenerator-runtime@0.10.5
+23 silly idealTree ├── regex-cache@0.4.3
+23 silly idealTree ├── remove-trailing-separator@1.0.2
+23 silly idealTree ├── repeat-element@1.1.2
+23 silly idealTree ├── repeat-string@1.6.1
+23 silly idealTree ├── repeating@2.0.1
+23 silly idealTree ├── request@2.81.0
+23 silly idealTree ├── request-progress@2.0.1
+23 silly idealTree ├── request-promise-core@1.1.1
+23 silly idealTree ├── request-promise-native@1.0.4
+23 silly idealTree ├── resolve@1.1.7
+23 silly idealTree ├── resolve-dir@0.1.1
+23 silly idealTree ├── resolve-from@2.0.0
+23 silly idealTree ├── resolve-pkg@0.1.0
+23 silly idealTree ├── rimraf@2.2.8
+23 silly idealTree ├── safe-buffer@5.1.1
+23 silly idealTree ├── sax@1.2.4
+23 silly idealTree ├── screenshot-stream@4.2.0
+23 silly idealTree ├── selenium-webdriver@2.53.3
+23 silly idealTree ├── semver@5.3.0
+23 silly idealTree ├── signal-exit@3.0.2
+23 silly idealTree ├── sntp@1.0.9
+23 silly idealTree ├─┬ socket.io@1.7.4
+23 silly idealTree │ ├── debug@2.3.3
+23 silly idealTree │ ├── ms@0.7.2
+23 silly idealTree │ └── object-assign@4.1.0
+23 silly idealTree ├─┬ socket.io-adapter@0.5.0
+23 silly idealTree │ ├── debug@2.3.3
+23 silly idealTree │ └── ms@0.7.2
+23 silly idealTree ├─┬ socket.io-client@1.7.4
+23 silly idealTree │ ├── component-emitter@1.2.1
+23 silly idealTree │ ├── debug@2.3.3
+23 silly idealTree │ └── ms@0.7.2
+23 silly idealTree ├─┬ socket.io-parser@2.3.1
+23 silly idealTree │ ├── debug@2.2.0
+23 silly idealTree │ ├── isarray@0.0.1
+23 silly idealTree │ └── ms@0.7.1
+23 silly idealTree ├── sort-keys@1.1.2
+23 silly idealTree ├── source-map@0.2.0
+23 silly idealTree ├── spawn-sync@1.0.15
+23 silly idealTree ├── spdx-correct@1.0.2
+23 silly idealTree ├── spdx-expression-parse@1.0.4
+23 silly idealTree ├── spdx-license-ids@1.2.2
+23 silly idealTree ├── sprintf-js@1.0.3
+23 silly idealTree ├─┬ sshpk@1.13.1
+23 silly idealTree │ └── assert-plus@1.0.0
+23 silly idealTree ├── stealthy-require@1.1.1
+23 silly idealTree ├── strict-uri-encode@1.1.0
+23 silly idealTree ├── string_decoder@1.0.3
+23 silly idealTree ├── string-width@1.0.2
+23 silly idealTree ├── stringstream@0.0.5
+23 silly idealTree ├── strip-ansi@3.0.1
+23 silly idealTree ├── strip-bom@2.0.0
+23 silly idealTree ├── strip-indent@1.0.1
+23 silly idealTree ├── strip-outer@1.0.0
+23 silly idealTree ├── strip-url-auth@1.0.1
+23 silly idealTree ├── supports-color@2.0.0
+23 silly idealTree ├── symbol-tree@3.2.2
+23 silly idealTree ├── temporary@0.0.6
+23 silly idealTree ├── throttleit@1.0.0
+23 silly idealTree ├── timed-out@4.0.1
+23 silly idealTree ├── tmp@0.0.24
+23 silly idealTree ├── to-array@0.1.4
+23 silly idealTree ├── tough-cookie@2.3.2
+23 silly idealTree ├── tr46@0.0.3
+23 silly idealTree ├── trim-newlines@1.0.0
+23 silly idealTree ├── trim-repeated@1.0.0
+23 silly idealTree ├── tunnel-agent@0.6.0
+23 silly idealTree ├── tweetnacl@0.14.5
+23 silly idealTree ├── type-check@0.3.2
+23 silly idealTree ├── typedarray@0.0.6
+23 silly idealTree ├── typescript@2.2.2
+23 silly idealTree ├── ultron@1.0.2
+23 silly idealTree ├── underscore.string@3.2.3
+23 silly idealTree ├─┬ unused-filename@1.0.0
+23 silly idealTree │ └── path-exists@3.0.0
+23 silly idealTree ├── unzip-response@2.0.1
+23 silly idealTree ├── url-parse-lax@1.0.0
+23 silly idealTree ├─┬ url-to-image@1.0.0
+23 silly idealTree │ ├─┬ async@2.5.0
+23 silly idealTree │ │ └── lodash@4.17.4
+23 silly idealTree │ ├── caseless@0.11.0
+23 silly idealTree │ ├── chalk@1.1.3
+23 silly idealTree │ ├── form-data@1.0.1
+23 silly idealTree │ ├── fs-extra@0.26.7
+23 silly idealTree │ ├── har-validator@2.0.6
+23 silly idealTree │ ├── lodash@3.10.1
+23 silly idealTree │ ├── node-uuid@1.4.8
+23 silly idealTree │ ├── phantomjs@1.9.20
+23 silly idealTree │ ├── qs@5.2.1
+23 silly idealTree │ ├── request@2.67.0
+23 silly idealTree │ ├── tough-cookie@2.2.2
+23 silly idealTree │ └── tunnel-agent@0.4.3
+23 silly idealTree ├── util-deprecate@1.0.2
+23 silly idealTree ├── uuid@3.1.0
+23 silly idealTree ├── validate-npm-package-license@3.0.1
+23 silly idealTree ├─┬ verror@1.10.0
+23 silly idealTree │ └── assert-plus@1.0.0
+23 silly idealTree ├── viewport-list@5.1.1
+23 silly idealTree ├── w3counter@3.0.1
+23 silly idealTree ├── webidl-conversions@4.0.1
+23 silly idealTree ├─┬ webshot@0.18.0
+23 silly idealTree │ ├── cross-spawn@0.2.9
+23 silly idealTree │ ├── graceful-fs@3.0.11
+23 silly idealTree │ ├── lru-cache@2.7.3
+23 silly idealTree │ └── tmp@0.0.31
+23 silly idealTree ├─┬ whatwg-encoding@1.0.1
+23 silly idealTree │ └── iconv-lite@0.4.13
+23 silly idealTree ├─┬ whatwg-url@4.8.0
+23 silly idealTree │ └── webidl-conversions@3.0.1
+23 silly idealTree ├─┬ which@1.2.14
+23 silly idealTree │ └── isexe@2.0.0
+23 silly idealTree ├── window-size@0.1.4
+23 silly idealTree ├── wordwrap@1.0.0
+23 silly idealTree ├── wrap-ansi@2.1.0
+23 silly idealTree ├── wrappy@1.0.2
+23 silly idealTree ├── ws@1.1.4
+23 silly idealTree ├── wtf-8@1.0.0
+23 silly idealTree ├── xml-name-validator@2.0.1
+23 silly idealTree ├─┬ xml2js@0.4.4
+23 silly idealTree │ └── sax@0.6.1
+23 silly idealTree ├── xmlbuilder@9.0.1
+23 silly idealTree ├── xmlhttprequest@1.8.0
+23 silly idealTree ├── xmlhttprequest-ssl@1.5.3
+23 silly idealTree ├── xtend@4.0.1
+23 silly idealTree ├── y18n@3.2.1
+23 silly idealTree ├── yallist@2.1.2
+23 silly idealTree ├─┬ yargs@3.29.0
+23 silly idealTree │ └── camelcase@1.2.1
+23 silly idealTree ├── yauzl@2.4.1
+23 silly idealTree └── yeast@0.1.2
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 silly generateActionsToTake Finishing
+27 silly diffTrees action count 1
+28 silly diffTrees remove glob@5.0.15
+29 silly decomposeActions action count 1
+30 silly decomposeActions remove glob@5.0.15
+31 silly executeActions Starting
+32 silly install executeActions
+33 silly doSerial global-install 0
+34 silly doParallel fetch 0
+35 verbose lock using C:\Users\vmudinas\AppData\Roaming\npm-cache\_locks\staging-5a91dc54028f61a1.lock for C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\.staging
+36 silly doParallel extract 0
+37 silly doParallel preinstall 0
+38 silly doReverseSerial remove 1
+39 silly remove C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\findup-sync\node_modules\glob
+40 verbose unbuild node_modules\findup-sync\node_modules\glob
+41 info lifecycle glob@5.0.15~preuninstall: glob@5.0.15
+42 silly lifecycle glob@5.0.15~preuninstall: no script for preuninstall, continuing
+43 info lifecycle glob@5.0.15~uninstall: glob@5.0.15
+44 silly lifecycle glob@5.0.15~uninstall: no script for uninstall, continuing
+45 verbose unbuild rmStuff glob@5.0.15 from C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules
+46 verbose unbuild rmStuff in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\findup-sync\node_modules
+47 info lifecycle glob@5.0.15~postuninstall: glob@5.0.15
+48 silly lifecycle glob@5.0.15~postuninstall: no script for postuninstall, continuing
+49 silly gentlyRm C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\findup-sync\node_modules\glob is being purged from base C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena
+50 verbose gentlyRm don't care about contents; nuking C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\findup-sync\node_modules\glob
+51 silly vacuum-fs purging C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\findup-sync\node_modules\glob
+52 silly vacuum-fs removing C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\findup-sync\node_modules
+53 silly vacuum-fs quitting because other entries in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\findup-sync
+54 silly doSerial move 0
+55 silly doSerial finalize 0
+56 silly doSerial build 0
+57 silly doSerial global-link 0
+58 silly doParallel update-linked 0
+59 silly doSerial install 0
+60 silly doSerial postinstall 0
+61 verbose unlock done using C:\Users\vmudinas\AppData\Roaming\npm-cache\_locks\staging-5a91dc54028f61a1.lock for C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\.staging
+62 silly executeActions Finishing
+63 silly rollbackFailedOptional Starting
+64 silly rollbackFailedOptional Finishing
+65 silly runTopLevelLifecycles Starting
+66 silly install runTopLevelLifecycles
+67 silly preinstall myproject C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\myproject-247e4208be379aa2bcd749fa72558194
+68 info lifecycle myproject@1.0.0~preinstall: myproject@1.0.0
+69 silly lifecycle myproject@1.0.0~preinstall: no script for preinstall, continuing
+70 silly build myproject
+71 info linkStuff myproject@1.0.0
+72 silly linkStuff myproject@1.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src as its parent node_modules
+73 verbose linkBins myproject@1.0.0
+74 verbose linkMans myproject@1.0.0
+75 verbose rebuildBundles myproject@1.0.0
+76 verbose rebuildBundles [ '.bin',
+76 verbose rebuildBundles   'abab',
+76 verbose rebuildBundles   'abbrev',
+76 verbose rebuildBundles   'accepts',
+76 verbose rebuildBundles   'acorn',
+76 verbose rebuildBundles   'acorn-globals',
+76 verbose rebuildBundles   'adm-zip',
+76 verbose rebuildBundles   'after',
+76 verbose rebuildBundles   'ajv',
+76 verbose rebuildBundles   'amdefine',
+76 verbose rebuildBundles   'ansi-regex',
+76 verbose rebuildBundles   'ansi-styles',
+76 verbose rebuildBundles   'argparse',
+76 verbose rebuildBundles   'arr-diff',
+76 verbose rebuildBundles   'arr-flatten',
+76 verbose rebuildBundles   'array-differ',
+76 verbose rebuildBundles   'array-equal',
+76 verbose rebuildBundles   'array-find-index',
+76 verbose rebuildBundles   'array-union',
+76 verbose rebuildBundles   'array-uniq',
+76 verbose rebuildBundles   'array-unique',
+76 verbose rebuildBundles   'arraybuffer.slice',
+76 verbose rebuildBundles   'arrify',
+76 verbose rebuildBundles   'asn1',
+76 verbose rebuildBundles   'assert-plus',
+76 verbose rebuildBundles   'async',
+76 verbose rebuildBundles   'asynckit',
+76 verbose rebuildBundles   'aws-sign2',
+76 verbose rebuildBundles   'aws4',
+76 verbose rebuildBundles   'babel-runtime',
+76 verbose rebuildBundles   'backo2',
+76 verbose rebuildBundles   'balanced-match',
+76 verbose rebuildBundles   'base64-arraybuffer',
+76 verbose rebuildBundles   'base64-stream',
+76 verbose rebuildBundles   'base64id',
+76 verbose rebuildBundles   'bcrypt-pbkdf',
+76 verbose rebuildBundles   'better-assert',
+76 verbose rebuildBundles   'bl',
+76 verbose rebuildBundles   'blob',
+76 verbose rebuildBundles   'bluebird',
+76 verbose rebuildBundles   'boolbase',
+76 verbose rebuildBundles   'boom',
+76 verbose rebuildBundles   'bootstrap',
+76 verbose rebuildBundles   'bootstrap-tooltip',
+76 verbose rebuildBundles   'brace-expansion',
+76 verbose rebuildBundles   'braces',
+76 verbose rebuildBundles   'browser-request',
+76 verbose rebuildBundles   'browser-stdout',
+76 verbose rebuildBundles   'builtin-modules',
+76 verbose rebuildBundles   'byline',
+76 verbose rebuildBundles   'callsite',
+76 verbose rebuildBundles   'camelcase',
+76 verbose rebuildBundles   'camelcase-keys',
+76 verbose rebuildBundles   'capture-stack-trace',
+76 verbose rebuildBundles   'caseless',
+76 verbose rebuildBundles   'chalk',
+76 verbose rebuildBundles   'cheerio',
+76 verbose rebuildBundles   'cliui',
+76 verbose rebuildBundles   'co',
+76 verbose rebuildBundles   'code-point-at',
+76 verbose rebuildBundles   'coffee-script',
+76 verbose rebuildBundles   'color-convert',
+76 verbose rebuildBundles   'color-name',
+76 verbose rebuildBundles   'colors',
+76 verbose rebuildBundles   'combined-stream',
+76 verbose rebuildBundles   'commander',
+76 verbose rebuildBundles   'component-bind',
+76 verbose rebuildBundles   'component-emitter',
+76 verbose rebuildBundles   'component-inherit',
+76 verbose rebuildBundles   'concat-map',
+76 verbose rebuildBundles   'concat-stream',
+76 verbose rebuildBundles   'content-type-parser',
+76 verbose rebuildBundles   'cookie',
+76 verbose rebuildBundles   'core-js',
+76 verbose rebuildBundles   'core-util-is',
+76 verbose rebuildBundles   'create-error-class',
+76 verbose rebuildBundles   'cross-spawn',
+76 verbose rebuildBundles   'cross-spawn-async',
+76 verbose rebuildBundles   'cryptiles',
+76 verbose rebuildBundles   'css-select',
+76 verbose rebuildBundles   'css-what',
+76 verbose rebuildBundles   'cssom',
+76 verbose rebuildBundles   'cssstyle',
+76 verbose rebuildBundles   'currently-unhandled',
+76 verbose rebuildBundles   'd3',
+76 verbose rebuildBundles   'dashdash',
+76 verbose rebuildBundles   'dateformat',
+76 verbose rebuildBundles   'debug',
+76 verbose rebuildBundles   'decamelize',
+76 verbose rebuildBundles   'deep-is',
+76 verbose rebuildBundles   'del',
+76 verbose rebuildBundles   'delayed-stream',
+76 verbose rebuildBundles   'detect-file',
+76 verbose rebuildBundles   'diff',
+76 verbose rebuildBundles   'dom-serializer',
+76 verbose rebuildBundles   'domelementtype',
+76 verbose rebuildBundles   'domhandler',
+76 verbose rebuildBundles   'domutils',
+76 verbose rebuildBundles   'duplexer3',
+76 verbose rebuildBundles   'easydate',
+76 verbose rebuildBundles   'ecc-jsbn',
+76 verbose rebuildBundles   'engine.io',
+76 verbose rebuildBundles   'engine.io-client',
+76 verbose rebuildBundles   'engine.io-parser',
+76 verbose rebuildBundles   'entities',
+76 verbose rebuildBundles   'error-ex',
+76 verbose rebuildBundles   'es6-promise',
+76 verbose rebuildBundles   'escape-string-regexp',
+76 verbose rebuildBundles   'escodegen',
+76 verbose rebuildBundles   'esprima',
+76 verbose rebuildBundles   'estraverse',
+76 verbose rebuildBundles   'esutils',
+76 verbose rebuildBundles   'eventemitter2',
+76 verbose rebuildBundles   'exit',
+76 verbose rebuildBundles   'expand-brackets',
+76 verbose rebuildBundles   'expand-range',
+76 verbose rebuildBundles   'expand-tilde',
+76 verbose rebuildBundles   'extend',
+76 verbose rebuildBundles   'extglob',
+76 verbose rebuildBundles   'extract-zip',
+76 verbose rebuildBundles   'extsprintf',
+76 verbose rebuildBundles   'fast-levenshtein',
+76 verbose rebuildBundles   'fd-slicer',
+76 verbose rebuildBundles   'file-url',
+76 verbose rebuildBundles   'filename-regex',
+76 verbose rebuildBundles   'filename-reserved-regex',
+76 verbose rebuildBundles   'filenamify',
+76 verbose rebuildBundles   'filenamify-url',
+76 verbose rebuildBundles   'fill-range',
+76 verbose rebuildBundles   'find-up',
+76 verbose rebuildBundles   'findup-sync',
+76 verbose rebuildBundles   'for-in',
+76 verbose rebuildBundles   'for-own',
+76 verbose rebuildBundles   'forever-agent',
+76 verbose rebuildBundles   'form-data',
+76 verbose rebuildBundles   'fs',
+76 verbose rebuildBundles   'fs-exists-sync',
+76 verbose rebuildBundles   'fs-extra',
+76 verbose rebuildBundles   'fs-write-stream-atomic',
+76 verbose rebuildBundles   'fs.realpath',
+76 verbose rebuildBundles   'generate-function',
+76 verbose rebuildBundles   'generate-object-property',
+76 verbose rebuildBundles   'get-res',
+76 verbose rebuildBundles   'get-stdin',
+76 verbose rebuildBundles   'get-stream',
+76 verbose rebuildBundles   'getobject',
+76 verbose rebuildBundles   'getpass',
+76 verbose rebuildBundles   'glob',
+76 verbose rebuildBundles   'glob-base',
+76 verbose rebuildBundles   'glob-parent',
+76 verbose rebuildBundles   'global-modules',
+76 verbose rebuildBundles   'global-prefix',
+76 verbose rebuildBundles   'globby',
+76 verbose rebuildBundles   'got',
+76 verbose rebuildBundles   'graceful-fs',
+76 verbose rebuildBundles   'graceful-readlink',
+76 verbose rebuildBundles   'growl',
+76 verbose rebuildBundles   'grunt',
+76 verbose rebuildBundles   'grunt-known-options',
+76 verbose rebuildBundles   'grunt-legacy-log',
+76 verbose rebuildBundles   'grunt-legacy-log-utils',
+76 verbose rebuildBundles   'grunt-legacy-util',
+76 verbose rebuildBundles   'grunt-pageres',
+76 verbose rebuildBundles   'har-schema',
+76 verbose rebuildBundles   'har-validator',
+76 verbose rebuildBundles   'has-ansi',
+76 verbose rebuildBundles   'has-binary',
+76 verbose rebuildBundles   'has-cors',
+76 verbose rebuildBundles   'has-flag',
+76 verbose rebuildBundles   'hasha',
+76 verbose rebuildBundles   'hawk',
+76 verbose rebuildBundles   'hoek',
+76 verbose rebuildBundles   'homedir-polyfill',
+76 verbose rebuildBundles   'hooker',
+76 verbose rebuildBundles   'hosted-git-info',
+76 verbose rebuildBundles   'html-encoding-sniffer',
+76 verbose rebuildBundles   'html2png',
+76 verbose rebuildBundles   'htmlparser2',
+76 verbose rebuildBundles   'http-signature',
+76 verbose rebuildBundles   'humanize-url',
+76 verbose rebuildBundles   'iconv-lite',
+76 verbose rebuildBundles   'iferr',
+76 verbose rebuildBundles   'imurmurhash',
+76 verbose rebuildBundles   'indent-string',
+76 verbose rebuildBundles   'indexof',
+76 verbose rebuildBundles   'inflight',
+76 verbose rebuildBundles   'inherits',
+76 verbose rebuildBundles   'ini',
+76 verbose rebuildBundles   'invert-kv',
+76 verbose rebuildBundles   'irregular-plurals',
+76 verbose rebuildBundles   'is-arrayish',
+76 verbose rebuildBundles   'is-buffer',
+76 verbose rebuildBundles   'is-builtin-module',
+76 verbose rebuildBundles   'is-dotfile',
+76 verbose rebuildBundles   'is-equal-shallow',
+76 verbose rebuildBundles   'is-extendable',
+76 verbose rebuildBundles   'is-extglob',
+76 verbose rebuildBundles   'is-finite',
+76 verbose rebuildBundles   'is-fullwidth-code-point',
+76 verbose rebuildBundles   'is-glob',
+76 verbose rebuildBundles   'is-my-json-valid',
+76 verbose rebuildBundles   'is-number',
+76 verbose rebuildBundles   'is-path-cwd',
+76 verbose rebuildBundles   'is-path-in-cwd',
+76 verbose rebuildBundles   'is-path-inside',
+76 verbose rebuildBundles   'is-plain-obj',
+76 verbose rebuildBundles   'is-posix-bracket',
+76 verbose rebuildBundles   'is-primitive',
+76 verbose rebuildBundles   'is-property',
+76 verbose rebuildBundles   'is-redirect',
+76 verbose rebuildBundles   'is-retry-allowed',
+76 verbose rebuildBundles   'is-stream',
+76 verbose rebuildBundles   'is-typedarray',
+76 verbose rebuildBundles   'is-utf8',
+76 verbose rebuildBundles   'is-windows',
+76 verbose rebuildBundles   'isarray',
+76 verbose rebuildBundles   'isexe',
+76 verbose rebuildBundles   'isobject',
+76 verbose rebuildBundles   'isstream',
+76 verbose rebuildBundles   'jquery',
+76 verbose rebuildBundles   'js-yaml',
+76 verbose rebuildBundles   'jsbn',
+76 verbose rebuildBundles   'jsdom',
+76 verbose rebuildBundles   'json-schema',
+76 verbose rebuildBundles   'json-stable-stringify',
+76 verbose rebuildBundles   'json-stringify-safe',
+76 verbose rebuildBundles   'json3',
+76 verbose rebuildBundles   'jsonfile',
+76 verbose rebuildBundles   'jsonify',
+76 verbose rebuildBundles   'jsonpointer',
+76 verbose rebuildBundles   'jsprim',
+76 verbose rebuildBundles   'kew',
+76 verbose rebuildBundles   'kind-of',
+76 verbose rebuildBundles   'klaw',
+76 verbose rebuildBundles   'lcid',
+76 verbose rebuildBundles   'levn',
+76 verbose rebuildBundles   'load-grunt-tasks',
+76 verbose rebuildBundles   'load-json-file',
+76 verbose rebuildBundles   'lodash',
+76 verbose rebuildBundles   'lodash._baseassign',
+76 verbose rebuildBundles   'lodash._basecopy',
+76 verbose rebuildBundles   'lodash._basecreate',
+76 verbose rebuildBundles   'lodash._getnative',
+76 verbose rebuildBundles   'lodash._isiterateecall',
+76 verbose rebuildBundles   'lodash._reinterpolate',
+76 verbose rebuildBundles   'lodash.create',
+76 verbose rebuildBundles   'lodash.isarguments',
+76 verbose rebuildBundles   'lodash.isarray',
+76 verbose rebuildBundles   'lodash.keys',
+76 verbose rebuildBundles   'lodash.template',
+76 verbose rebuildBundles   'lodash.templatesettings',
+76 verbose rebuildBundles   'log-symbols',
+76 verbose rebuildBundles   'loud-rejection',
+76 verbose rebuildBundles   'lowercase-keys',
+76 verbose rebuildBundles   'lru-cache',
+76 verbose rebuildBundles   'make-dir',
+76 verbose rebuildBundles   'map-obj',
+76 verbose rebuildBundles   'mem',
+76 verbose rebuildBundles   'meow',
+76 verbose rebuildBundles   'micromatch',
+76 verbose rebuildBundles   'mime-db',
+76 verbose rebuildBundles   'mime-types',
+76 verbose rebuildBundles   'mimic-fn',
+76 verbose rebuildBundles   'minimatch',
+76 verbose rebuildBundles   'minimist',
+76 verbose rebuildBundles   'mkdirp',
+76 verbose rebuildBundles   'mocha',
+76 verbose rebuildBundles   'modify-filename',
+76 verbose rebuildBundles   'ms',
+76 verbose rebuildBundles   'mt-printscreen',
+76 verbose rebuildBundles   'multimatch',
+76 verbose rebuildBundles   'natives',
+76 verbose rebuildBundles   'negotiator',
+76 verbose rebuildBundles   'node-phantom-simple',
+76 verbose rebuildBundles   'nopt',
+76 verbose rebuildBundles   'normalize-package-data',
+76 verbose rebuildBundles   'normalize-path',
+76 verbose rebuildBundles   'normalize-url',
+76 verbose rebuildBundles   'nth-check',
+76 verbose rebuildBundles   'number-is-nan',
+76 verbose rebuildBundles   'nwmatcher',
+76 verbose rebuildBundles   'oauth-sign',
+76 verbose rebuildBundles   'object-assign',
+76 verbose rebuildBundles   'object-component',
+76 verbose rebuildBundles   'object.omit',
+76 verbose rebuildBundles   'once',
+76 verbose rebuildBundles   'optionator',
+76 verbose rebuildBundles   'options',
+76 verbose rebuildBundles   'os-homedir',
+76 verbose rebuildBundles   'os-locale',
+76 verbose rebuildBundles   'os-shim',
+76 verbose rebuildBundles   'os-tmpdir',
+76 verbose rebuildBundles   'p-map',
+76 verbose rebuildBundles   'package',
+76 verbose rebuildBundles   'pageres',
+76 verbose rebuildBundles   'parse-cookie-phantomjs',
+76 verbose rebuildBundles   'parse-glob',
+76 verbose rebuildBundles   'parse-json',
+76 verbose rebuildBundles   'parse-passwd',
+76 verbose rebuildBundles   'parse5',
+76 verbose rebuildBundles   'parsejson',
+76 verbose rebuildBundles   'parseqs',
+76 verbose rebuildBundles   'parseuri',
+76 verbose rebuildBundles   'path-exists',
+76 verbose rebuildBundles   'path-is-absolute',
+76 verbose rebuildBundles   'path-is-inside',
+76 verbose rebuildBundles   'path-type',
+76 verbose rebuildBundles   'pdfkitjs',
+76 verbose rebuildBundles   'pend',
+76 verbose rebuildBundles   'performance-now',
+76 verbose rebuildBundles   'phantom-bridge',
+76 verbose rebuildBundles   'phantomjs',
+76 verbose rebuildBundles   'phantomjs-bin',
+76 verbose rebuildBundles   'phantomjs-prebuilt',
+76 verbose rebuildBundles   'pify',
+76 verbose rebuildBundles   'pinkie',
+76 verbose rebuildBundles   'pinkie-promise',
+76 verbose rebuildBundles   'pkg-up',
+76 verbose rebuildBundles   'plur',
+76 verbose rebuildBundles   'pn',
+76 verbose rebuildBundles   'prelude-ls',
+76 verbose rebuildBundles   'prepend-http',
+76 verbose rebuildBundles   'preserve',
+76 verbose rebuildBundles   'process-nextick-args',
+76 verbose rebuildBundles   'progress',
+76 verbose rebuildBundles   'protocolify',
+76 verbose rebuildBundles   'pseudomap',
+76 verbose rebuildBundles   'punycode',
+76 verbose rebuildBundles   'qs',
+76 verbose rebuildBundles   'query-string',
+76 verbose rebuildBundles   'randomatic',
+76 verbose rebuildBundles   'read-pkg',
+76 verbose rebuildBundles   'read-pkg-up',
+76 verbose rebuildBundles   'readable-stream',
+76 verbose rebuildBundles   'redent',
+76 verbose rebuildBundles   'regenerator-runtime',
+76 verbose rebuildBundles   'regex-cache',
+76 verbose rebuildBundles   'remove-trailing-separator',
+76 verbose rebuildBundles   'repeat-element',
+76 verbose rebuildBundles   'repeat-string',
+76 verbose rebuildBundles   'repeating',
+76 verbose rebuildBundles   'request',
+76 verbose rebuildBundles   'request-progress',
+76 verbose rebuildBundles   'request-promise-core',
+76 verbose rebuildBundles   'request-promise-native',
+76 verbose rebuildBundles   'resolve',
+76 verbose rebuildBundles   'resolve-dir',
+76 verbose rebuildBundles   'resolve-from',
+76 verbose rebuildBundles   'resolve-pkg',
+76 verbose rebuildBundles   'rimraf',
+76 verbose rebuildBundles   'safe-buffer',
+76 verbose rebuildBundles   'sax',
+76 verbose rebuildBundles   'screenshot-stream',
+76 verbose rebuildBundles   'selenium-webdriver',
+76 verbose rebuildBundles   'semver',
+76 verbose rebuildBundles   'signal-exit',
+76 verbose rebuildBundles   'sntp',
+76 verbose rebuildBundles   'socket.io',
+76 verbose rebuildBundles   'socket.io-adapter',
+76 verbose rebuildBundles   'socket.io-client',
+76 verbose rebuildBundles   'socket.io-parser',
+76 verbose rebuildBundles   'sort-keys',
+76 verbose rebuildBundles   'source-map',
+76 verbose rebuildBundles   'spawn-sync',
+76 verbose rebuildBundles   'spdx-correct',
+76 verbose rebuildBundles   'spdx-expression-parse',
+76 verbose rebuildBundles   'spdx-license-ids',
+76 verbose rebuildBundles   'sprintf-js',
+76 verbose rebuildBundles   'sshpk',
+76 verbose rebuildBundles   'stealthy-require',
+76 verbose rebuildBundles   'strict-uri-encode',
+76 verbose rebuildBundles   'string-width',
+76 verbose rebuildBundles   'string_decoder',
+76 verbose rebuildBundles   'stringstream',
+76 verbose rebuildBundles   'strip-ansi',
+76 verbose rebuildBundles   'strip-bom',
+76 verbose rebuildBundles   'strip-indent',
+76 verbose rebuildBundles   'strip-outer',
+76 verbose rebuildBundles   'strip-url-auth',
+76 verbose rebuildBundles   'supports-color',
+76 verbose rebuildBundles   'symbol-tree',
+76 verbose rebuildBundles   'temporary',
+76 verbose rebuildBundles   'throttleit',
+76 verbose rebuildBundles   'timed-out',
+76 verbose rebuildBundles   'tmp',
+76 verbose rebuildBundles   'to-array',
+76 verbose rebuildBundles   'tough-cookie',
+76 verbose rebuildBundles   'tr46',
+76 verbose rebuildBundles   'trim-newlines',
+76 verbose rebuildBundles   'trim-repeated',
+76 verbose rebuildBundles   'tunnel-agent',
+76 verbose rebuildBundles   'tweetnacl',
+76 verbose rebuildBundles   'type-check',
+76 verbose rebuildBundles   'typedarray',
+76 verbose rebuildBundles   'typescript',
+76 verbose rebuildBundles   'ultron',
+76 verbose rebuildBundles   'underscore.string',
+76 verbose rebuildBundles   'unused-filename',
+76 verbose rebuildBundles   'unzip-response',
+76 verbose rebuildBundles   'url-parse-lax',
+76 verbose rebuildBundles   'url-to-image',
+76 verbose rebuildBundles   'util-deprecate',
+76 verbose rebuildBundles   'uuid',
+76 verbose rebuildBundles   'validate-npm-package-license',
+76 verbose rebuildBundles   'verror',
+76 verbose rebuildBundles   'viewport-list',
+76 verbose rebuildBundles   'w3counter',
+76 verbose rebuildBundles   'webidl-conversions',
+76 verbose rebuildBundles   'webshot',
+76 verbose rebuildBundles   'whatwg-encoding',
+76 verbose rebuildBundles   'whatwg-url',
+76 verbose rebuildBundles   'which',
+76 verbose rebuildBundles   'window-size',
+76 verbose rebuildBundles   'wordwrap',
+76 verbose rebuildBundles   'wrap-ansi',
+76 verbose rebuildBundles   'wrappy',
+76 verbose rebuildBundles   'ws',
+76 verbose rebuildBundles   'wtf-8',
+76 verbose rebuildBundles   'xml-name-validator',
+76 verbose rebuildBundles   'xml2js',
+76 verbose rebuildBundles   'xmlbuilder',
+76 verbose rebuildBundles   'xmlhttprequest',
+76 verbose rebuildBundles   'xmlhttprequest-ssl',
+76 verbose rebuildBundles   'xtend',
+76 verbose rebuildBundles   'y18n',
+76 verbose rebuildBundles   'yallist',
+76 verbose rebuildBundles   'yargs',
+76 verbose rebuildBundles   'yauzl',
+76 verbose rebuildBundles   'yeast' ]
+77 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\abab
+78 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\abab
+79 info lifecycle abab@1.0.3~preinstall: abab@1.0.3
+80 silly lifecycle abab@1.0.3~preinstall: no script for preinstall, continuing
+81 info linkStuff abab@1.0.3
+82 silly linkStuff abab@1.0.3 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+83 verbose linkBins abab@1.0.3
+84 verbose linkMans abab@1.0.3
+85 verbose rebuildBundles abab@1.0.3
+86 info lifecycle abab@1.0.3~install: abab@1.0.3
+87 silly lifecycle abab@1.0.3~install: no script for install, continuing
+88 info lifecycle abab@1.0.3~postinstall: abab@1.0.3
+89 silly lifecycle abab@1.0.3~postinstall: no script for postinstall, continuing
+90 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\abbrev
+91 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\abbrev
+92 info lifecycle abbrev@1.1.0~preinstall: abbrev@1.1.0
+93 silly lifecycle abbrev@1.1.0~preinstall: no script for preinstall, continuing
+94 info linkStuff abbrev@1.1.0
+95 silly linkStuff abbrev@1.1.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+96 verbose linkBins abbrev@1.1.0
+97 verbose linkMans abbrev@1.1.0
+98 verbose rebuildBundles abbrev@1.1.0
+99 info lifecycle abbrev@1.1.0~install: abbrev@1.1.0
+100 silly lifecycle abbrev@1.1.0~install: no script for install, continuing
+101 info lifecycle abbrev@1.1.0~postinstall: abbrev@1.1.0
+102 silly lifecycle abbrev@1.1.0~postinstall: no script for postinstall, continuing
+103 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\accepts
+104 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\accepts
+105 info lifecycle accepts@1.3.3~preinstall: accepts@1.3.3
+106 silly lifecycle accepts@1.3.3~preinstall: no script for preinstall, continuing
+107 info linkStuff accepts@1.3.3
+108 silly linkStuff accepts@1.3.3 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+109 verbose linkBins accepts@1.3.3
+110 verbose linkMans accepts@1.3.3
+111 verbose rebuildBundles accepts@1.3.3
+112 info lifecycle accepts@1.3.3~install: accepts@1.3.3
+113 silly lifecycle accepts@1.3.3~install: no script for install, continuing
+114 info lifecycle accepts@1.3.3~postinstall: accepts@1.3.3
+115 silly lifecycle accepts@1.3.3~postinstall: no script for postinstall, continuing
+116 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\adm-zip
+117 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\adm-zip
+118 info lifecycle adm-zip@0.4.4~preinstall: adm-zip@0.4.4
+119 silly lifecycle adm-zip@0.4.4~preinstall: no script for preinstall, continuing
+120 info linkStuff adm-zip@0.4.4
+121 silly linkStuff adm-zip@0.4.4 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+122 verbose linkBins adm-zip@0.4.4
+123 verbose linkMans adm-zip@0.4.4
+124 verbose rebuildBundles adm-zip@0.4.4
+125 info lifecycle adm-zip@0.4.4~install: adm-zip@0.4.4
+126 silly lifecycle adm-zip@0.4.4~install: no script for install, continuing
+127 info lifecycle adm-zip@0.4.4~postinstall: adm-zip@0.4.4
+128 silly lifecycle adm-zip@0.4.4~postinstall: no script for postinstall, continuing
+129 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\after
+130 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\after
+131 info lifecycle after@0.8.2~preinstall: after@0.8.2
+132 silly lifecycle after@0.8.2~preinstall: no script for preinstall, continuing
+133 info linkStuff after@0.8.2
+134 silly linkStuff after@0.8.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+135 verbose linkBins after@0.8.2
+136 verbose linkMans after@0.8.2
+137 verbose rebuildBundles after@0.8.2
+138 info lifecycle after@0.8.2~install: after@0.8.2
+139 silly lifecycle after@0.8.2~install: no script for install, continuing
+140 info lifecycle after@0.8.2~postinstall: after@0.8.2
+141 silly lifecycle after@0.8.2~postinstall: no script for postinstall, continuing
+142 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\ajv
+143 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\ajv
+144 info lifecycle ajv@4.11.8~preinstall: ajv@4.11.8
+145 silly lifecycle ajv@4.11.8~preinstall: no script for preinstall, continuing
+146 info linkStuff ajv@4.11.8
+147 silly linkStuff ajv@4.11.8 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+148 verbose linkBins ajv@4.11.8
+149 verbose linkMans ajv@4.11.8
+150 verbose rebuildBundles ajv@4.11.8
+151 info lifecycle ajv@4.11.8~install: ajv@4.11.8
+152 silly lifecycle ajv@4.11.8~install: no script for install, continuing
+153 info lifecycle ajv@4.11.8~postinstall: ajv@4.11.8
+154 silly lifecycle ajv@4.11.8~postinstall: no script for postinstall, continuing
+155 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\amdefine
+156 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\amdefine
+157 info lifecycle amdefine@1.0.1~preinstall: amdefine@1.0.1
+158 silly lifecycle amdefine@1.0.1~preinstall: no script for preinstall, continuing
+159 info linkStuff amdefine@1.0.1
+160 silly linkStuff amdefine@1.0.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+161 verbose linkBins amdefine@1.0.1
+162 verbose linkMans amdefine@1.0.1
+163 verbose rebuildBundles amdefine@1.0.1
+164 info lifecycle amdefine@1.0.1~install: amdefine@1.0.1
+165 silly lifecycle amdefine@1.0.1~install: no script for install, continuing
+166 info lifecycle amdefine@1.0.1~postinstall: amdefine@1.0.1
+167 silly lifecycle amdefine@1.0.1~postinstall: no script for postinstall, continuing
+168 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\ansi-regex
+169 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\ansi-regex
+170 info lifecycle ansi-regex@2.1.1~preinstall: ansi-regex@2.1.1
+171 silly lifecycle ansi-regex@2.1.1~preinstall: no script for preinstall, continuing
+172 info linkStuff ansi-regex@2.1.1
+173 silly linkStuff ansi-regex@2.1.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+174 verbose linkBins ansi-regex@2.1.1
+175 verbose linkMans ansi-regex@2.1.1
+176 verbose rebuildBundles ansi-regex@2.1.1
+177 info lifecycle ansi-regex@2.1.1~install: ansi-regex@2.1.1
+178 silly lifecycle ansi-regex@2.1.1~install: no script for install, continuing
+179 info lifecycle ansi-regex@2.1.1~postinstall: ansi-regex@2.1.1
+180 silly lifecycle ansi-regex@2.1.1~postinstall: no script for postinstall, continuing
+181 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\ansi-styles
+182 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\ansi-styles
+183 info lifecycle ansi-styles@2.2.1~preinstall: ansi-styles@2.2.1
+184 silly lifecycle ansi-styles@2.2.1~preinstall: no script for preinstall, continuing
+185 info linkStuff ansi-styles@2.2.1
+186 silly linkStuff ansi-styles@2.2.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+187 verbose linkBins ansi-styles@2.2.1
+188 verbose linkMans ansi-styles@2.2.1
+189 verbose rebuildBundles ansi-styles@2.2.1
+190 info lifecycle ansi-styles@2.2.1~install: ansi-styles@2.2.1
+191 silly lifecycle ansi-styles@2.2.1~install: no script for install, continuing
+192 info lifecycle ansi-styles@2.2.1~postinstall: ansi-styles@2.2.1
+193 silly lifecycle ansi-styles@2.2.1~postinstall: no script for postinstall, continuing
+194 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\argparse
+195 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\argparse
+196 info lifecycle argparse@1.0.9~preinstall: argparse@1.0.9
+197 silly lifecycle argparse@1.0.9~preinstall: no script for preinstall, continuing
+198 info linkStuff argparse@1.0.9
+199 silly linkStuff argparse@1.0.9 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+200 verbose linkBins argparse@1.0.9
+201 verbose linkMans argparse@1.0.9
+202 verbose rebuildBundles argparse@1.0.9
+203 info lifecycle argparse@1.0.9~install: argparse@1.0.9
+204 silly lifecycle argparse@1.0.9~install: no script for install, continuing
+205 info lifecycle argparse@1.0.9~postinstall: argparse@1.0.9
+206 silly lifecycle argparse@1.0.9~postinstall: no script for postinstall, continuing
+207 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arr-diff
+208 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arr-diff
+209 info lifecycle arr-diff@2.0.0~preinstall: arr-diff@2.0.0
+210 silly lifecycle arr-diff@2.0.0~preinstall: no script for preinstall, continuing
+211 info linkStuff arr-diff@2.0.0
+212 silly linkStuff arr-diff@2.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+213 verbose linkBins arr-diff@2.0.0
+214 verbose linkMans arr-diff@2.0.0
+215 verbose rebuildBundles arr-diff@2.0.0
+216 info lifecycle arr-diff@2.0.0~install: arr-diff@2.0.0
+217 silly lifecycle arr-diff@2.0.0~install: no script for install, continuing
+218 info lifecycle arr-diff@2.0.0~postinstall: arr-diff@2.0.0
+219 silly lifecycle arr-diff@2.0.0~postinstall: no script for postinstall, continuing
+220 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arr-flatten
+221 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arr-flatten
+222 info lifecycle arr-flatten@1.1.0~preinstall: arr-flatten@1.1.0
+223 silly lifecycle arr-flatten@1.1.0~preinstall: no script for preinstall, continuing
+224 info linkStuff arr-flatten@1.1.0
+225 silly linkStuff arr-flatten@1.1.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+226 verbose linkBins arr-flatten@1.1.0
+227 verbose linkMans arr-flatten@1.1.0
+228 verbose rebuildBundles arr-flatten@1.1.0
+229 info lifecycle arr-flatten@1.1.0~install: arr-flatten@1.1.0
+230 silly lifecycle arr-flatten@1.1.0~install: no script for install, continuing
+231 info lifecycle arr-flatten@1.1.0~postinstall: arr-flatten@1.1.0
+232 silly lifecycle arr-flatten@1.1.0~postinstall: no script for postinstall, continuing
+233 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-differ
+234 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-differ
+235 info lifecycle array-differ@1.0.0~preinstall: array-differ@1.0.0
+236 silly lifecycle array-differ@1.0.0~preinstall: no script for preinstall, continuing
+237 info linkStuff array-differ@1.0.0
+238 silly linkStuff array-differ@1.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+239 verbose linkBins array-differ@1.0.0
+240 verbose linkMans array-differ@1.0.0
+241 verbose rebuildBundles array-differ@1.0.0
+242 info lifecycle array-differ@1.0.0~install: array-differ@1.0.0
+243 silly lifecycle array-differ@1.0.0~install: no script for install, continuing
+244 info lifecycle array-differ@1.0.0~postinstall: array-differ@1.0.0
+245 silly lifecycle array-differ@1.0.0~postinstall: no script for postinstall, continuing
+246 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-equal
+247 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-equal
+248 info lifecycle array-equal@1.0.0~preinstall: array-equal@1.0.0
+249 silly lifecycle array-equal@1.0.0~preinstall: no script for preinstall, continuing
+250 info linkStuff array-equal@1.0.0
+251 silly linkStuff array-equal@1.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+252 verbose linkBins array-equal@1.0.0
+253 verbose linkMans array-equal@1.0.0
+254 verbose rebuildBundles array-equal@1.0.0
+255 info lifecycle array-equal@1.0.0~install: array-equal@1.0.0
+256 silly lifecycle array-equal@1.0.0~install: no script for install, continuing
+257 info lifecycle array-equal@1.0.0~postinstall: array-equal@1.0.0
+258 silly lifecycle array-equal@1.0.0~postinstall: no script for postinstall, continuing
+259 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-find-index
+260 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-find-index
+261 info lifecycle array-find-index@1.0.2~preinstall: array-find-index@1.0.2
+262 silly lifecycle array-find-index@1.0.2~preinstall: no script for preinstall, continuing
+263 info linkStuff array-find-index@1.0.2
+264 silly linkStuff array-find-index@1.0.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+265 verbose linkBins array-find-index@1.0.2
+266 verbose linkMans array-find-index@1.0.2
+267 verbose rebuildBundles array-find-index@1.0.2
+268 info lifecycle array-find-index@1.0.2~install: array-find-index@1.0.2
+269 silly lifecycle array-find-index@1.0.2~install: no script for install, continuing
+270 info lifecycle array-find-index@1.0.2~postinstall: array-find-index@1.0.2
+271 silly lifecycle array-find-index@1.0.2~postinstall: no script for postinstall, continuing
+272 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-union
+273 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-union
+274 info lifecycle array-union@1.0.2~preinstall: array-union@1.0.2
+275 silly lifecycle array-union@1.0.2~preinstall: no script for preinstall, continuing
+276 info linkStuff array-union@1.0.2
+277 silly linkStuff array-union@1.0.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+278 verbose linkBins array-union@1.0.2
+279 verbose linkMans array-union@1.0.2
+280 verbose rebuildBundles array-union@1.0.2
+281 info lifecycle array-union@1.0.2~install: array-union@1.0.2
+282 silly lifecycle array-union@1.0.2~install: no script for install, continuing
+283 info lifecycle array-union@1.0.2~postinstall: array-union@1.0.2
+284 silly lifecycle array-union@1.0.2~postinstall: no script for postinstall, continuing
+285 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-uniq
+286 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-uniq
+287 info lifecycle array-uniq@1.0.3~preinstall: array-uniq@1.0.3
+288 silly lifecycle array-uniq@1.0.3~preinstall: no script for preinstall, continuing
+289 info linkStuff array-uniq@1.0.3
+290 silly linkStuff array-uniq@1.0.3 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+291 verbose linkBins array-uniq@1.0.3
+292 verbose linkMans array-uniq@1.0.3
+293 verbose rebuildBundles array-uniq@1.0.3
+294 info lifecycle array-uniq@1.0.3~install: array-uniq@1.0.3
+295 silly lifecycle array-uniq@1.0.3~install: no script for install, continuing
+296 info lifecycle array-uniq@1.0.3~postinstall: array-uniq@1.0.3
+297 silly lifecycle array-uniq@1.0.3~postinstall: no script for postinstall, continuing
+298 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-unique
+299 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\array-unique
+300 info lifecycle array-unique@0.2.1~preinstall: array-unique@0.2.1
+301 silly lifecycle array-unique@0.2.1~preinstall: no script for preinstall, continuing
+302 info linkStuff array-unique@0.2.1
+303 silly linkStuff array-unique@0.2.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+304 verbose linkBins array-unique@0.2.1
+305 verbose linkMans array-unique@0.2.1
+306 verbose rebuildBundles array-unique@0.2.1
+307 info lifecycle array-unique@0.2.1~install: array-unique@0.2.1
+308 silly lifecycle array-unique@0.2.1~install: no script for install, continuing
+309 info lifecycle array-unique@0.2.1~postinstall: array-unique@0.2.1
+310 silly lifecycle array-unique@0.2.1~postinstall: no script for postinstall, continuing
+311 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arraybuffer.slice
+312 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arraybuffer.slice
+313 info lifecycle arraybuffer.slice@0.0.6~preinstall: arraybuffer.slice@0.0.6
+314 silly lifecycle arraybuffer.slice@0.0.6~preinstall: no script for preinstall, continuing
+315 info linkStuff arraybuffer.slice@0.0.6
+316 silly linkStuff arraybuffer.slice@0.0.6 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+317 verbose linkBins arraybuffer.slice@0.0.6
+318 verbose linkMans arraybuffer.slice@0.0.6
+319 verbose rebuildBundles arraybuffer.slice@0.0.6
+320 info lifecycle arraybuffer.slice@0.0.6~install: arraybuffer.slice@0.0.6
+321 silly lifecycle arraybuffer.slice@0.0.6~install: no script for install, continuing
+322 info lifecycle arraybuffer.slice@0.0.6~postinstall: arraybuffer.slice@0.0.6
+323 silly lifecycle arraybuffer.slice@0.0.6~postinstall: no script for postinstall, continuing
+324 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arrify
+325 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\arrify
+326 info lifecycle arrify@1.0.1~preinstall: arrify@1.0.1
+327 silly lifecycle arrify@1.0.1~preinstall: no script for preinstall, continuing
+328 info linkStuff arrify@1.0.1
+329 silly linkStuff arrify@1.0.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+330 verbose linkBins arrify@1.0.1
+331 verbose linkMans arrify@1.0.1
+332 verbose rebuildBundles arrify@1.0.1
+333 info lifecycle arrify@1.0.1~install: arrify@1.0.1
+334 silly lifecycle arrify@1.0.1~install: no script for install, continuing
+335 info lifecycle arrify@1.0.1~postinstall: arrify@1.0.1
+336 silly lifecycle arrify@1.0.1~postinstall: no script for postinstall, continuing
+337 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\asn1
+338 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\asn1
+339 info lifecycle asn1@0.2.3~preinstall: asn1@0.2.3
+340 silly lifecycle asn1@0.2.3~preinstall: no script for preinstall, continuing
+341 info linkStuff asn1@0.2.3
+342 silly linkStuff asn1@0.2.3 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+343 verbose linkBins asn1@0.2.3
+344 verbose linkMans asn1@0.2.3
+345 verbose rebuildBundles asn1@0.2.3
+346 info lifecycle asn1@0.2.3~install: asn1@0.2.3
+347 silly lifecycle asn1@0.2.3~install: no script for install, continuing
+348 info lifecycle asn1@0.2.3~postinstall: asn1@0.2.3
+349 silly lifecycle asn1@0.2.3~postinstall: no script for postinstall, continuing
+350 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\assert-plus
+351 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\assert-plus
+352 info lifecycle assert-plus@0.2.0~preinstall: assert-plus@0.2.0
+353 silly lifecycle assert-plus@0.2.0~preinstall: no script for preinstall, continuing
+354 info linkStuff assert-plus@0.2.0
+355 silly linkStuff assert-plus@0.2.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+356 verbose linkBins assert-plus@0.2.0
+357 verbose linkMans assert-plus@0.2.0
+358 verbose rebuildBundles assert-plus@0.2.0
+359 info lifecycle assert-plus@0.2.0~install: assert-plus@0.2.0
+360 silly lifecycle assert-plus@0.2.0~install: no script for install, continuing
+361 info lifecycle assert-plus@0.2.0~postinstall: assert-plus@0.2.0
+362 silly lifecycle assert-plus@0.2.0~postinstall: no script for postinstall, continuing
+363 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\async
+364 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\async
+365 info lifecycle async@1.5.2~preinstall: async@1.5.2
+366 silly lifecycle async@1.5.2~preinstall: no script for preinstall, continuing
+367 info linkStuff async@1.5.2
+368 silly linkStuff async@1.5.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+369 verbose linkBins async@1.5.2
+370 verbose linkMans async@1.5.2
+371 verbose rebuildBundles async@1.5.2
+372 info lifecycle async@1.5.2~install: async@1.5.2
+373 silly lifecycle async@1.5.2~install: no script for install, continuing
+374 info lifecycle async@1.5.2~postinstall: async@1.5.2
+375 silly lifecycle async@1.5.2~postinstall: no script for postinstall, continuing
+376 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\asynckit
+377 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\asynckit
+378 info lifecycle asynckit@0.4.0~preinstall: asynckit@0.4.0
+379 silly lifecycle asynckit@0.4.0~preinstall: no script for preinstall, continuing
+380 info linkStuff asynckit@0.4.0
+381 silly linkStuff asynckit@0.4.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+382 verbose linkBins asynckit@0.4.0
+383 verbose linkMans asynckit@0.4.0
+384 verbose rebuildBundles asynckit@0.4.0
+385 info lifecycle asynckit@0.4.0~install: asynckit@0.4.0
+386 silly lifecycle asynckit@0.4.0~install: no script for install, continuing
+387 info lifecycle asynckit@0.4.0~postinstall: asynckit@0.4.0
+388 silly lifecycle asynckit@0.4.0~postinstall: no script for postinstall, continuing
+389 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\aws-sign2
+390 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\aws-sign2
+391 info lifecycle aws-sign2@0.6.0~preinstall: aws-sign2@0.6.0
+392 silly lifecycle aws-sign2@0.6.0~preinstall: no script for preinstall, continuing
+393 info linkStuff aws-sign2@0.6.0
+394 silly linkStuff aws-sign2@0.6.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+395 verbose linkBins aws-sign2@0.6.0
+396 verbose linkMans aws-sign2@0.6.0
+397 verbose rebuildBundles aws-sign2@0.6.0
+398 info lifecycle aws-sign2@0.6.0~install: aws-sign2@0.6.0
+399 silly lifecycle aws-sign2@0.6.0~install: no script for install, continuing
+400 info lifecycle aws-sign2@0.6.0~postinstall: aws-sign2@0.6.0
+401 silly lifecycle aws-sign2@0.6.0~postinstall: no script for postinstall, continuing
+402 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\aws4
+403 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\aws4
+404 info lifecycle aws4@1.6.0~preinstall: aws4@1.6.0
+405 silly lifecycle aws4@1.6.0~preinstall: no script for preinstall, continuing
+406 info linkStuff aws4@1.6.0
+407 silly linkStuff aws4@1.6.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+408 verbose linkBins aws4@1.6.0
+409 verbose linkMans aws4@1.6.0
+410 verbose rebuildBundles aws4@1.6.0
+411 info lifecycle aws4@1.6.0~install: aws4@1.6.0
+412 silly lifecycle aws4@1.6.0~install: no script for install, continuing
+413 info lifecycle aws4@1.6.0~postinstall: aws4@1.6.0
+414 silly lifecycle aws4@1.6.0~postinstall: no script for postinstall, continuing
+415 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\babel-runtime
+416 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\babel-runtime
+417 info lifecycle babel-runtime@6.25.0~preinstall: babel-runtime@6.25.0
+418 silly lifecycle babel-runtime@6.25.0~preinstall: no script for preinstall, continuing
+419 info linkStuff babel-runtime@6.25.0
+420 silly linkStuff babel-runtime@6.25.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+421 verbose linkBins babel-runtime@6.25.0
+422 verbose linkMans babel-runtime@6.25.0
+423 verbose rebuildBundles babel-runtime@6.25.0
+424 info lifecycle babel-runtime@6.25.0~install: babel-runtime@6.25.0
+425 silly lifecycle babel-runtime@6.25.0~install: no script for install, continuing
+426 info lifecycle babel-runtime@6.25.0~postinstall: babel-runtime@6.25.0
+427 silly lifecycle babel-runtime@6.25.0~postinstall: no script for postinstall, continuing
+428 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\backo2
+429 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\backo2
+430 info lifecycle backo2@1.0.2~preinstall: backo2@1.0.2
+431 silly lifecycle backo2@1.0.2~preinstall: no script for preinstall, continuing
+432 info linkStuff backo2@1.0.2
+433 silly linkStuff backo2@1.0.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+434 verbose linkBins backo2@1.0.2
+435 verbose linkMans backo2@1.0.2
+436 verbose rebuildBundles backo2@1.0.2
+437 info lifecycle backo2@1.0.2~install: backo2@1.0.2
+438 silly lifecycle backo2@1.0.2~install: no script for install, continuing
+439 info lifecycle backo2@1.0.2~postinstall: backo2@1.0.2
+440 silly lifecycle backo2@1.0.2~postinstall: no script for postinstall, continuing
+441 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\balanced-match
+442 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\balanced-match
+443 info lifecycle balanced-match@0.4.2~preinstall: balanced-match@0.4.2
+444 silly lifecycle balanced-match@0.4.2~preinstall: no script for preinstall, continuing
+445 info linkStuff balanced-match@0.4.2
+446 silly linkStuff balanced-match@0.4.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+447 verbose linkBins balanced-match@0.4.2
+448 verbose linkMans balanced-match@0.4.2
+449 verbose rebuildBundles balanced-match@0.4.2
+450 info lifecycle balanced-match@0.4.2~install: balanced-match@0.4.2
+451 silly lifecycle balanced-match@0.4.2~install: no script for install, continuing
+452 info lifecycle balanced-match@0.4.2~postinstall: balanced-match@0.4.2
+453 silly lifecycle balanced-match@0.4.2~postinstall: no script for postinstall, continuing
+454 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\base64-arraybuffer
+455 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\base64-arraybuffer
+456 info lifecycle base64-arraybuffer@0.1.5~preinstall: base64-arraybuffer@0.1.5
+457 silly lifecycle base64-arraybuffer@0.1.5~preinstall: no script for preinstall, continuing
+458 info linkStuff base64-arraybuffer@0.1.5
+459 silly linkStuff base64-arraybuffer@0.1.5 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+460 verbose linkBins base64-arraybuffer@0.1.5
+461 verbose linkMans base64-arraybuffer@0.1.5
+462 verbose rebuildBundles base64-arraybuffer@0.1.5
+463 info lifecycle base64-arraybuffer@0.1.5~install: base64-arraybuffer@0.1.5
+464 silly lifecycle base64-arraybuffer@0.1.5~install: no script for install, continuing
+465 info lifecycle base64-arraybuffer@0.1.5~postinstall: base64-arraybuffer@0.1.5
+466 silly lifecycle base64-arraybuffer@0.1.5~postinstall: no script for postinstall, continuing
+467 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\base64-stream
+468 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\base64-stream
+469 info lifecycle base64-stream@0.1.3~preinstall: base64-stream@0.1.3
+470 silly lifecycle base64-stream@0.1.3~preinstall: no script for preinstall, continuing
+471 info linkStuff base64-stream@0.1.3
+472 silly linkStuff base64-stream@0.1.3 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+473 verbose linkBins base64-stream@0.1.3
+474 verbose linkMans base64-stream@0.1.3
+475 verbose rebuildBundles base64-stream@0.1.3
+476 info lifecycle base64-stream@0.1.3~install: base64-stream@0.1.3
+477 silly lifecycle base64-stream@0.1.3~install: no script for install, continuing
+478 info lifecycle base64-stream@0.1.3~postinstall: base64-stream@0.1.3
+479 silly lifecycle base64-stream@0.1.3~postinstall: no script for postinstall, continuing
+480 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\base64id
+481 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\base64id
+482 info lifecycle base64id@1.0.0~preinstall: base64id@1.0.0
+483 silly lifecycle base64id@1.0.0~preinstall: no script for preinstall, continuing
+484 info linkStuff base64id@1.0.0
+485 silly linkStuff base64id@1.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+486 verbose linkBins base64id@1.0.0
+487 verbose linkMans base64id@1.0.0
+488 verbose rebuildBundles base64id@1.0.0
+489 info lifecycle base64id@1.0.0~install: base64id@1.0.0
+490 silly lifecycle base64id@1.0.0~install: no script for install, continuing
+491 info lifecycle base64id@1.0.0~postinstall: base64id@1.0.0
+492 silly lifecycle base64id@1.0.0~postinstall: no script for postinstall, continuing
+493 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bcrypt-pbkdf
+494 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bcrypt-pbkdf
+495 info lifecycle bcrypt-pbkdf@1.0.1~preinstall: bcrypt-pbkdf@1.0.1
+496 silly lifecycle bcrypt-pbkdf@1.0.1~preinstall: no script for preinstall, continuing
+497 info linkStuff bcrypt-pbkdf@1.0.1
+498 silly linkStuff bcrypt-pbkdf@1.0.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+499 verbose linkBins bcrypt-pbkdf@1.0.1
+500 verbose linkMans bcrypt-pbkdf@1.0.1
+501 verbose rebuildBundles bcrypt-pbkdf@1.0.1
+502 info lifecycle bcrypt-pbkdf@1.0.1~install: bcrypt-pbkdf@1.0.1
+503 silly lifecycle bcrypt-pbkdf@1.0.1~install: no script for install, continuing
+504 info lifecycle bcrypt-pbkdf@1.0.1~postinstall: bcrypt-pbkdf@1.0.1
+505 silly lifecycle bcrypt-pbkdf@1.0.1~postinstall: no script for postinstall, continuing
+506 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\better-assert
+507 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\better-assert
+508 info lifecycle better-assert@1.0.2~preinstall: better-assert@1.0.2
+509 silly lifecycle better-assert@1.0.2~preinstall: no script for preinstall, continuing
+510 info linkStuff better-assert@1.0.2
+511 silly linkStuff better-assert@1.0.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+512 verbose linkBins better-assert@1.0.2
+513 verbose linkMans better-assert@1.0.2
+514 verbose rebuildBundles better-assert@1.0.2
+515 info lifecycle better-assert@1.0.2~install: better-assert@1.0.2
+516 silly lifecycle better-assert@1.0.2~install: no script for install, continuing
+517 info lifecycle better-assert@1.0.2~postinstall: better-assert@1.0.2
+518 silly lifecycle better-assert@1.0.2~postinstall: no script for postinstall, continuing
+519 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bl
+520 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bl
+521 info lifecycle bl@1.0.3~preinstall: bl@1.0.3
+522 silly lifecycle bl@1.0.3~preinstall: no script for preinstall, continuing
+523 info linkStuff bl@1.0.3
+524 silly linkStuff bl@1.0.3 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+525 verbose linkBins bl@1.0.3
+526 verbose linkMans bl@1.0.3
+527 verbose rebuildBundles bl@1.0.3
+528 verbose rebuildBundles [ 'readable-stream', 'string_decoder' ]
+529 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bl\node_modules\string_decoder
+530 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bl\node_modules\string_decoder
+531 info lifecycle string_decoder@0.10.31~preinstall: string_decoder@0.10.31
+532 silly lifecycle string_decoder@0.10.31~preinstall: no script for preinstall, continuing
+533 info linkStuff string_decoder@0.10.31
+534 silly linkStuff string_decoder@0.10.31 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bl\node_modules as its parent node_modules
+535 verbose linkBins string_decoder@0.10.31
+536 verbose linkMans string_decoder@0.10.31
+537 verbose rebuildBundles string_decoder@0.10.31
+538 info lifecycle string_decoder@0.10.31~install: string_decoder@0.10.31
+539 silly lifecycle string_decoder@0.10.31~install: no script for install, continuing
+540 info lifecycle string_decoder@0.10.31~postinstall: string_decoder@0.10.31
+541 silly lifecycle string_decoder@0.10.31~postinstall: no script for postinstall, continuing
+542 info lifecycle bl@1.0.3~install: bl@1.0.3
+543 silly lifecycle bl@1.0.3~install: no script for install, continuing
+544 info lifecycle bl@1.0.3~postinstall: bl@1.0.3
+545 silly lifecycle bl@1.0.3~postinstall: no script for postinstall, continuing
+546 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\blob
+547 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\blob
+548 info lifecycle blob@0.0.4~preinstall: blob@0.0.4
+549 silly lifecycle blob@0.0.4~preinstall: no script for preinstall, continuing
+550 info linkStuff blob@0.0.4
+551 silly linkStuff blob@0.0.4 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+552 verbose linkBins blob@0.0.4
+553 verbose linkMans blob@0.0.4
+554 verbose rebuildBundles blob@0.0.4
+555 info lifecycle blob@0.0.4~install: blob@0.0.4
+556 silly lifecycle blob@0.0.4~install: no script for install, continuing
+557 info lifecycle blob@0.0.4~postinstall: blob@0.0.4
+558 silly lifecycle blob@0.0.4~postinstall: no script for postinstall, continuing
+559 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bluebird
+560 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bluebird
+561 info lifecycle bluebird@3.0.6~preinstall: bluebird@3.0.6
+562 silly lifecycle bluebird@3.0.6~preinstall: no script for preinstall, continuing
+563 info linkStuff bluebird@3.0.6
+564 silly linkStuff bluebird@3.0.6 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+565 verbose linkBins bluebird@3.0.6
+566 verbose linkMans bluebird@3.0.6
+567 verbose rebuildBundles bluebird@3.0.6
+568 info lifecycle bluebird@3.0.6~install: bluebird@3.0.6
+569 silly lifecycle bluebird@3.0.6~install: no script for install, continuing
+570 info lifecycle bluebird@3.0.6~postinstall: bluebird@3.0.6
+571 silly lifecycle bluebird@3.0.6~postinstall: no script for postinstall, continuing
+572 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\boolbase
+573 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\boolbase
+574 info lifecycle boolbase@1.0.0~preinstall: boolbase@1.0.0
+575 silly lifecycle boolbase@1.0.0~preinstall: no script for preinstall, continuing
+576 info linkStuff boolbase@1.0.0
+577 silly linkStuff boolbase@1.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+578 verbose linkBins boolbase@1.0.0
+579 verbose linkMans boolbase@1.0.0
+580 verbose rebuildBundles boolbase@1.0.0
+581 info lifecycle boolbase@1.0.0~install: boolbase@1.0.0
+582 silly lifecycle boolbase@1.0.0~install: no script for install, continuing
+583 info lifecycle boolbase@1.0.0~postinstall: boolbase@1.0.0
+584 silly lifecycle boolbase@1.0.0~postinstall: no script for postinstall, continuing
+585 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\boom
+586 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\boom
+587 info lifecycle boom@2.10.1~preinstall: boom@2.10.1
+588 silly lifecycle boom@2.10.1~preinstall: no script for preinstall, continuing
+589 info linkStuff boom@2.10.1
+590 silly linkStuff boom@2.10.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+591 verbose linkBins boom@2.10.1
+592 verbose linkMans boom@2.10.1
+593 verbose rebuildBundles boom@2.10.1
+594 info lifecycle boom@2.10.1~install: boom@2.10.1
+595 silly lifecycle boom@2.10.1~install: no script for install, continuing
+596 info lifecycle boom@2.10.1~postinstall: boom@2.10.1
+597 silly lifecycle boom@2.10.1~postinstall: no script for postinstall, continuing
+598 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bootstrap
+599 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bootstrap
+600 info lifecycle bootstrap@3.3.7~preinstall: bootstrap@3.3.7
+601 silly lifecycle bootstrap@3.3.7~preinstall: no script for preinstall, continuing
+602 info linkStuff bootstrap@3.3.7
+603 silly linkStuff bootstrap@3.3.7 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+604 verbose linkBins bootstrap@3.3.7
+605 verbose linkMans bootstrap@3.3.7
+606 verbose rebuildBundles bootstrap@3.3.7
+607 info lifecycle bootstrap@3.3.7~install: bootstrap@3.3.7
+608 silly lifecycle bootstrap@3.3.7~install: no script for install, continuing
+609 info lifecycle bootstrap@3.3.7~postinstall: bootstrap@3.3.7
+610 silly lifecycle bootstrap@3.3.7~postinstall: no script for postinstall, continuing
+611 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bootstrap-tooltip
+612 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\bootstrap-tooltip
+613 info lifecycle bootstrap-tooltip@3.1.1~preinstall: bootstrap-tooltip@3.1.1
+614 silly lifecycle bootstrap-tooltip@3.1.1~preinstall: no script for preinstall, continuing
+615 info linkStuff bootstrap-tooltip@3.1.1
+616 silly linkStuff bootstrap-tooltip@3.1.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+617 verbose linkBins bootstrap-tooltip@3.1.1
+618 verbose linkMans bootstrap-tooltip@3.1.1
+619 verbose rebuildBundles bootstrap-tooltip@3.1.1
+620 info lifecycle bootstrap-tooltip@3.1.1~install: bootstrap-tooltip@3.1.1
+621 silly lifecycle bootstrap-tooltip@3.1.1~install: no script for install, continuing
+622 info lifecycle bootstrap-tooltip@3.1.1~postinstall: bootstrap-tooltip@3.1.1
+623 silly lifecycle bootstrap-tooltip@3.1.1~postinstall: no script for postinstall, continuing
+624 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\brace-expansion
+625 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\brace-expansion
+626 info lifecycle brace-expansion@1.1.6~preinstall: brace-expansion@1.1.6
+627 silly lifecycle brace-expansion@1.1.6~preinstall: no script for preinstall, continuing
+628 info linkStuff brace-expansion@1.1.6
+629 silly linkStuff brace-expansion@1.1.6 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+630 verbose linkBins brace-expansion@1.1.6
+631 verbose linkMans brace-expansion@1.1.6
+632 verbose rebuildBundles brace-expansion@1.1.6
+633 info lifecycle brace-expansion@1.1.6~install: brace-expansion@1.1.6
+634 silly lifecycle brace-expansion@1.1.6~install: no script for install, continuing
+635 info lifecycle brace-expansion@1.1.6~postinstall: brace-expansion@1.1.6
+636 silly lifecycle brace-expansion@1.1.6~postinstall: no script for postinstall, continuing
+637 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\braces
+638 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\braces
+639 info lifecycle braces@1.8.5~preinstall: braces@1.8.5
+640 silly lifecycle braces@1.8.5~preinstall: no script for preinstall, continuing
+641 info linkStuff braces@1.8.5
+642 silly linkStuff braces@1.8.5 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+643 verbose linkBins braces@1.8.5
+644 verbose linkMans braces@1.8.5
+645 verbose rebuildBundles braces@1.8.5
+646 info lifecycle braces@1.8.5~install: braces@1.8.5
+647 silly lifecycle braces@1.8.5~install: no script for install, continuing
+648 info lifecycle braces@1.8.5~postinstall: braces@1.8.5
+649 silly lifecycle braces@1.8.5~postinstall: no script for postinstall, continuing
+650 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\browser-stdout
+651 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\browser-stdout
+652 info lifecycle browser-stdout@1.3.0~preinstall: browser-stdout@1.3.0
+653 silly lifecycle browser-stdout@1.3.0~preinstall: no script for preinstall, continuing
+654 info linkStuff browser-stdout@1.3.0
+655 silly linkStuff browser-stdout@1.3.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+656 verbose linkBins browser-stdout@1.3.0
+657 verbose linkMans browser-stdout@1.3.0
+658 verbose rebuildBundles browser-stdout@1.3.0
+659 info lifecycle browser-stdout@1.3.0~install: browser-stdout@1.3.0
+660 silly lifecycle browser-stdout@1.3.0~install: no script for install, continuing
+661 info lifecycle browser-stdout@1.3.0~postinstall: browser-stdout@1.3.0
+662 silly lifecycle browser-stdout@1.3.0~postinstall: no script for postinstall, continuing
+663 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\builtin-modules
+664 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\builtin-modules
+665 info lifecycle builtin-modules@1.1.1~preinstall: builtin-modules@1.1.1
+666 silly lifecycle builtin-modules@1.1.1~preinstall: no script for preinstall, continuing
+667 info linkStuff builtin-modules@1.1.1
+668 silly linkStuff builtin-modules@1.1.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+669 verbose linkBins builtin-modules@1.1.1
+670 verbose linkMans builtin-modules@1.1.1
+671 verbose rebuildBundles builtin-modules@1.1.1
+672 info lifecycle builtin-modules@1.1.1~install: builtin-modules@1.1.1
+673 silly lifecycle builtin-modules@1.1.1~install: no script for install, continuing
+674 info lifecycle builtin-modules@1.1.1~postinstall: builtin-modules@1.1.1
+675 silly lifecycle builtin-modules@1.1.1~postinstall: no script for postinstall, continuing
+676 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\byline
+677 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\byline
+678 info lifecycle byline@4.2.2~preinstall: byline@4.2.2
+679 silly lifecycle byline@4.2.2~preinstall: no script for preinstall, continuing
+680 info linkStuff byline@4.2.2
+681 silly linkStuff byline@4.2.2 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+682 verbose linkBins byline@4.2.2
+683 verbose linkMans byline@4.2.2
+684 verbose rebuildBundles byline@4.2.2
+685 info lifecycle byline@4.2.2~install: byline@4.2.2
+686 silly lifecycle byline@4.2.2~install: no script for install, continuing
+687 info lifecycle byline@4.2.2~postinstall: byline@4.2.2
+688 silly lifecycle byline@4.2.2~postinstall: no script for postinstall, continuing
+689 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\callsite
+690 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\callsite
+691 info lifecycle callsite@1.0.0~preinstall: callsite@1.0.0
+692 silly lifecycle callsite@1.0.0~preinstall: no script for preinstall, continuing
+693 info linkStuff callsite@1.0.0
+694 silly linkStuff callsite@1.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+695 verbose linkBins callsite@1.0.0
+696 verbose linkMans callsite@1.0.0
+697 verbose rebuildBundles callsite@1.0.0
+698 info lifecycle callsite@1.0.0~install: callsite@1.0.0
+699 silly lifecycle callsite@1.0.0~install: no script for install, continuing
+700 info lifecycle callsite@1.0.0~postinstall: callsite@1.0.0
+701 silly lifecycle callsite@1.0.0~postinstall: no script for postinstall, continuing
+702 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\camelcase
+703 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\camelcase
+704 info lifecycle camelcase@2.1.1~preinstall: camelcase@2.1.1
+705 silly lifecycle camelcase@2.1.1~preinstall: no script for preinstall, continuing
+706 info linkStuff camelcase@2.1.1
+707 silly linkStuff camelcase@2.1.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+708 verbose linkBins camelcase@2.1.1
+709 verbose linkMans camelcase@2.1.1
+710 verbose rebuildBundles camelcase@2.1.1
+711 info lifecycle camelcase@2.1.1~install: camelcase@2.1.1
+712 silly lifecycle camelcase@2.1.1~install: no script for install, continuing
+713 info lifecycle camelcase@2.1.1~postinstall: camelcase@2.1.1
+714 silly lifecycle camelcase@2.1.1~postinstall: no script for postinstall, continuing
+715 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\camelcase-keys
+716 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\camelcase-keys
+717 info lifecycle camelcase-keys@2.1.0~preinstall: camelcase-keys@2.1.0
+718 silly lifecycle camelcase-keys@2.1.0~preinstall: no script for preinstall, continuing
+719 info linkStuff camelcase-keys@2.1.0
+720 silly linkStuff camelcase-keys@2.1.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+721 verbose linkBins camelcase-keys@2.1.0
+722 verbose linkMans camelcase-keys@2.1.0
+723 verbose rebuildBundles camelcase-keys@2.1.0
+724 info lifecycle camelcase-keys@2.1.0~install: camelcase-keys@2.1.0
+725 silly lifecycle camelcase-keys@2.1.0~install: no script for install, continuing
+726 info lifecycle camelcase-keys@2.1.0~postinstall: camelcase-keys@2.1.0
+727 silly lifecycle camelcase-keys@2.1.0~postinstall: no script for postinstall, continuing
+728 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\capture-stack-trace
+729 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\capture-stack-trace
+730 info lifecycle capture-stack-trace@1.0.0~preinstall: capture-stack-trace@1.0.0
+731 silly lifecycle capture-stack-trace@1.0.0~preinstall: no script for preinstall, continuing
+732 info linkStuff capture-stack-trace@1.0.0
+733 silly linkStuff capture-stack-trace@1.0.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+734 verbose linkBins capture-stack-trace@1.0.0
+735 verbose linkMans capture-stack-trace@1.0.0
+736 verbose rebuildBundles capture-stack-trace@1.0.0
+737 info lifecycle capture-stack-trace@1.0.0~install: capture-stack-trace@1.0.0
+738 silly lifecycle capture-stack-trace@1.0.0~install: no script for install, continuing
+739 info lifecycle capture-stack-trace@1.0.0~postinstall: capture-stack-trace@1.0.0
+740 silly lifecycle capture-stack-trace@1.0.0~postinstall: no script for postinstall, continuing
+741 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\caseless
+742 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\caseless
+743 info lifecycle caseless@0.12.0~preinstall: caseless@0.12.0
+744 silly lifecycle caseless@0.12.0~preinstall: no script for preinstall, continuing
+745 info linkStuff caseless@0.12.0
+746 silly linkStuff caseless@0.12.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+747 verbose linkBins caseless@0.12.0
+748 verbose linkMans caseless@0.12.0
+749 verbose rebuildBundles caseless@0.12.0
+750 info lifecycle caseless@0.12.0~install: caseless@0.12.0
+751 silly lifecycle caseless@0.12.0~install: no script for install, continuing
+752 info lifecycle caseless@0.12.0~postinstall: caseless@0.12.0
+753 silly lifecycle caseless@0.12.0~postinstall: no script for postinstall, continuing
+754 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio
+755 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio
+756 info lifecycle cheerio@0.19.0~preinstall: cheerio@0.19.0
+757 silly lifecycle cheerio@0.19.0~preinstall: no script for preinstall, continuing
+758 info linkStuff cheerio@0.19.0
+759 silly linkStuff cheerio@0.19.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+760 verbose linkBins cheerio@0.19.0
+761 verbose linkMans cheerio@0.19.0
+762 verbose rebuildBundles cheerio@0.19.0
+763 verbose rebuildBundles [ 'domhandler',
+763 verbose rebuildBundles   'domutils',
+763 verbose rebuildBundles   'htmlparser2',
+763 verbose rebuildBundles   'isarray',
+763 verbose rebuildBundles   'lodash',
+763 verbose rebuildBundles   'readable-stream',
+763 verbose rebuildBundles   'string_decoder' ]
+764 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\domhandler
+765 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\domhandler
+766 info lifecycle domhandler@2.3.0~preinstall: domhandler@2.3.0
+767 silly lifecycle domhandler@2.3.0~preinstall: no script for preinstall, continuing
+768 info linkStuff domhandler@2.3.0
+769 silly linkStuff domhandler@2.3.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules as its parent node_modules
+770 verbose linkBins domhandler@2.3.0
+771 verbose linkMans domhandler@2.3.0
+772 verbose rebuildBundles domhandler@2.3.0
+773 info lifecycle domhandler@2.3.0~install: domhandler@2.3.0
+774 silly lifecycle domhandler@2.3.0~install: no script for install, continuing
+775 info lifecycle domhandler@2.3.0~postinstall: domhandler@2.3.0
+776 silly lifecycle domhandler@2.3.0~postinstall: no script for postinstall, continuing
+777 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\domutils
+778 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\domutils
+779 info lifecycle domutils@1.5.1~preinstall: domutils@1.5.1
+780 silly lifecycle domutils@1.5.1~preinstall: no script for preinstall, continuing
+781 info linkStuff domutils@1.5.1
+782 silly linkStuff domutils@1.5.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules as its parent node_modules
+783 verbose linkBins domutils@1.5.1
+784 verbose linkMans domutils@1.5.1
+785 verbose rebuildBundles domutils@1.5.1
+786 info lifecycle domutils@1.5.1~install: domutils@1.5.1
+787 silly lifecycle domutils@1.5.1~install: no script for install, continuing
+788 info lifecycle domutils@1.5.1~postinstall: domutils@1.5.1
+789 silly lifecycle domutils@1.5.1~postinstall: no script for postinstall, continuing
+790 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\isarray
+791 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\isarray
+792 info lifecycle isarray@0.0.1~preinstall: isarray@0.0.1
+793 silly lifecycle isarray@0.0.1~preinstall: no script for preinstall, continuing
+794 info linkStuff isarray@0.0.1
+795 silly linkStuff isarray@0.0.1 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules as its parent node_modules
+796 verbose linkBins isarray@0.0.1
+797 verbose linkMans isarray@0.0.1
+798 verbose rebuildBundles isarray@0.0.1
+799 info lifecycle isarray@0.0.1~install: isarray@0.0.1
+800 silly lifecycle isarray@0.0.1~install: no script for install, continuing
+801 info lifecycle isarray@0.0.1~postinstall: isarray@0.0.1
+802 silly lifecycle isarray@0.0.1~postinstall: no script for postinstall, continuing
+803 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\readable-stream
+804 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\readable-stream
+805 info lifecycle readable-stream@1.1.14~preinstall: readable-stream@1.1.14
+806 silly lifecycle readable-stream@1.1.14~preinstall: no script for preinstall, continuing
+807 info linkStuff readable-stream@1.1.14
+808 silly linkStuff readable-stream@1.1.14 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules as its parent node_modules
+809 verbose linkBins readable-stream@1.1.14
+810 verbose linkMans readable-stream@1.1.14
+811 verbose rebuildBundles readable-stream@1.1.14
+812 info lifecycle readable-stream@1.1.14~install: readable-stream@1.1.14
+813 silly lifecycle readable-stream@1.1.14~install: no script for install, continuing
+814 info lifecycle readable-stream@1.1.14~postinstall: readable-stream@1.1.14
+815 silly lifecycle readable-stream@1.1.14~postinstall: no script for postinstall, continuing
+816 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\string_decoder
+817 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules\string_decoder
+818 info lifecycle string_decoder@0.10.31~preinstall: string_decoder@0.10.31
+819 silly lifecycle string_decoder@0.10.31~preinstall: no script for preinstall, continuing
+820 info linkStuff string_decoder@0.10.31
+821 silly linkStuff string_decoder@0.10.31 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cheerio\node_modules as its parent node_modules
+822 verbose linkBins string_decoder@0.10.31
+823 verbose linkMans string_decoder@0.10.31
+824 verbose rebuildBundles string_decoder@0.10.31
+825 info lifecycle string_decoder@0.10.31~install: string_decoder@0.10.31
+826 silly lifecycle string_decoder@0.10.31~install: no script for install, continuing
+827 info lifecycle string_decoder@0.10.31~postinstall: string_decoder@0.10.31
+828 silly lifecycle string_decoder@0.10.31~postinstall: no script for postinstall, continuing
+829 info lifecycle cheerio@0.19.0~install: cheerio@0.19.0
+830 silly lifecycle cheerio@0.19.0~install: no script for install, continuing
+831 info lifecycle cheerio@0.19.0~postinstall: cheerio@0.19.0
+832 silly lifecycle cheerio@0.19.0~postinstall: no script for postinstall, continuing
+833 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cliui
+834 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\cliui
+835 info lifecycle cliui@3.2.0~preinstall: cliui@3.2.0
+836 silly lifecycle cliui@3.2.0~preinstall: no script for preinstall, continuing
+837 info linkStuff cliui@3.2.0
+838 silly linkStuff cliui@3.2.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+839 verbose linkBins cliui@3.2.0
+840 verbose linkMans cliui@3.2.0
+841 verbose rebuildBundles cliui@3.2.0
+842 info lifecycle cliui@3.2.0~install: cliui@3.2.0
+843 silly lifecycle cliui@3.2.0~install: no script for install, continuing
+844 info lifecycle cliui@3.2.0~postinstall: cliui@3.2.0
+845 silly lifecycle cliui@3.2.0~postinstall: no script for postinstall, continuing
+846 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\co
+847 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\co
+848 info lifecycle co@4.6.0~preinstall: co@4.6.0
+849 silly lifecycle co@4.6.0~preinstall: no script for preinstall, continuing
+850 info linkStuff co@4.6.0
+851 silly linkStuff co@4.6.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+852 verbose linkBins co@4.6.0
+853 verbose linkMans co@4.6.0
+854 verbose rebuildBundles co@4.6.0
+855 info lifecycle co@4.6.0~install: co@4.6.0
+856 silly lifecycle co@4.6.0~install: no script for install, continuing
+857 info lifecycle co@4.6.0~postinstall: co@4.6.0
+858 silly lifecycle co@4.6.0~postinstall: no script for postinstall, continuing
+859 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\code-point-at
+860 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\code-point-at
+861 info lifecycle code-point-at@1.1.0~preinstall: code-point-at@1.1.0
+862 silly lifecycle code-point-at@1.1.0~preinstall: no script for preinstall, continuing
+863 info linkStuff code-point-at@1.1.0
+864 silly linkStuff code-point-at@1.1.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+865 verbose linkBins code-point-at@1.1.0
+866 verbose linkMans code-point-at@1.1.0
+867 verbose rebuildBundles code-point-at@1.1.0
+868 info lifecycle code-point-at@1.1.0~install: code-point-at@1.1.0
+869 silly lifecycle code-point-at@1.1.0~install: no script for install, continuing
+870 info lifecycle code-point-at@1.1.0~postinstall: code-point-at@1.1.0
+871 silly lifecycle code-point-at@1.1.0~postinstall: no script for postinstall, continuing
+872 verbose rebuild bundle C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\coffee-script
+873 info build C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\coffee-script
+874 info lifecycle coffee-script@1.10.0~preinstall: coffee-script@1.10.0
+875 silly lifecycle coffee-script@1.10.0~preinstall: no script for preinstall, continuing
+876 info linkStuff coffee-script@1.10.0
+877 silly linkStuff coffee-script@1.10.0 has C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules as its parent node_modules
+878 warn prefer global coffee-script@1.10.0 should be installed with -g
+879 verbose linkBins coffee-script@1.10.0
+880 verbose link bins [ { cake: './bin/cake', coffee: './bin/coffee' },
+880 verbose link bins   'C:\\Dev\\SureTrend5\\HygienaWeb\\HygienaWeb\\src\\Hygiena\\node_modules\\.bin',
+880 verbose link bins   false ]
+881 verbose linkMans coffee-script@1.10.0
+882 verbose rebuildBundles coffee-script@1.10.0
+883 verbose stack Error: ENOENT: no such file or directory, chmod 'C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\coffee-script\bin\cake'
+883 verbose stack     at Error (native)
+884 verbose cwd C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena
+885 error Windows_NT 10.0.15063
+886 error argv "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Web\\External\\Node.exe" "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\Web\\External\\node_modules\\npm\\bin\\npm-cli.js" "install"
+887 error node v5.4.1
+888 error npm  v3.3.4
+889 error path C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\coffee-script\bin\cake
+890 error code ENOENT
+891 error errno -4058
+892 error syscall chmod
+893 error enoent ENOENT: no such file or directory, chmod 'C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\node_modules\coffee-script\bin\cake'
+893 error enoent This is most likely not a problem with npm itself
+893 error enoent and is related to npm not being able to find a file.
+894 verbose exit [ -4058, true ]

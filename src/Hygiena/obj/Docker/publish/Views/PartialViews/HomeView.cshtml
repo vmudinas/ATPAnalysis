@@ -1,0 +1,62 @@
+﻿<div id="homeView" class="container-fluid" ng-controller="homeController">
+    <div ng-if="loaded">
+        <div class="row">
+            <div class="col-lg-1 headerLabelOne">
+                <label>{{language.dashboard.caption| capitalize}}</label>
+            </div>
+            <div class="col-lg-2 ">
+                <select  ng-options="o.dashboard for o in failsBy" ng-model="selectedFailedBy" ng-change="updateDashBoard(selectedFailedBy)" class="hygienaSelectDash"></select>
+            </div>
+            <div class="col-lg-1 headerLabel">
+                <label>{{language.period.caption| capitalize}}</label>
+            </div>
+            <div class="col-lg-2">
+              
+                <select ng-model="selectedP" data-ng-options="o.period for o in periods" ng-change="changePeriod(selectedP)" class="hygienaSelectDash" ></select>
+            </div>
+            <div class="col-lg-1 headerLabel">
+                <label>{{language.from.caption| capitalize}}</label>
+            </div>
+            <div class="col-lg-2">
+                <div dx-date-box="dateBox.dateTimeFrom" class="dateSelectorStyle" ></div>
+            </div>
+            <div class="col-lg-1 headerLabel">
+                <label>{{language.to.caption| capitalize}}</label>
+            </div>
+            <div class="col-lg-2">
+                <div dx-date-box="dateBox.dateTimeTo" class="dateSelectorStyle"></div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-sm-3">
+                <label>{{selectedFailedBy.dashboard | capitalize}} </label>
+                <div id="homeViewGrid1" dx-data-grid="failsGridOptions"></div>
+            </div>
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <label>{{language.failsCautionPassByLocation.caption| capitalize}}: {{currentDashBoard}}</label>
+                        <div id="idPieByLocation" dx-pie-chart="chartOptions"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <label>{{language.passCautionFailPeriod.caption| capitalize}}</label>
+                        <div id="idpieByPeriod" dx-pie-chart="chartPeriodOptions"></div>
+                    </div>
+                    <div class="col-sm-4">
+                        <label>{{language.failsForLocation.caption| capitalize}}: {{currentDashBoard}} </label>
+                        <div id="homeViewGrid2" dx-data-grid="failGridOptions"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 trendAnalysisClass">
+                        <label>{{language.trendAnalysisFor.caption| capitalize}}: {{currentDashBoard}}</label>
+                        <div id="idchartLow" dx-chart="trendChartOptions" ng-if="selectedFailedBy.id === dashEnum.dashType.FailsByLoc"></div>
+                        <div id="idchartLow2" dx-chart="trendChartOptions2" ng-if="selectedFailedBy.id === dashEnum.dashType.FailsByPlan"></div>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

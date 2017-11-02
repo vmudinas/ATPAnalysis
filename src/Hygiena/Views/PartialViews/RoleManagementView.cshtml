@@ -1,0 +1,29 @@
+﻿<div id="userManagementView" class=".table-responsive" ng-controller="adminRoleManagementController" ng-init="language != undefined">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <label>{{language.roleManagementTitle.caption| capitalize}}</label>
+            <hr/>
+
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-lg-12">
+
+            <label>{{language.userManagementRoles.caption| capitalize}}</label>
+            <div id="userRoleGrid" dx-data-grid="userRolesGridOptions"></div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-lg-12">
+            <hr/>
+            <label>{{language.userManagementRolesPermissions.caption| capitalize}}</label>
+            <div id="userRolePermissionsGrid" dx-data-grid="userPermissionsGridOptions"></div>
+        </div>
+    </div>
+
+</div>

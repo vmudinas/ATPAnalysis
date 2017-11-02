@@ -1,0 +1,301 @@
+2017-10-25T10:04:49.8506302-07:00 0HL8RPA0AEFME [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 127
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T10:52:02.0904376-07:00 0HL8RQ4CCP10R [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Queryable.AsQueryable(IEnumerable source)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T10:53:33.2968766-07:00 0HL8RQ4CCP10S [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Queryable.AsQueryable(IEnumerable source)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:09:23.1480929-07:00 0HL8RQE2L3771 [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:09:26.6075094-07:00 0HL8RQE2L3772 [FTL] PagedResults Failed: admin (4c14f306)
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Object[]'.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:09:52.9564057-07:00 0HL8RQE2L3773 [FTL] PagedResults Failed: admin (4c14f306)
+System.InvalidCastException: Unable to cast object of type 'System.String' to type 'System.Object[]'.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:10:04.2486398-07:00 0HL8RQE2L3774 [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:28:36.2315752-07:00 0HL8RQOQ9OLRU [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: String was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at DevExtreme.AspNet.Data.Helpers.DataSourceLoadOptionsParser.Parse(DataSourceLoadOptionsBase loadOptions, Func`2 valueSource)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:31:56.7358928-07:00 0HL8RQOQ9OLRV [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: String was not recognized as a valid Boolean.
+   at System.Boolean.Parse(String value)
+   at DevExtreme.AspNet.Data.Helpers.DataSourceLoadOptionsParser.Parse(DataSourceLoadOptionsBase loadOptions, Func`2 valueSource)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:39:20.0915071-07:00 0HL8RQUQ62QNQ [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at DevExtreme.AspNet.Data.Helpers.DataSourceLoadOptionsParser.Parse(DataSourceLoadOptionsBase loadOptions, Func`2 valueSource)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 116
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:49:29.8712358-07:00 0HL8RR4FTCQT8 [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 205
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:50:09.8135525-07:00 0HL8RR4FTCQT9 [FTL] PagedResults Failed: admin (4c14f306)
+System.InvalidCastException: Unable to cast object of type 'System.Collections.Generic.List`1[System.Object]' to type 'System.Object[]'.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 199
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T11:53:37.5056929-07:00 0HL8RR6PN1AQ4 [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Dynamic.Core.Validation.Check.NotNull[T](T value, String parameterName) in C:\Users\azureuser\Documents\Github\System.Linq.Dynamic.Core\src\System.Linq.Dynamic.Core\Validation\Check.cs:line 38
+   at System.Linq.Dynamic.Core.DynamicEnumerableExtensions.ToDynamicArray(IEnumerable source) in C:\Users\azureuser\Documents\Github\System.Linq.Dynamic.Core\src\System.Linq.Dynamic.Core\DynamicEnumerableExtensions.cs:line 36
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 199
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:18:52.7523903-07:00 0HL8RRKT9H09L [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: source
+   at System.Linq.Dynamic.Core.Validation.Check.NotNull[T](T value, String parameterName) in C:\Users\azureuser\Documents\Github\System.Linq.Dynamic.Core\src\System.Linq.Dynamic.Core\Validation\Check.cs:line 38
+   at System.Linq.Dynamic.Core.DynamicEnumerableExtensions.ToDynamicArray(IEnumerable source) in C:\Users\azureuser\Documents\Github\System.Linq.Dynamic.Core\src\System.Linq.Dynamic.Core\DynamicEnumerableExtensions.cs:line 36
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 200
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:31:38.5741999-07:00 0HL8RRS1GVIT4 [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 238
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 220
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:36:29.7127220-07:00 0HL8RRUO9GAAK [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 257
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 239
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:38:37.8234887-07:00 0HL8RRVUF97H3 [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 254
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 236
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:44:45.0080431-07:00 0HL8RS3BT09Q5 [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 256
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 238
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:47:11.2918282-07:00 0HL8RS4NG2N8R [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 256
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 238
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:50:21.2251821-07:00 0HL8RS4NG2N8S [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:50:33.2696409-07:00 0HL8RS4NG2N8T [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account)
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:53:17.4435969-07:00 0HL8RS84JV79B [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 259
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 241
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T12:53:42.5629258-07:00 0HL8RS84JV79C [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 213
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T13:14:17.7733774-07:00 0HL8RSJS9F3OU [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 263
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 245
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T13:14:21.6169438-07:00 0HL8RSJS9F3OV [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 263
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 245
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T13:19:31.1046851-07:00 0HL8RSMPJITUP [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 263
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 245
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T13:31:36.7848898-07:00 0HL8RSTHS6KUG [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 279
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 261
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T13:33:18.3443939-07:00 0HL8RSUG4NR6G [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 279
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 261
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T13:35:36.2266241-07:00 0HL8RSVP7LRBT [FTL] PagedResults Failed: admin (4c14f306)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.GetSort(SortingInfo[] sortingInfo) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 279
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 261
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T13:49:44.5920595-07:00 0HL8RT7M2AE9N [FTL] PagedResults Failed: admin (4c14f306)
+System.InvalidCastException: Unable to cast object of type 'Newtonsoft.Json.Linq.JArray' to type 'System.Object[]'.
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 221
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T14:17:30.5535922-07:00 0HL8RTN6IDB0T [FTL] PagedResults Failed: admin (4c14f306)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'Newtonsoft.Json.Linq.JArray' does not contain a definition for 'fields'
+   at CallSite.Target(Closure , CallSite , Object )
+   at CallSite.Target(Closure , CallSite , Object )
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 231
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T14:28:43.0404310-07:00 0HL8RTTEVGRNC [FTL] PagedResults Failed: admin (4c14f306)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Non-invocable member 'Newtonsoft.Json.Linq.JToken.First' cannot be used like a method.
+   at CallSite.Target(Closure , CallSite , Object )
+   at CallSite.Target(Closure , CallSite , Object )
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 232
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T14:39:06.8266530-07:00 0HL8RU38SCR9A [FTL] PagedResults Failed: admin (4c14f306)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: No overload for method 'Replace' takes '2' arguments
+   at CallSite.Target(Closure , CallSite , Object , String , String )
+   at CallSite.Target(Closure , CallSite , Object , String , String )
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 232
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T14:39:25.5910308-07:00 0HL8RU38SCR9B [FTL] PagedResults Failed: admin (4c14f306)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: No overload for method 'Replace' takes '2' arguments
+   at CallSite.Target(Closure , CallSite , Object , String , String )
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 232
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T14:39:36.7142487-07:00 0HL8RU38SCR9C [FTL] PagedResults Failed: admin (4c14f306)
+Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: No overload for method 'Replace' takes '2' arguments
+   at CallSite.Target(Closure , CallSite , Object , String , String )
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 232
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T16:44:30.0411382-07:00 0HL8S09AVC0GS [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 148
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 191
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T16:44:30.2839914-07:00 0HL8S09AVC0GT [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 148
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-25T16:59:57.8293055-07:00 0HL8S09AVC0GU [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 148
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 191
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T16:59:58.0783710-07:00 0HL8S09AVC0GV [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 148
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-25T17:04:58.3891248-07:00 0HL8S0KP1POIA [FTL] PagedResults Failed: admin (4c14f306)
+System.FormatException: JSON reader was expecting ':' but found '}'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateFindOperation[TProjection](FilterDefinition`1 filter, FindOptions`2 options)
+   at MongoDB.Driver.MongoCollectionImpl`1.FindSync[TProjection](FilterDefinition`1 filter, FindOptions`2 options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.ToCursor(CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.ToList[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoResults(String collectionName, Expression`1 filter, String sort, String filterStr, Int32 skip, Int32 take) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 124
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 205
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T17:05:22.2554754-07:00 0HL8S0KP1POIB [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.FormatException: JSON reader was expecting ':' but found '}'.
+   at MongoDB.Bson.IO.JsonReader.ReadBsonType()
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonArraySerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.BsonDocumentSerializer.DeserializeValue(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.BsonValueSerializerBase`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.BsonDocument.Parse(String json)
+   at MongoDB.Driver.AndFilterDefinition`1.Render(IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateCountOperation(FilterDefinition`1 filter, CountOptions options)
+   at MongoDB.Driver.MongoCollectionImpl`1.Count(FilterDefinition`1 filter, CountOptions options, CancellationToken cancellationToken)
+   at MongoDB.Driver.FindFluent`2.Count(CancellationToken cancellationToken)
+   at Infrastructure.Repository.Repository.GetMongoCount[T](String collectionName, Expression`1 predicate, String filter) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 89
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-25T17:05:33.4902695-07:00 0HL8S0KP1POIC [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 205
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T17:05:33.7470389-07:00 0HL8S0KP1POID [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-25T17:06:05.0144510-07:00 0HL8S0KP1POIE [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 205
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T17:06:05.2734757-07:00 0HL8S0KP1POIF [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-25T17:07:38.4028949-07:00 0HL8S0M8NQ349 [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 205
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T17:07:39.6790927-07:00 0HL8S0M8NQ34A [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-25T17:07:56.3940503-07:00 0HL8S0M8NQ34B [FTL] PagedResults Failed: admin (4c14f306)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 205
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 50
+2017-10-25T17:08:19.1574383-07:00 0HL8S0M8NQ34C [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Infrastructure.Services.DataService.GenerateMongoFilter(DataSourceLoadOptions options) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 154
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 107
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71

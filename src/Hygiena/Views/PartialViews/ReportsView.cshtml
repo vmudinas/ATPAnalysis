@@ -1,0 +1,73 @@
+﻿<div id="reportView" class=".table-responsive" ng-controller="reportsController">
+    <div class="row">
+        <div class="col-lg-3 ddTitle" >
+            <span class="spanTitle">{{language.reportType.caption| capitalize}}</span>
+            <select ng-options="o.report for o in reportTypes" ng-model="reportReportType" ng-change="updateReport(reportReportType)" class="hygienaSelectDash"></select>
+          </div>
+        <div class="col-lg-3 ddTitle" >
+            <span class="spanTitle">{{language.period.caption| capitalize}}</span>
+            <select ng-model="selectedP" data-ng-options="o.period for o in periods" ng-change="changePeriod(selectedP)" class="hygienaSelectDash"></select>
+        </div>
+        <div class="col-lg-3 ddTitle" >
+            <span class="spanTitle">{{language.from.caption| capitalize}}</span>
+            <div dx-date-box="dateBox.dateTimeFrom" class="dateSelectorStyle"></div>
+        </div>
+        <div class="col-lg-3 ddTitle" >
+            <span class="spanTitle">{{language.to.caption| capitalize}}</span>
+            <div dx-date-box="dateBox.dateTimeTo" class="dateSelectorStyle"></div>
+                
+        </div>
+    </div>
+    <hr/>
+    <br />
+    <div id="tabs">
+        <div dx-tabs="{
+                        dataSource: tabs,
+                        bindingOptions: {
+                            selectedIndex: 'selectedTab'
+                        }
+                    }">
+        </div>
+
+    </div>
+    <br />
+
+    <div ng-show="selectedTab==0">
+        <br />
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-10">
+                <div dx-radio-group="pcfTypeGroup.reportType"></div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div dx-radio-group="pcfTypeGroup.changeLayout"></div>
+            </div>
+            <div class="col-lg-2"><button ng-click="printDiv('chartDiv');">Print Report</button></div> 
+        </div>
+        <br/>
+
+        <hr/>
+            <div class="row" id="chartDiv"></div>
+        <br/>
+        <hr/>
+    </div>
+    
+
+    <div ng-show="selectedTab==1">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div id="reportGrid" dx-data-grid="reportGridOptions"></div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+        <div class="loadpanel" dx-load-panel="loadOptions"></div>
+
+
+
+    </div>

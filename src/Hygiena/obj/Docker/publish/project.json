@@ -1,0 +1,82 @@
+{
+  "userSecretsId": "aspnet-UserSecretDemo-79c563d8-751d-48e5-a5b1-d0ec19e5d2b0",
+
+  "dependencies": {
+    "Infrastructure": "1.0.0-*",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.1.0",
+    "Serilog.Extensions.Logging.File": "1.0.1-dev-00008",
+    "Microsoft.Extensions.Configuration.EnvironmentVariables": "1.1.0",
+    "Microsoft.Extensions.Logging": "1.1.0",
+    "Microsoft.Extensions.Logging.Console": "1.1.0",
+    "Microsoft.Extensions.Logging.Debug": "1.1.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions": "1.1.0",
+    "Microsoft.AspNetCore.Authentication.JwtBearer": "1.1.0",
+    "Microsoft.AspNetCore.Routing": "1.1.0",
+    "Microsoft.AspNetCore.Server.IISIntegration": "1.1.0",
+    "Microsoft.AspNetCore.Server.Kestrel": "1.1.0",
+    "Microsoft.AspNetCore.StaticFiles": "1.1.0",
+    "Microsoft.NETCore.App": {
+      "version": "1.1.0",
+      "type": "platform"
+    },
+    "Microsoft.AspNetCore.Mvc": "1.1.1",
+    "Microsoft.AspNetCore.Diagnostics": "1.1.0-preview1-final",
+    "Microsoft.AspNetCore.NodeServices": "1.1.0" 
+
+  },
+
+  "tools": {
+    "BundlerMinifier.Core": "2.4.337",
+    "Microsoft.AspNetCore.Server.IISIntegration.Tools": "1.1.0-preview4-final",
+    "Microsoft.Extensions.SecretManager.Tools": {
+      "version": "1.1.0-preview4-final",
+      "imports": "portable-net45+win8+dnxcore50"
+    }
+  },
+
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.1.1"
+        }
+      },
+      "imports": "dotnet5.6"
+    }
+  },
+
+
+  "buildOptions": {
+    "emitEntryPoint": true,
+    "preserveCompilationContext": true
+  },
+  "runtimes": {
+    "win7-x64": {},
+    "win10-x64": {},
+    "osx.10.10-x64": {},
+    "osx.10.11-x64": {},
+    "debian.8-x64": {},
+    "ubuntu.14.04-x64": {}
+  },
+
+
+  "publishOptions": {
+    "include": [
+      "wwwroot",
+      "node_modules",
+      "Views",
+      "Areas/**/Views",
+      "appsettings.json",
+      "project.json",
+      "web.config"
+    ]
+  },
+
+  "scripts": {
+    "prepublish": ["bower install", "dotnet bundle"],
+    "postpublish": [
+      "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%"
+    ]
+  }
+}

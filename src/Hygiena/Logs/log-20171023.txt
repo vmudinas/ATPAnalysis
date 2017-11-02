@@ -1,0 +1,21 @@
+2017-10-23T15:54:06.6340156-07:00 0HL8QD3RGMVOI [FTL] GetPagedCountResults Failed: admin (f22b8456)
+MongoDB.Driver.MongoCommandException: Command aggregate failed: '$group' is not supported.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 108
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-23T16:45:29.7540980-07:00 0HL8QD3RGMVOJ [FTL] GetPagedCountResults Failed: admin (f22b8456)
+MongoDB.Driver.MongoCommandException: Command aggregate failed: '$group' is not supported.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 108
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71
+2017-10-23T16:45:30.7325935-07:00 0HL8QD3RGMVOK [FTL] GetPagedCountResults Failed: admin (f22b8456)
+MongoDB.Driver.MongoCommandException: Command aggregate failed: '$group' is not supported.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 108
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 71

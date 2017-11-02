@@ -1,0 +1,329 @@
+﻿html { height: 100%; }
+
+body { min-height: 100%; }
+
+.roleCheckBox {
+    height: 25px;
+    width: 25px;
+}
+
+.bold { font-weight: bold; }
+.left { text-align: left; }
+.right { text-align: right; }
+.center { text-align: center; }
+.nowrap { white-space: nowrap; }
+.pass { background: url(Pass.gif) no-repeat; }
+.caution { background: url(Caution.gif) no-repeat; }
+.fail { background: url(Fail.gif) no-repeat; }
+
+.hygienaDatePickerTo {
+    bottom: 5px;
+    height: 30px;
+    position: relative !important;
+    width: 191px;
+}
+
+.hygienaDatePickerFrom {
+    bottom: 5px;
+    height: 30px;
+    position: relative !important;
+    width: 191px;
+}
+
+.homeLb { padding-right: 5px; }
+
+.hygienaSelectDash {
+    height: 30px;
+    width: 185px;
+}
+
+.hygienaSelectPeriod {
+    height: 30px;
+    width: 185px;
+}
+
+.dateSelectorStyle {
+    height: 30px;
+    width: 185px !important;
+}
+
+.titleRight { float: right; }
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+/* Result View*/
+
+#resultGrid {
+    position: relative;
+    top: 25px;
+    width: 100%;
+}
+
+/* Highlighting rules for nav menu items */
+
+.navbar-nav > li.active > button, .navbar-nav > li.active > div {
+    background-color: #ffffff !important;
+    color: darkblue;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    outline: none !important;
+}
+
+.navbar-nav > li > div {
+    padding-top: 8px !important;
+}
+
+ul.navbar-right > li > button {
+    margin: 4px 0 0 0 !important;
+}
+
+.blue { color: darkblue; }
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse {
+    background-color: #4189C7;
+    border: none !important;
+    color: white;
+}
+
+.navbar-inverse .navbar-brand { color: white !important; }
+
+a:hover { color: black !important; }
+
+.registerContainer, .loginContainer { padding: 5px; }
+
+.trendAnalysisContainer { height: 50px; }
+
+.headerLabel {
+    left: 22px;
+    padding-top: 8px;
+    position: relative;
+}
+
+.headerLabelOne {
+    left: 10px;
+    padding-top: 8px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.alignCenter { text-align: center; }
+
+.firstPageTitleLarge {
+    color: #333333;
+    font-size: xx-large;
+}
+
+.firstPageTitleMedium {
+    color: #808080;
+    font-size: medium;
+}
+
+.firstPageTitleSmall {
+    color: #808080;
+    font-size: small;
+}
+
+.firstPageLineHeight { line-height: 20px; }
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus { background-color: silver !important; }
+
+.adminMenu {
+    padding: 5px;
+    padding-top: 18px;
+}
+
+.hygienaFlag {
+    padding: 5px;
+    padding-left: 21px;
+    padding-top: 37px;
+}
+
+.worldimg {
+    background-image: url('../css/Distributor_Map_2014.jpg');
+    height: 50px;
+    width: 100%;
+}
+
+#table-wrapper { position: relative; }
+
+#table-scroll {
+    height: 450px;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+#table-wrapper table { width: 100%; }
+
+#table-wrapper table * {
+    background: white;
+    border: 1px solid #ddd;
+    color: black;
+}
+
+#table-wrapper table thead th .text {
+    border: 1px solid red;
+    height: 20px;
+    position: absolute;
+    top: -20px;
+    width: 35%;
+    z-index: 2;
+}
+
+.deleteClass,
+.editClass {
+    border: none !important;
+    color: #337ab7 !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.noTxtOutline {
+    border: none !important;
+    outline: none;
+    width: 100%;
+}
+
+.languageTable {
+    left: 50px;
+    min-width: 800px;
+    position: relative;
+    width: 80% !important;
+}
+
+.firstPageClass {
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-left: 50px;
+    width: 80%;
+}
+
+#unitTokenGrid { width: 1350px; }
+
+.registeredClass { color: green; }
+
+.pendingClass { color: orange; }
+
+@media (min-width: 1400px) {
+    .container { width: 1385px; }
+}
+
+@media (min-width: 1500px) {
+    .container { width: 1480px; }
+}
+
+.mainTitle {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    margin-right: 28px;
+}
+
+/*.hygienaMenu,.hygienaMenuSub {
+    padding: 5px;
+    padding-top: 18px;
+}*/
+
+.dropdown-menu { background-color: #4189C7; }
+
+#navbar .btn-link {
+    border: none !important;
+    color: white;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    height: 40px;
+    margin: 20px 2px 0 2px;
+    padding: 2px 12px 0 12px;
+    text-decoration: none !important;
+}
+
+#navbar .btn-link:hover { color: darkblue; }
+
+#idchartLow {
+    bottom: 15px;
+    position: relative;
+}
+
+.trendAnalysisClass {
+    bottom: 25px;
+    position: relative;
+}
+
+#reportView,
+#homeView,
+#loginView,
+#unitTokenGrid,
+#userLanguageView,
+#userManagementView,
+#languageView,
+#resultsView,
+#unitTokenGeneratorView,
+#locationsView,
+#plansView,
+#scheduleEmailedReportsView,
+.containerView {
+    left: 20px;
+    position: absolute;
+    top: 80px;
+    width: 95%;
+}
+
+
+#vector-map {
+    height: 420px;
+    width: 100%;
+    display: block;
+}
+.inline {
+    display: -webkit-inline-box;
+    border: 1px solid red;
+    margin: 10px;
+}
+.pieTest {
+    overflow: visible !important;
+}
+.loadpanel {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+}
+.generatedReport {
+    position:absolute;
+    top:250px;
+
+}
+@media print {
+    body * {
+        visibility: hidden;
+        margin: 1.6cm;
+    }
+    @page {
+        margin: 0;
+        size: auto;
+        page-break-before: always;
+    }
+    #dataviz-container, #dataviz-container * {
+        visibility: visible;
+
+    }
+    #dataviz-container {
+        left: 0px;
+        top: 0px;
+        position: absolute;
+    }
+}
+
+@page {
+    margin: 0;
+    size: auto;
+    page-break-before: always;
+}

@@ -1,0 +1,318 @@
+﻿@using System.Threading.Tasks
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hygiena</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="">
+    <meta name="author" content="Hygiena">
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link href="~/lib/devextreme/css/dx.common.css" rel="stylesheet"/>
+    <link href="~/lib/devextreme/css/dx.light.css" rel="stylesheet"/>
+    <link href="~/css/flag-icon.css" rel="stylesheet"/>
+
+    <script src="~/js/Site.js"></script>
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <script src="~/js/IE11/objectAssignPolyfill.js"></script>
+    <script src="~/lib/tether/dist/js/tether.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/underscore/underscore.js"></script>
+
+    <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="~/lib/angular-route/angular-route.min.js"></script>
+    <script src="~/lib/angular-sanitize/angular-sanitize.js"></script>  
+
+    <script src="~/lib/cldrjs/dist/cldr.js"></script>
+    <script src="~/lib/cldrjs/dist/cldr/event.js"></script>
+    <script src="~/lib/cldrjs/dist/cldr/supplemental.js"></script>
+    <script src="~/lib/cldrjs/dist/cldr/unresolved.js"></script>
+
+    <script src="~/lib/globalize/dist/globalize.js"></script>
+    <script src="~/lib/globalize/dist/globalize/number.js"></script>
+    <script src="~/lib/globalize/dist/globalize/date.js"></script>
+    <script src="~/lib/globalize/dist/globalize/currency.js"></script>
+
+
+    <script type="text/javascript" src="~/lib/jszip/dist/jszip.min.js"></script>
+    <script type="text/javascript" src="~/lib/devextreme/js/dx.all.js"></script>
+    <script type="text/javascript" src="~/lib/devextreme/js/dx.aspnet.mvc.js"></script>
+
+
+    @*Custom Language*@
+    <script type="text/javascript" src="~/js/app/language/localization/dx.messages.en.js"></script>
+    <script type="text/javascript" src="~/js/app/language/localization/dx.messages.es.js"></script>
+    <script type="text/javascript" src="~/js/app/language/localization/dx.messages.de.js"></script>
+
+
+    <script src="~/lib/devextreme/js/vectormap-data/africa.js"></script>
+    <script src="~/lib/devextreme/js/vectormap-data/canada.js"></script>
+    <script src="~/lib/devextreme/js/vectormap-data/eurasia.js"></script>
+    <script src="~/lib/devextreme/js/vectormap-data/europe.js"></script>
+    <script src="~/lib/devextreme/js/vectormap-data/usa.js"></script>
+    <script src="~/lib/devextreme/js/vectormap-data/world.js"></script>
+
+    <script type="text/javascript" src="~/lib/moment/moment.js"></script>
+    <script type="text/javascript" src="~/lib/moment/min/locales.js"></script>
+
+    <link rel="stylesheet" href="~/css/font-awesome.css"/>
+    
+    <link href="~/lib/c3/c3.css" rel="stylesheet" />
+    <link href="~/lib/print.js/dist/print.min.css" rel="stylesheet" />
+    <script src="~/lib/d3/d3.js"></script>
+    <script src="~/lib/c3/c3.js"></script>
+    <script src="~/lib/print.js/dist/print.min.js"></script>
+
+    <script src="~/js/app/app.js"></script>
+    <script src="~/js/app/services/gridDefinitionService.js"></script>
+    <script src="~/js/app/services/languageService.js"></script>
+    <script src="~/js/app/services/adminService.js"></script>
+    <script src="~/js/app/services/homeService.js"></script>
+    <script src="~/js/app/services/locationsService.js"></script>
+    <script src="~/js/app/services/plansService.js"></script>
+    <script src="~/js/app/services/reportsService.js"></script>
+    <script src="~/js/app/services/resultsService.js"></script>
+    <script src="~/js/app/services/usersService.js"></script>
+    <script src="~/js/app/services/unitsService.js"></script>
+    <script src="~/js/app/services/tokenService.js"></script>
+    <script src="~/js/app/controllers/navController.js"></script>
+    <script src="~/js/app/controllers/languageController.js"></script>
+    <script src="~/js/app/controllers/adminController.js"></script>
+    <script src="~/js/app/controllers/homeController.js"></script>
+    <script src="~/js/app/controllers/locationsController.js"></script>
+    <script src="~/js/app/controllers/plansController.js"></script>
+    <script src="~/js/app/controllers/reportsController.js"></script>
+    <script src="~/js/app/controllers/resultController.js"></script>
+    <script src="~/js/app/controllers/adminRegistrationController.js"></script>
+    <script src="~/js/app/controllers/unitsController.js"></script>
+    <script src="~/js/app/controllers/userLanguageController.js"></script>
+    <script src="~/js/app/controllers/adminUserManagementController.js"></script>
+    <script src="~/js/app/controllers/adminRoleManagementController.js"></script>
+    <script src="~/js/app/controllers/scheduleEmailedReportsController.js"></script>
+    <script src="~/js/app/services/scheduleEmailedReportsService.js"></script>
+    <script src="~/js/app/controllers/reportGeneratorControler.js"></script>
+    <script src="~/js/app/controllers/tokenController.js"></script>   
+    <script src="~/lib/spin.js/spin.js"></script>
+</head>
+
+<body ng-app="app">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid" ng-controller="navController" ng-init="language != undefined">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a asp-area="" asp-controller="Navigation" asp-action="MainView">
+                <span class="navbar-brand">{{language.systemTitle.caption| capitalize}}</span>
+            </a>
+
+
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <ul class="nav navbar-nav">
+                    <li ng-class="{'active': selectedMenu == 'home'}">
+
+                        <button type="button" class="btn btn-link" ng-click="go('/home',@User.IsInRole("homeViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("homeViewEnabled").ToString().ToLower() } ">
+
+                            <span ng-class="{'blue': selectedMenu == 'home'}"><i class="fa fa-home fa-lg" aria-hidden="true"></i> {{language.home.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': selectedMenu == 'result'}">
+                        <button type="button" class="btn btn-link" ng-click="go('/result',@User.IsInRole("resultViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("resultViewEnabled").ToString().ToLower() } ">
+
+                            <span ng-class="{'blue': selectedMenu == 'result'}"><i class="fa fa-list fa-lg" aria-hidden="true"></i> {{language.results.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active':  selectedMenu == 'locations'}">
+                        <button type="button" class="btn btn-link" ng-click="go('/locations',@User.IsInRole("locationsViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("locationsViewEnabled").ToString().ToLower() } ">
+                            <span ng-class="{'blue':  selectedMenu == 'locations'}">
+                                <i class="fa fa-globe  fa-lg" aria-hidden="true"></i>&nbsp;
+                                {{language.locations.caption| capitalize}}
+                            </span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': selectedMenu == 'plans'}">
+                        <button type="button" class="btn btn-link" ng-click="go('/plans',@User.IsInRole("plansViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("plansViewEnabled").ToString().ToLower() } ">
+                            <span ng-class="{'blue': selectedMenu == 'plans'}"><i class="fa fa-columns  fa-lg" aria-hidden="true"></i> {{language.plans.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': selectedMenu == 'units'}">
+                        <button type="button" class="btn btn-link" ng-click="go('/units',@User.IsInRole("unitViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("unitViewEnabled").ToString().ToLower() } ">
+                            <span ng-class="{'blue': selectedMenu == 'units'}"><i class="fa fa-columns  fa-lg" aria-hidden="true"></i> {{language.units.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': selectedMenu == 'reports'}">
+                        <button type="button" class="btn btn-link" ng-click="go('/reports',@User.IsInRole("reportsViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("reportsViewEnabled").ToString().ToLower() } ">
+                            <span ng-class="{'blue': selectedMenu == 'reports'}"><i class="fa fa-line-chart  fa-lg" aria-hidden="true"></i> {{language.reports.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li id="adminTab" ng-class="{'active': selectedMenu == 'admin'}">
+                        <div class="btn btn-link" data-toggle="dropdown">
+                            <span ng-class="{'blue': selectedMenu == 'admin'}">
+                                <i class="fa fa-server  fa-lg" aria-hidden="true"></i>
+                                {{language.admin.caption| capitalize}}
+                            </span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li ng-class="{'active':  selectedAdminMenu == 'userManagement'}">
+                                <button type="button" class="btn btn-link" ng-click="go('/userManagement',@User.IsInRole("adminUserManagementViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminUserManagementViewEnabled").ToString().ToLower() } ">
+                                    <span ng-class="{'blue':  selectedAdminMenu == 'userManagement'}">
+                                        <i class="fa fa-user  fa-lg" aria-hidden="true"></i>
+                                        {{language.usersManagement.caption}}
+                                    </span>
+                                </button>
+
+                            </li>
+                            <li ng-class="{'active': selectedAdminMenu == 'roleManagement'}">
+                                <button type="button" class="btn btn-link" ng-click="go('/roleManagement',@User.IsInRole("adminRoleManagementViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminRoleManagementViewEnabled").ToString().ToLower() } ">
+                                    <span ng-class="{'blue':  selectedAdminMenu == 'roleManagement'}">
+                                        <i class="fa fa-users  fa-lg" aria-hidden="true"></i>
+                                        {{language.roleManagement.caption}}
+                                    </span>
+                                </button>
+                            </li>
+
+                            <li ng-class="{'active': selectedAdminMenu == 'adminunit'}">
+                                <button type="button" class="btn btn-link" ng-click="go('/adminunit',@User.IsInRole("adminUnitViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminUnitViewEnabled").ToString().ToLower() } ">
+                                    <span ng-class="{'blue':  selectedAdminMenu == 'adminunit'}">
+                                        <i class="fa fa-mobile  fa-lg" aria-hidden="true"></i>
+                                        {{language.tokenRegistration.caption| capitalize}}
+                                    </span>
+                                </button>
+                            </li>
+                            <li ng-class="{'active': selectedAdminMenu == 'scheduleEmailedReports'}">
+
+                                <button type="button" class="btn btn-link" ng-click="go('/scheduleEmailedReports',@User.IsInRole("canScheduleEmail").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("canScheduleEmail").ToString().ToLower() } ">
+                                    <span ng-class="{'blue':  selectedAdminMenu == 'scheduleEmailedReports'}">
+                                        <i class="fa fa-paper-plane  fa-lg" aria-hidden="true"></i>
+                                        {{language.scheduleEmailedReports.caption}}
+
+                                    </span>
+                                </button>
+
+                            </li>
+                            <li ng-class="{'active': selectedAdminMenu == 'userLangauge'}">
+
+                                <button type="button" class="btn btn-link" ng-click="go('/userLangauge',@User.IsInRole("adminUserLanguageViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminUserLanguageViewEnabled").ToString().ToLower() } ">
+                                    <span ng-class="{'blue':  selectedAdminMenu == 'userLangauge'}">
+                                        <i class="fa fa-language  fa-lg" aria-hidden="true"></i>
+                                        {{language.userslanguage.caption| capitalize}}
+                                    </span>
+                                </button>
+
+                            </li>
+                            <li ng-class="{'active': selectedAdminMenu == 'tokenGenerator'}">
+
+                                <button type="button" class="btn btn-link" ng-click="go('/tokenGenerator','true')"  >
+                                
+                                        <i class="fa fa-paper-plane  fa-lg" aria-hidden="true"></i>
+                                        {{language.hygienaOnly.caption| capitalize}} 
+                      
+                                </button>
+
+                            </li>
+                            @if (User.Identity.Name.ToLower().Equals("admin") || User.Identity.Name.ToLower().Equals("jbolda"))
+                            {
+                                <li ng-class="{'active': selectedAdminMenu == 'language'}">
+
+                                    <button type="button" class="btn btn-link" ng-click="go('/language',@User.IsInRole("languageViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("languageViewEnabled").ToString().ToLower() } ">
+                                        <span ng-class="{'blue':  selectedAdminMenu == 'language'}">
+                                            <i class="fa fa-language  fa-lg" aria-hidden="true"></i>
+                                            {{language.hygienaOnly.caption| capitalize}} {{language.language.caption| capitalize}}
+                                        </span>
+                                    </button>
+
+                                </li>
+                            }
+                        </ul>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-class="{'active': selectedMenu =='manage'}">
+
+                        <button type="button" class="btn btn-link" ng-click="go('/manage',@User.IsInRole("userManagementEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("userManagementEnabled").ToString().ToLower() } ">
+                            <span ng-class="{'blue': selectedMenu =='manage'}"> {{language.hello.caption| capitalize}} @UserManager.GetUserName(User)</span>
+
+                        </button>
+
+                    </li>
+                    <li class="dropdown language-selector">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                            <img ng-src="{{selectedLang }}" height="26" width="26" alt="" class="flagImage"/>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li ng-click="selectLanguage('css/flag-uk.png','English')">
+                                <a>
+                                    <img src="~/css/flag-uk.png" alt=""/>
+                                    <span>{{english}}</span>
+                                </a>
+                            </li>
+                            <li ng-click="selectLanguage('css/flag-es.png','Spanish')">
+                                <a>
+                                    <img src="~/css/flag-es.png" alt=""/>
+                                    <span>{{spanish}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Navigation" asp-action="NavigateLogOff">{{language.logoff.caption| capitalize}}</a>
+
+                    </li>
+                </ul>
+            }
+            else
+            {
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a asp-area="" asp-controller="Account" asp-action="Register">{{language.register.caption| capitalize}}</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Account" asp-action="Login">{{language.login.caption| capitalize}}</a>
+                    </li>
+                    <li class="dropdown language-selector">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                            <img ng-src="{{selectedLang }}" height="26" width="26" alt=""/>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li ng-click="selectLanguage('css/flag-uk.png','English')">
+                                <a href="#">
+                                    <img src="~/css/flag-uk.png" alt=""/>
+                                    <span>{{english}}</span>
+                                </a>
+                            </li>
+                            <li ng-click="selectLanguage('css/flag-es.png','Spanish')">
+                                <a href="#">
+                                    <img src="~/css/flag-es.png" alt=""/>
+                                    <span>{{spanish}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            }
+
+
+        </div>
+    </div>
+</nav>
+
+@RenderBody()
+
+@RenderSection("scripts", false)
+</body>
+</html>

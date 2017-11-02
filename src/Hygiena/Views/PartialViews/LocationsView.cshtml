@@ -1,0 +1,15 @@
+﻿<div id="locationsView" class=".table-responsive" ng-controller="locationsController" ng-init="language != undefined">
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <label>{{language.locations.caption| capitalize}}</label>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="locationsGrid" dx-data-grid="locationsGridOptions"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+2017-08-16T15:23:43.7644362-07:00 0HL74ULQ75TMR [FTL] admin generateReport (060e46e2)
+MailKit.Net.Smtp.SmtpCommandException: 4.7.0 Temporary server error. Please try again later. PRX5 NextHop: pod51041ehf.outlook.com [SN1NAM01FT010.eop-nam01.prod.protection.outlook.com]
+   at MailKit.Net.Smtp.SmtpClient.Data(FormatOptions options, MimeMessage message, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.Send(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.Send(FormatOptions options, MimeMessage message, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.MailTransport.Send(MimeMessage message, CancellationToken cancellationToken, ITransferProgress progress)
+   at Infrastructure.UserModel.Services.AuthMessageSender.SendEmail(String smtpServer, Int32 smtpServerPort, MimeMessage emailMsg, String adminEmail, String fromPassword) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\UserModel\Services\AuthMessageSender.cs:line 93
+   at Infrastructure.UserModel.Services.AuthMessageSender.SendHtmlEmailAsync(List`1 email, String subject, String pathToFile, String adminUserName, String adminEmail, String fromPassword, String smtpServer, Int32 smtpServerPort) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\UserModel\Services\AuthMessageSender.cs:line 73
+   at Infrastructure.UserModel.Services.AuthMessageSender.SendHtmlEmailAsync(String email, String subject, String pathToFile, String adminUserName, String adminEmail, String fromPassword, String smtpServer, Int32 smtpServerPort) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\UserModel\Services\AuthMessageSender.cs:line 25
+   at Infrastructure.Services.DataService.RunNodeReport(DateTime fromDate, DateTime toUtc, String userName, String reportType, String reportTitle) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceNode.cs:line 41
+   at Hygiena.Controllers.api.ReportsController.EmailReport(String userName, String title, String reportType, String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 40

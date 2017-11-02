@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  suretrend5:
+    image: suretrend5
+    build:
+      context: ./SureTrend5
+      dockerfile: Dockerfile
+
+  hygiena:
+    image: hygiena
+    build:
+      context: ./src/Hygiena
+      dockerfile: Dockerfile

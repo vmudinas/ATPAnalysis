@@ -1,0 +1,65 @@
+﻿<div id="languageView" class=".table-responsive" ng-controller="languageController" ng-init="language != undefined">
+
+
+    <form class="form-horizontal langFormClass" role="form" ng-submit="addRow()">
+        <div class="row">
+            <label class="col-md-4 control-label text-nowrap">Logical Value</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" name="name"
+                       ng-model="logicalName" ng-change="removeSpace()" ng-disabled="logicalNameDisabled"/>
+            </div>
+            <div class="col-md-2">
+                <input type="submit" value="Add" class="btn-sm btn-primary" ng-show="showAddBtn()"/>
+            </div>
+        </div>
+
+        <hr/>
+        <div class="row">
+            <label class="col-md-4 control-label text-nowrap">Select Language</label>
+            <div class="col-md-6">
+                <div dx-select-box="selectBox.simple" dx-select-value="English"></div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn-sm btn-primary" ng-show="saveAddBtn" ng-click="saveBtn()">Save</button>
+            </div>
+        </div>
+    </form>
+    <hr/>
+    <div class="row">
+        <div class="col-md-10"></div>
+        <div class="col-md-2">
+            <button class="btn-sm btn-primary" ng-click="resetBtn()">Reset</button>
+        </div>
+    </div>
+
+    <hr/>
+    <div id="table-wrapper">
+        <div id="table-scroll" class="adminLanguageGrid">
+            <table class="table languageTable">
+                <tr>
+                    <th>Logic Name</th>
+                    <th>Caption</th>
+                    <th>Tool-tip</th>
+                    <th></th>
+                </tr>
+                <tr ng-repeat="name in logicalNames | filter:{logicName:logicalName}">
+
+                    <td>
+                        {{name.logicName}}
+                    </td>
+                    <td class="{{name.logicName}}caption">
+                        <input class="noTxtOutline" type="text" ng-model="languageForEdit[name.logicName].caption" ng-change="onChange(name.logicName,'caption')"/>
+                    </td>
+                    <td class="{{name.logicName}}tooltip">
+                        <input class="noTxtOutline" type="text" ng-model="languageForEdit[name.logicName].tooltip" ng-change="onChange(name.logicName,'tooltip')"/>
+                    </td>
+
+                    <td>
+                        <a class="deleteClass dx-link dx-link-delete" ng-click="removeLogicName(name.logicName)">Delete</a>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

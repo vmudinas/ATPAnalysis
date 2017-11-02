@@ -1,0 +1,524 @@
+﻿@namespace xlink 'http://www.w3.org/1999/xlink';
+
+html {
+    height: 100%;
+    min-height: 100%;
+    overflow-y: visible;
+}
+
+/*.container-fluid {
+    height: 100vh !important;
+}*/
+
+
+body {
+    overflow: visible;
+}
+
+.roleCheckBox {
+    height: 25px;
+    width: 25px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.pass {
+    background: url(Pass.gif) no-repeat;
+}
+
+.caution {
+    background: url(Caution.gif) no-repeat;
+}
+
+.fail {
+    background: url(Fail.gif) no-repeat;
+}
+
+.hygienaDatePickerTo {
+    bottom: 5px;
+    height: 30px;
+    position: relative !important;
+    width: 210px;
+}
+
+.hygienaDatePickerFrom {
+    bottom: 5px;
+    height: 30px;
+    position: relative !important;
+    width: 210px;
+}
+
+.homeLb {
+    padding-right: 5px;
+}
+
+.hygienaSelectDash {
+    height: 30px;
+    width: 210px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.hygienaSelectPeriod {
+    height: 30px;
+    width: 210px;
+}
+
+.dateSelectorStyle {
+    height: 30px;
+    width: 210px !important;
+    position: relative;
+    left: 0px;
+}
+
+.titleRight {
+    float: right;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+/* Result View*/
+
+#resultGrid {
+    position: relative;
+    top: 25px;
+    width: 100%;
+}
+
+/* Highlighting rules for nav menu items */
+
+#adminTab li.active,
+.navbar-nav > li.active > button, .navbar-nav > li.active > div,
+#adminTab li:hover {
+    -webkit-border-radius: 3px 3px 0 0;
+    background-color: white !important;
+    border-radius: 3px 3px 0 0;
+    color: darkblue;
+    outline: none !important;
+}
+
+.navbar-nav > li > div {
+    padding-top: 8px !important;
+}
+
+
+.blue {
+    color: darkblue;
+    /* position: relative; */
+    /* width: 100%; */
+    /* float: left; */
+    /* display: table-row-group; */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a, .navbar-inverse {
+    background-color: #4189C7;
+    border: none !important;
+    color: white;
+}
+
+    .navbar-inverse .navbar-brand {
+        color: white !important;
+    }
+
+a:hover {
+    color: black !important;
+}
+
+.registerContainer, .loginContainer {
+    padding: 5px;
+}
+
+.trendAnalysisContainer {
+    height: 50px;
+}
+
+/*.headerLabel {
+   
+    padding-top: 8px;
+    position: relative;
+}
+
+.headerLabelOne {
+  
+    padding-top: 8px;
+    position: relative;
+    margin-bottom: 12px;
+}*/
+
+.alignCenter {
+    text-align: center;
+}
+
+.firstPageTitleLarge {
+    color: #333333;
+    font-size: xx-large;
+}
+
+.firstPageTitleMedium {
+    color: #808080;
+    font-size: medium;
+}
+
+.firstPageTitleSmall {
+    color: #808080;
+    font-size: small;
+}
+
+.firstPageLineHeight {
+    line-height: 20px;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: silver !important;
+}
+
+.adminMenu {
+    padding: 5px;
+    padding-top: 18px;
+}
+
+.hygienaFlag {
+    padding: 5px;
+    padding-left: 21px;
+    padding-top: 37px;
+}
+
+.worldimg {
+    background-image: url('../css/Distributor_Map_2014.jpg');
+    height: 50px;
+    width: 100%;
+}
+
+
+.deleteClass,
+.editClass {
+    border: none !important;
+    color: #337ab7 !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.noTxtOutline {
+    border: none !important;
+    outline: none;
+    width: 100%;
+}
+
+.languageTable {
+    left: 50px;
+    min-width: 800px;
+    position: relative;
+    width: 80% !important;
+}
+
+
+
+#unitTokenGrid {
+    width: 100%;
+}
+
+.registeredClass {
+    color: green;
+}
+
+.pendingClass {
+    color: orange;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1385px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .container {
+        width: 1480px;
+    }
+}
+
+.mainTitle {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+    margin-right: 28px;
+}
+
+/*.hygienaMenu,.hygienaMenuSub {
+    padding: 5px;
+    padding-top: 18px;
+}*/
+
+.dropdown-menu {
+    background-color: #4189C7;
+}
+
+#navbar .btn-link {
+    border: none !important;
+    color: white;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    height: 45px;
+    line-height: 28.4px;
+    margin: 12px 2px 0 2px;
+    padding: 2px 12px 0 12px;
+    text-decoration: none !important;
+    width: 100%;
+    /* float: right; */
+    text-align: left;
+    /* float: left; */
+}
+
+    #navbar .btn-link:hover {
+        color: darkblue;
+    }
+
+/*#idchartLow {
+        position: relative;
+    bottom: 0px;
+    top: 5px;
+}**/
+
+.trendAnalysisClass {
+    bottom: 25px;
+    position: relative;
+}
+
+/*#reportView,
+#homeView,
+#loginView,
+#unitTokenGrid,
+#userLanguageView,
+#userManagementView,
+#languageView,
+#resultsView,
+#unitTokenGeneratorView,
+#locationsView,
+#plansView,
+#scheduleEmailedReportsView*/
+
+.viewContainer {
+    min-width: 300px;
+    /*height: 950px;*/
+    overflow: visible;
+    width: 100%;
+    /* margin: 5px;
+   position:absolute;
+   top:50px;
+   padding:50px;*/
+}
+
+#vector-map {
+    display: block;
+    height: 420px;
+    width: 100%;
+}
+
+.inline {
+    border: 1px solid red;
+    display: -webkit-inline-box;
+    margin: 10px;
+}
+
+.pieTest {
+    overflow: visible !important;
+}
+
+.loadpanel {
+    left: 50% !important;
+    position: fixed !important;
+    top: 50% !important;
+}
+
+.generatedReport {
+    position: absolute;
+    top: 250px;
+}
+
+/*@media print {
+    body * {
+        margin: 1.6cm;
+        visibility: hidden;
+    }
+
+    @page {
+        margin: 0;
+        page-break-before: always;
+        size: auto;
+    }
+
+    #dataviz-container, #dataviz-container * { visibility: visible; }
+
+    #dataviz-container {
+        left: 0px;
+        position: absolute;
+        top: 0px;
+    }
+}*/
+
+@page {
+    margin: 0;
+    page-break-before: always;
+    size: auto;
+}
+
+.text-nowrap {
+    float: left;
+    white-space: nowrap;
+}
+
+/*.fill {
+    min-height: 100%;
+    height: 100%;
+}*/
+
+/*.dx-scrollable-container {
+    height: auto;
+}*/
+
+.adminLanguageGrid {
+    height: 50vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+}
+
+.manageContainer {
+    margin: 20px;
+    position: relative;
+    top: 60px;
+}
+
+li a {
+    cursor: pointer;
+}
+
+.flagImage {
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+}
+
+.navbar-btn {
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+        .navbar-collapse.collapse {
+            display: none !important;
+        }
+
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+
+        .navbar-nav > li {
+            float: none;
+        }
+
+            .navbar-nav > li > a {
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+
+    .collapsing {
+        overflow: hidden !important;
+    }
+}
+/*#Monday, #Sunday, #Tuesday, #Wednesday, #Thursday, #Friday, #Saturday,
+#January, #February, #March, #April, #May, #June, #July, #August, #September, #October, #November, #December,
+#_2000, #_2001, #_2002, #_2003, #_2004, #_2005, #_2006, #_2007, #_2008, #_2009, #_2010, #_2011,
+#_2012, #_2013, #_2014, #_2015, #_2016, #_2017, #_2018, #_2019, #_2020, #_2021, #_2022,
+#_2023, #_2024, #_2025, #_2026, #_2027, #_2028, #_2029 {
+    display: inline;
+}*/
+
+
+#chartDiv {
+    margin: 25px;
+    padding: 25px;
+}
+
+#Summary {
+    padding-left: 25%;
+}
+
+.ddTitle {
+    display: inline-flex;
+}
+
+.spanTitle {
+    width: 80px;
+    text-align: right;
+    margin: 0px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.floatRightClass {
+    float: right;
+}
+
+.classUnderline {
+    text-decoration: underline;
+}
+.homeColumnHeight {
+
+    min-height:350px !important; 
+}

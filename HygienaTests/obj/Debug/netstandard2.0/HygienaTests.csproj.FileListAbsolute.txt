@@ -1,0 +1,13 @@
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\bin\Debug\netstandard2.0\HygienaTests.deps.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\bin\Debug\netstandard2.0\HygienaTests.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\bin\Debug\netstandard2.0\HygienaTests.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\bin\Debug\netstandard2.0\Hygiena.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\bin\Debug\netstandard2.0\Infrastructure.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\bin\Debug\netstandard2.0\Hygiena.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\bin\Debug\netstandard2.0\Infrastructure.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\obj\Debug\netstandard2.0\HygienaTests.csprojResolveAssemblyReference.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\obj\Debug\netstandard2.0\HygienaTests.csproj.CoreCompileInputs.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\obj\Debug\netstandard2.0\HygienaTests.AssemblyInfoInputs.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\obj\Debug\netstandard2.0\HygienaTests.AssemblyInfo.cs
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\obj\Debug\netstandard2.0\HygienaTests.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\HygienaTests\obj\Debug\netstandard2.0\HygienaTests.pdb

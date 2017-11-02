@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Infrastructure</id>
+    <version>1.0.0</version>
+    <authors>Infrastructure</authors>
+    <owners>Infrastructure</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp1.1">
+        <dependency id="Microsoft.Extensions.Configuration.EnvironmentVariables" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="MailKit" version="1.12.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Identity.EntityFrameworkCore" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Json" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Tools" version="1.1.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Design" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Libuv" version="1.9.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.NETCore.App" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.UserSecrets" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Options.ConfigurationExtensions" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.Relational" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging.Console" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Logging" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="runtime.osx.10.10-x64.Microsoft.VisualStudio.clrdbg" version="15.0.25626-preview-3219185" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.NETCore.Runtime.CoreCLR" version="1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/netcoreapp1.1/project.json" buildAction="Content" />
+      <files include="any/netcoreapp1.1/Properties/launchSettings.json" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\bin\Release\netcoreapp1.1\Infrastructure.runtimeconfig.json" target="lib\netcoreapp1.1\Infrastructure.runtimeconfig.json" />
+    <file src="C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\bin\Release\netcoreapp1.1\Infrastructure.dll" target="lib\netcoreapp1.1\Infrastructure.dll" />
+    <file src="C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\project.json" target="content\project.json" />
+    <file src="C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\project.json" target="contentFiles\any\netcoreapp1.1\project.json" />
+    <file src="C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Properties\launchSettings.json" target="content\Properties\launchSettings.json" />
+    <file src="C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Properties\launchSettings.json" target="contentFiles\any\netcoreapp1.1\Properties\launchSettings.json" />
+  </files>
+</package>

@@ -1,0 +1,90 @@
+﻿<div id="reportView" class=".table-responsive" ng-controller="reportsController">
+
+
+    <div class="row">
+        <div class="col-lg-1 headerLabelOne">
+            <label>{{language.reportType.caption| capitalize}}</label>
+
+        </div>
+        <div class="col-lg-2 ">
+            <select ng-options="o.report for o in reportTypes" ng-model="reportReportType" ng-change="updateReport(reportReportType)" class="hygienaSelectDash"></select>
+        </div>
+        <div class="col-lg-1 headerLabel">
+            <label>{{language.period.caption| capitalize}}</label>
+        </div>
+        <div class="col-lg-2">
+
+            <select ng-model="selectedP" data-ng-options="o.period for o in periods" ng-change="changePeriod(selectedP)" class="hygienaSelectDash"></select>
+        </div>
+        <div class="col-lg-1 headerLabel">
+            <label>{{language.from.caption| capitalize}}</label>
+        </div>
+        <div class="col-lg-2">
+            <div dx-date-box="dateBox.dateTimeFrom" class="dateSelectorStyle"></div>
+        </div>
+        <div class="col-lg-1 headerLabel">
+            <label>{{language.to.caption| capitalize}}</label>
+        </div>
+        <div class="col-lg-2">
+            <div dx-date-box="dateBox.dateTimeTo" class="dateSelectorStyle"></div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-lg-1 headerLabelOne">
+
+
+        </div>
+        <div class="col-lg-11">
+
+            <div dx-radio-group="radioGroup.reportType"></div>
+        </div>
+
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-1 headerLabelOne">
+
+
+        </div>
+        <div class="col-lg-11">
+
+            <div dx-radio-group="radioGroup.changeLayout"></div>
+        </div>
+
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-lg-11 col-lg-offset-1">
+            <div id="grid">
+                <div dx-data-grid="gridOptions"></div>
+
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <div class="row">
+        <div class="col-lg-10">
+        </div>
+        <div class="col-lg-2">
+            <div style="float:right;" dx-button="{
+                text: 'Generate Report',
+                onClick: showLoadPanel,
+                width:135
+            }"></div>
+        </div>
+        
+
+    </div>
+    <div class="loadpanel" dx-load-panel="loadOptions"></div>
+
+    <div class="popup"
+         dx-popup="popupOptions">
+    </div>
+</div>
+
+
+

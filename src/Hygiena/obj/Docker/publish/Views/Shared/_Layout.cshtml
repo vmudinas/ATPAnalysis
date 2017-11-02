@@ -1,0 +1,247 @@
+﻿@using System.Threading.Tasks
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SureTrend 5</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="">
+    <meta name="author" content="Hygiena">
+
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link href="~/lib/devextreme/v16.2/css/dx.common.css" rel="stylesheet"/>
+    <link href="~/lib/devextreme/v16.2/css/dx.light.css" rel="stylesheet"/>
+    <link href="~/css/flag-icon.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="~/css/site.css"/>
+    <script src="~/js/IE11/objectAssignPolyfill.js"></script>
+    <script src="~/lib/tether/dist/js/tether.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/underscore/underscore.js"></script>
+
+    <script type="text/javascript" src="~/lib/devextreme/v16.2/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="~/lib/devextreme/v16.2/js/angular.min.js"></script>
+    <script type="text/javascript" src="~/lib/devextreme/v16.2/js/angular-route.min.js"></script>
+    <script src="~/lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="~/lib/d3/d3.js"></script>
+
+    <script src="~/lib/devextreme/v16.2/js/cldr.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/cldr/event.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/cldr/supplemental.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/cldr/unresolved.js"></script>
+
+    <script src="~/lib/devextreme/v16.2/js/globalize.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/globalize/number.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/globalize/date.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/globalize/currency.js"></script>
+
+    <script type="text/javascript" src="~/lib/devextreme/v16.2/js/jszip.js"></script>
+    <script type="text/javascript" src="~/lib/devextreme/v16.2/js/dx.all.js"></script>
+    <script type="text/javascript" src="~/lib/devextreme/v16.2/js/localization/dx.all.de.js"></script>
+    <script type="text/javascript" src="~/lib/devextreme/v16.2/js/localization/dx.all.es.js"></script>
+
+    <script src="~/lib/devextreme/v16.2/js/vectormap-data/africa.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/vectormap-data/canada.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/vectormap-data/eurasia.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/vectormap-data/europe.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/vectormap-data/usa.js"></script>
+    <script src="~/lib/devextreme/v16.2/js/vectormap-data/world.js"></script>
+
+    <script type="text/javascript" src="~/lib/moment/min/moment-with-locales.js"></script>
+
+    <link rel="stylesheet" href="~/css/font-awesome.css"/>
+
+    <script src="~/js/app/app.js"></script>
+    <script src="~/js/app/services/gridDefinitionService.js"></script>
+    <script src="~/js/app/services/languageService.js"></script>
+    <script src="~/js/app/services/adminService.js"></script>
+    <script src="~/js/app/services/homeService.js"></script>
+    <script src="~/js/app/services/locationsService.js"></script>
+    <script src="~/js/app/services/plansService.js"></script>
+    <script src="~/js/app/services/reportsService.js"></script>
+    <script src="~/js/app/services/resultsService.js"></script>
+    <script src="~/js/app/services/usersService.js"></script>
+    <script src="~/js/app/services/unitsService.js"></script>
+    <script src="~/js/app/controllers/navController.js"></script>
+    <script src="~/js/app/controllers/languageController.js"></script>
+    <script src="~/js/app/controllers/adminController.js"></script>
+    <script src="~/js/app/controllers/homeController.js"></script>
+    <script src="~/js/app/controllers/locationsController.js"></script>
+    <script src="~/js/app/controllers/plansController.js"></script>
+    <script src="~/js/app/controllers/reportsController.js"></script>
+    <script src="~/js/app/controllers/resultController.js"></script>
+    <script src="~/js/app/controllers/adminUnitController.js"></script>
+    <script src="~/js/app/controllers/unitsController.js"></script>
+    <script src="~/js/app/controllers/userLanguageController.js"></script>
+    <script src="~/js/app/controllers/adminUserManagementController.js"></script>
+    <script src="~/js/app/controllers/adminRoleManagementController.js"></script>
+    <script src="~/js/app/controllers/scheduleEmailedReportsController.js"></script>
+    <script src="~/js/app/services/scheduleEmailedReportsService.js"></script>
+</head>
+
+<body ng-app="app">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" ng-controller="navController" ng-init="language != undefined">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand mainTitle" href="/">SureTrend</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <ul class="nav navbar-nav">
+                    <li ng-class="{'active': tabActive.isHome}">
+                        <button type="button" class="btn btn-link" ng-click="go('/home',@User.IsInRole("homeViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("homeViewEnabled").ToString().ToLower() } ">
+                            <span class="glyphicon glyphicon-home" ng-class="{'blue': tabActive.isHome}"></span>
+                            <span ng-class="{'blue': tabActive.isHome}"> {{language.home.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': tabActive.isResults}">
+                        <button type="button" class="btn btn-link" ng-click="go('/result',@User.IsInRole("resultViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("resultViewEnabled").ToString().ToLower() } ">
+                            <span class="glyphicon glyphicon-th-list" ng-class="{'blue': tabActive.isResults}"></span>
+                            <span ng-class="{'blue': tabActive.isResults}"> {{language.results.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': tabActive.isLocs}">
+                        <button type="button" class="btn btn-link" ng-click="go('/locations',@User.IsInRole("locationsViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("locationsViewEnabled").ToString().ToLower() } ">
+                            <span class="glyphicon glyphicon-th-list" ng-class="{'blue': tabActive.isLocs}"></span>
+                            <span ng-class="{'blue': tabActive.isLocs}"> {{language.locations.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': tabActive.isPlans}">
+                        <button type="button" class="btn btn-link" ng-click="go('/plans',@User.IsInRole("plansViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("plansViewEnabled").ToString().ToLower() } ">
+                            <span class="glyphicon glyphicon-folder-open" ng-class="{'blue': tabActive.isPlans}"></span>
+                            <span ng-class="{'blue': tabActive.isPlans}"> {{language.plans.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': tabActive.isReports}">
+                        <button type="button" class="btn btn-link" ng-click="go('/reports',@User.IsInRole("reportsViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("reportsViewEnabled").ToString().ToLower() } ">
+                            <span class="glyphicon glyphicon-signal" ng-class="{'blue': tabActive.isReports}"></span>
+                            <span ng-class="{'blue': tabActive.isReports}"> {{language.reports.caption| capitalize}}</span>
+                        </button>
+                    </li>
+                    <li ng-class="{'active': tabActive.isAdmin}">
+                        <div class="btn btn-link" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-credit-card" ng-class="{'blue': tabActive.isAdmin}"></span>
+                            <span ng-class="{'blue': tabActive.isAdmin}"> {{language.admin.caption| capitalize}}</span>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button type="button" class="btn btn-link" ng-click="go('/userManagement',@User.IsInRole("adminUserManagementViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminUserManagementViewEnabled").ToString().ToLower() } ">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    {{language.usersManagement.caption}}
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link" ng-click="go('/roleManagement',@User.IsInRole("adminRoleManagementViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminRoleManagementViewEnabled").ToString().ToLower() } ">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    {{language.roleManagement.caption}}
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link" ng-click="go('/userLangauge',@User.IsInRole("adminUserLanguageViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminUserLanguageViewEnabled").ToString().ToLower() } ">
+                                        <span class="glyphicon glyphicon-book"></span>
+                                        {{language.userslanguage.caption| capitalize}}
+                                    </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link" ng-click="go('/adminunit',@User.IsInRole("adminUnitViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("adminUnitViewEnabled").ToString().ToLower() } ">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    {{language.unitManagement.caption| capitalize}}
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link" ng-click="go('/language',@User.IsInRole("languageViewEnabled").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("languageViewEnabled").ToString().ToLower() } ">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    {{language.language.caption| capitalize}}
+                                </button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-link" ng-click="go('/scheduleEmailedReports',@User.IsInRole("canScheduleEmail").ToString().ToLower())" ng-class="{ 'disabled' : !@User.IsInRole("canScheduleEmail").ToString().ToLower() } ">
+                                    <span class="glyphicon glyphicon-stats"></span>
+                                    {{language.scheduleEmailedReports.caption}}
+                                </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form asp-area="" asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm2">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a asp-area="" asp-controller="Manage" asp-action="Index" title="Manage" class="greetingClass">{{language.hello.caption| capitalize}} @UserManager.GetUserName(User)</a>
+                        </li>
+                        <li class="dropdown language-selector">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                                <img ng-src="{{selectedLang }}" height="26" width="26" alt="" />
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li ng-click="selectLanguage('css/flag-uk.png','English')">
+                                    <a href="#">
+                                        <img src="~/css/flag-uk.png" alt=""/>
+                                        <span>{{english}}</span>
+                                    </a>
+                                </li>
+                                <li ng-click="selectLanguage('css/flag-es.png','Spanish')">
+                                    <a href="#">
+                                        <img src="~/css/flag-es.png" alt=""/>
+                                        <span>{{spanish}}</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn-link navbar-btn navbar-link">{{language.logoff.caption | capitalize}}</button>
+                        </li>
+                    </ul>
+                </form>
+            }
+            else
+            {
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a asp-area="" asp-controller="Account" asp-action="Register">{{language.register.caption| capitalize}}</a>
+                    </li>
+                    <li>
+                        <a asp-area="" asp-controller="Account" asp-action="Login">{{language.login.caption| capitalize}}</a>
+                    </li>
+                    <li class="dropdown language-selector">
+                        <a class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                            <img ng-src="{{selectedLang }}" height="26" width="26" alt="" />
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                            <li ng-click="selectLanguage('css/flag-uk.png','English')">
+                                <a href="#">
+                                    <img src="~/css/flag-uk.png" alt="" />
+                                    <span>{{english}}</span>
+                                </a>
+                            </li>
+                            <li ng-click="selectLanguage('css/flag-es.png','Spanish')">
+                                <a href="#">
+                                    <img src="~/css/flag-es.png" alt="" />
+                                    <span>{{spanish}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            }
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    @RenderBody()
+</div>
+@RenderSection("scripts", false)
+</body>
+</html>

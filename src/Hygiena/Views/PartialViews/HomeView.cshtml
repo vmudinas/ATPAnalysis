@@ -1,0 +1,61 @@
+﻿<div id="homeView" ng-controller="homeController">
+
+        <div>
+            <div class="row">
+                <div class="col-lg-3 ddTitle">
+                    <span class="spanTitle">{{language.dashboard.caption| capitalize}}</span>
+                    <select ng-options="o.dashboard for o in failsBy" ng-model="selectedFailedBy" ng-change="updateDashBoard(selectedFailedBy)" class="hygienaSelectDash"></select>
+                </div>
+                <div class="col-lg-3 ddTitle">
+                    <span class="spanTitle">{{language.period.caption| capitalize}}</span>
+                    <select ng-model="selectedP" data-ng-options="o.period for o in periods" ng-change="changePeriod(selectedP)" class="hygienaSelectDash"></select>
+                </div>
+                <div class="col-lg-3 ddTitle">
+                    <span class="spanTitle">{{language.from.caption| capitalize}}</span>
+                    <div dx-date-box="dateBox.dateTimeFrom" class="dateSelectorStyle"></div>
+                </div>
+                <div class="col-lg-3 ddTitle">
+                    <span class="spanTitle">{{language.to.caption| capitalize}}</span>
+                    <div dx-date-box="dateBox.dateTimeTo" class="dateSelectorStyle"></div>
+
+                </div>
+            </div>
+            <hr />
+            <div id="idSpinnerGrid" class="row">
+                <div class="col-lg-3 homeColumnHeight">
+                    <label class="classUnderline">{{selectedFailedBy.dashboard | capitalize}} </label>
+                    <p>
+                        <div id="homeViewGrid1" dx-data-grid="failsGridOptions"></div>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 homeColumnHeight">
+                    <label class="classUnderline">{{language.failsCautionPassByLocation.caption| capitalize}}: {{currentDashBoard}}</label>
+                    <p>
+                        <div id="idpieByPlanLoc" class="reportChartClass"></div>
+                    </p>
+                </div>
+                <div class="col-lg-3 homeColumnHeight">
+                    <label class="classUnderline">{{language.passCautionFailPeriod.caption| capitalize}}</label>
+                    <p>
+                        <div id="idpieByPeriod" class="reportChartClass"></div>
+                    </p>
+                </div>
+                <div class="col-lg-3 homeColumnHeight">
+                    <label class="classUnderline">{{language.failsForLocation.caption| capitalize}}: {{currentDashBoard}} </label>
+                    <p>
+                        <div id="homeViewGrid2" dx-data-grid="failGridOptions"></div>
+                    </p>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <label class="classUnderline">{{language.trendAnalysisFor.caption| capitalize}}: {{currentDashBoard}}</label>
+                    <p>
+                        <div id="idchartLow" ></div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>

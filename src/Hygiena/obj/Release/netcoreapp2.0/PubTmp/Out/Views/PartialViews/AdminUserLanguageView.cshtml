@@ -1,0 +1,14 @@
+﻿<div id="userLanguageView" class=".table-responsive" ng-controller="userLanguageController" ng-init="language != undefined">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <label>{{language.userLanguageTitle.caption| capitalize}}</label>
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="userLangageGrid" dx-data-grid="userLangageGridOptions"></div>
+        </div>
+    </div>
+</div>

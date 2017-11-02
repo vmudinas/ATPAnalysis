@@ -1,0 +1,33 @@
+{
+  "name": "pivottable-plus",
+  "description": "Javascript Pivot Table implementation from Nicolas Kruchten with more funcionalities such as multi-value aggregators and more chart options",
+  "version": "3.0.1",
+  "main": [
+    "dist/pivot.js",
+    "dist/pivot.css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "examples"
+  ],
+  "keywords": [
+    "pivot",
+    "crosstab",
+    "grid",
+    "table",
+    "pivottable",
+    "pivotgrid",
+    "pivotchart",
+    "jquery"
+  ],
+  "homepage": "http://github.com/csbatista/pivottable-plus",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/csbatista/pivottable-plus.git"
+  },
+  "dependencies": {
+    "jquery": ">=1.9.0",
+    "jquery-ui": "^1.12.1"
+
+  }
+}

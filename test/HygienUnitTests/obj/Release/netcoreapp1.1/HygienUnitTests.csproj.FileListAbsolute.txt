@@ -1,0 +1,16 @@
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\xunit.runner.utility.netstandard15.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\xunit.runner.reporters.netstandard15.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\HygienUnitTests.deps.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\HygienUnitTests.runtimeconfig.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\HygienUnitTests.runtimeconfig.dev.json
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\HygienUnitTests.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\HygienUnitTests.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\Hygiena.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\Infrastructure.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\Hygiena.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\bin\Release\netcoreapp1.1\Infrastructure.pdb
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\obj\Release\netcoreapp1.1\HygienUnitTests.csprojResolveAssemblyReference.cache
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\obj\Release\netcoreapp1.1\HygienUnitTests.AssemblyInfo.cs
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\obj\Release\netcoreapp1.1\HygienUnitTests.dll
+C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\test\HygienUnitTests\obj\Release\netcoreapp1.1\HygienUnitTests.pdb

@@ -1,0 +1,35 @@
+﻿<div id="resultsView" ng-controller="resultController" ng-init="language != undefined">
+    <div class="row">
+        <div class="col-lg-1">
+            <label>{{language.period.caption}}</label>
+        </div>
+        <div class="col-lg-3">
+            <select data-ng-options="o.period for o in periods" data-ng-model="selectedPeriodResult" ng-change="changeResultPeriod(selectedPeriodResult)" class="hygienaSelectPeriod"></select>
+        </div>
+        <div class="col-lg-1">
+            <label>{{language.from.caption}}</label>
+        </div>
+        <div class="col-lg-3">
+            <div dx-date-box="dateBox.dateTimeFromResult" class="dateSelectorStyle"></div>
+        </div>
+        <div class="col-lg-1">
+            <label>{{language.to.caption}}</label>
+        </div>
+        <div class="col-lg-3">
+            <div dx-date-box="dateBox.dateTimeToResult" class="dateSelectorStyle"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1 col-lg-offset-11">
+                <button type="button" class="btn btn-link right" ng-click="resetResultGridTemplateClick()" title="{{language.resetGridToFactorySettings.caption}}">
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="resultGrid" dx-data-grid="resultsDataGridOptions"></div>
+        </div>
+    </div>
+</div>

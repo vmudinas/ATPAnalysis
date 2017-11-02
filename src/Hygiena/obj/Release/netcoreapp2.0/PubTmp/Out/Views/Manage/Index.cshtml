@@ -1,0 +1,32 @@
+﻿@model Infrastructure.UserModel.Models.ManageViewModels.IndexViewModel
+
+
+<div class="container" ng-init="language != undefined">
+    <h2>{{language.manageYourAccount.caption| capitalize}}.</h2>
+    <p class="text-success">@ViewData["StatusMessage"]</p>
+
+    <div>
+        <h4>{{language.changeYourAccountSettings.caption| capitalize}}</h4>
+        <hr/>
+        <dl class="dl-horizontal">
+            <dt></dt>
+            <dt>
+                <label>{{language.password.caption| capitalize}}:</label>
+                @if (Model.HasPassword)
+                {
+                    <button type="button" class="btn btn-link" ng-click="go('/changePassword',true)">
+                        {{language.change.caption| capitalize}}
+                    </button>
+                }
+                else
+                {
+                    <button type="button" class="btn btn-link" ng-click="go('/setPassword',true)">
+                        {{language.create.caption| capitalize}}
+                    </button>
+                }
+            </dt>
+
+        </dl>
+
+    </div>
+</div>

@@ -1,0 +1,12 @@
+2017-09-18T12:20:09.5844734-07:00 0HL7UP93HN8G5 [FTL] Register Failed. Serial Number:0 (94dbeca4)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.RegisterUnit(RegisterUnit regUnit, String userName, String password, String newUserId) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceUnitRegistration.cs:line 64
+   at Hygiena.Controllers.TokenController.<RegisterUnit>d__11.MoveNext() in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\TokenController.cs:line 233
+2017-09-18T12:21:51.6411858-07:00 0HL7UP93HN8G6 [FTL] Register Failed. Serial Number:0 (94dbeca4)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.RegisterUnit(RegisterUnit regUnit, String userName, String password, String newUserId) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceUnitRegistration.cs:line 64
+   at Hygiena.Controllers.TokenController.<RegisterUnit>d__11.MoveNext() in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\TokenController.cs:line 233
+2017-09-18T12:23:29.7815505-07:00 0HL7UP93HN8G7 [FTL] Register Failed. Serial Number:0 (94dbeca4)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Infrastructure.Services.DataService.RegisterUnit(RegisterUnit regUnit, String userName, String password, String newUserId) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceUnitRegistration.cs:line 64
+   at Hygiena.Controllers.TokenController.<RegisterUnit>d__11.MoveNext() in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\TokenController.cs:line 233

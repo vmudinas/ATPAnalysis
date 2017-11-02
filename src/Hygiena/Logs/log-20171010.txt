@@ -1,0 +1,254 @@
+2017-10-10T11:52:31.3109805-07:00 0HL8G207SJ6H1 [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateSelect(SelectExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 127
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-10T11:52:31.5809834-07:00 0HL8G207SJ6H2 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.TranslateAndAlso(BinaryExpression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 70
+2017-10-10T11:52:38.9569823-07:00 0HL8G207SJ6H3 [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateSelect(SelectExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 127
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-10T11:52:39.2984810-07:00 0HL8G207SJ6H4 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.TranslateAndAlso(BinaryExpression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 70
+2017-10-10T11:52:42.5777912-07:00 0HL8G207SJ6H5 [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateSelect(SelectExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 127
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-10T11:52:42.8182913-07:00 0HL8G207SJ6H6 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.TranslateAndAlso(BinaryExpression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 70
+2017-10-10T12:03:13.2484658-07:00 0HL8G2676IV9H [FTL] PagedResults Failed: admin (4c14f306)
+MongoDB.Driver.MongoCommandException: Command aggregate failed: '$group' is not supported.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 127
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-10T12:03:40.9757872-07:00 0HL8G2676IV9I [FTL] GetPagedCountResults Failed: admin (f22b8456)
+MongoDB.Driver.MongoCommandException: Command aggregate failed: '$group' is not supported.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 70
+2017-10-10T12:17:16.8862148-07:00 0HL8G2E2K4U1M [FTL] PagedResults Failed: admin (4c14f306)
+MongoDB.Driver.MongoCommandException: Command aggregate failed: '$group' is not supported.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at DevExtreme.AspNet.Data.DataSourceLoader.Load[T](IQueryable`1 source, DataSourceLoadOptionsBase options)
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 128
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-10T12:17:17.1847160-07:00 0HL8G2E2K4U1N [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.TranslateAndAlso(BinaryExpression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 70
+2017-10-10T12:25:51.6697034-07:00 0HL8G2IS1GQU5 [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: predicate
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Infrastructure.Repository.Repository.Get[T](String databaseName, String collectionName, Expression`1 predicate) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 72
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 122
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-10T12:25:59.3498758-07:00 0HL8G2IS1GQU6 [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.TranslateAndAlso(BinaryExpression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 70
+2017-10-10T12:28:20.0078011-07:00 0HL8G2K885NLI [FTL] PagedResults Failed: admin (4c14f306)
+System.ArgumentNullException: Value cannot be null.
+Parameter name: predicate
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at Infrastructure.Repository.Repository.Get[T](String databaseName, String collectionName, Expression`1 predicate) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Repository\Repository.cs:line 72
+   at Infrastructure.Services.DataService.GetPagedResults(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 122
+   at Hygiena.Controllers.api.ResultController.GetPagedResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 51
+2017-10-10T12:28:20.3013010-07:00 0HL8G2K885NLJ [FTL] GetPagedCountResults Failed: admin (f22b8456)
+System.ArgumentException: Unsupported filter: Contains(value(System.Collections.Generic.List`1[Infrastructure.Entities.SiteUser]).Select({document}{SiteId})).
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.TranslateAndAlso(BinaryExpression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.PredicateTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateWhere(WhereExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslateGroupBy(GroupByExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.TranslatePipeline(PipelineExpression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node)
+   at MongoDB.Driver.Linq.Translators.QueryableTranslator.Translate(Expression node, IBsonSerializerRegistry serializerRegistry)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at Infrastructure.Services.DataService.GetPagedResultsCount(DateTime fromUtc, DateTime toUtc, DataSourceLoadOptions options, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 113
+   at Hygiena.Controllers.api.ResultController.GetPagedCountResults(String fromUtc, String toUtc, String loadOption) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ResultController.cs:line 70
+2017-10-10T13:41:11.8556118-07:00 0HL8G3SV5BKR9 [FTL] GetResults Failed: admin (18e0708a)
+System.FormatException: Element '_id' does not match any field or property of class Infrastructure.Entities.Result.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryableImpl`2.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Infrastructure.Services.DataService.GetResults(DateTime fromUtc, DateTime toUtc, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 35
+   at Hygiena.Controllers.api.ReportsController.GetReportData(String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 78
+2017-10-10T13:41:21.7635662-07:00 0HL8G3SV5BKRA [FTL] GetResults Failed: admin (18e0708a)
+System.FormatException: Element '_id' does not match any field or property of class Infrastructure.Entities.Result.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryableImpl`2.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Infrastructure.Services.DataService.GetResults(DateTime fromUtc, DateTime toUtc, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 35
+   at Hygiena.Controllers.api.ReportsController.GetReportData(String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 78
+2017-10-10T13:42:21.7879640-07:00 0HL8G3SV5BKRB [FTL] GetResults Failed: admin (18e0708a)
+System.FormatException: Element '_id' does not match any field or property of class Infrastructure.Entities.Result.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryableImpl`2.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Infrastructure.Services.DataService.GetResults(DateTime fromUtc, DateTime toUtc, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 35
+   at Hygiena.Controllers.api.ReportsController.GetReportData(String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 78
+2017-10-10T13:42:41.3534123-07:00 0HL8G3SV5BKRC [FTL] GetResults Failed: admin (18e0708a)
+System.FormatException: Element '_id' does not match any field or property of class Infrastructure.Entities.Result.
+   at MongoDB.Driver.Linq.MongoQueryProviderImpl`1.Execute(Expression expression)
+   at MongoDB.Driver.Linq.MongoQueryableImpl`2.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Infrastructure.Services.DataService.GetResults(DateTime fromUtc, DateTime toUtc, ClientAccount account) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Infrastructure\Services\DataServiceResults.cs:line 35
+   at Hygiena.Controllers.api.ReportsController.GetReportData(String fromUtc, String toUtc) in C:\Dev\SureTrend5\HygienaWeb\HygienaWeb\src\Hygiena\Controllers\api\ReportsController.cs:line 78
+2017-10-10T19:55:55.3174655-07:00 0HL8GAEBOC00I [FTL] Object reference not set to an instance of an object. (f59a5554)
+2017-10-10T19:55:55.3299737-07:00 0HL8GAEBOC00I [FTL] [null] (12807b18)
+2017-10-10T19:58:53.6900985-07:00 0HL8GAEBOC00J [FTL] Object reference not set to an instance of an object. (f59a5554)
+2017-10-10T19:58:53.6955998-07:00 0HL8GAEBOC00J [FTL] [null] (12807b18)
+2017-10-10T19:59:37.6438385-07:00 0HL8GAEBOC00K [FTL] Object reference not set to an instance of an object. (f59a5554)
+2017-10-10T19:59:37.6438385-07:00 0HL8GAEBOC00K [FTL] [null] (12807b18)
+2017-10-10T20:00:43.3918254-07:00 0HL8GAEBOC00L [FTL] Object reference not set to an instance of an object. (f59a5554)
+2017-10-10T20:00:43.3918254-07:00 0HL8GAEBOC00L [FTL] [null] (12807b18)
